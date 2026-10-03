@@ -65,6 +65,8 @@ pnpm narrative inspect .tmp/my-world
 - [並列ライターの手順](docs/writer-workflow.md): 共有する基礎と担当ごとの提案形式。
 - [Jevの初期実験](docs/jev-experiment.md): 32ケースの合成ベンチマーク。MVPの文脈・質問とは別の実験。
 - [MVPの統合検証](docs/mvp-verification.md): 到達性、テスト、実Jevの保留結果とキャッシュ。
+- [制作手法の振り返り](docs/methods-retrospective.md): 有効だった方法、つまずきと修正、確認範囲、次に比較する起点。
+- [subagentによる評価](docs/methods-evaluation.md): 一経路のプレイ評価、検証記録の再計算、改善の優先順位。
 - [サンプルのブリーフ](examples/ash-estuary/brief.md)、[草稿の統合レビュー](examples/ash-estuary/review.md)、[ゲーム化の調整](examples/ash-estuary/implementation-notes.md)。
 - [シーン・人物画像の制作](examples/ash-estuary/art/README.md): Bのペン画と淡彩を採用。11シーンと5人の三面図・ポーズ画・表情集、描画方針と人物参照。
 - [並列実装の契約・進捗](docs/mvp-plan.md): 担当範囲、固定API、再開手順。
