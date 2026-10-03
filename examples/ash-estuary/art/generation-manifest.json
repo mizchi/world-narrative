@@ -1,0 +1,34 @@
+{
+  "formatVersion": "ash-estuary-art-generation/v1",
+  "tool": "image_gen",
+  "requestedModel": "gpt-image-2.5",
+  "resolvedModel": null,
+  "modelNote": "内蔵ツールはモデルの指定と確認を公開していない。",
+  "selected": "B",
+  "images": [
+    {
+      "id": "A",
+      "name": "油彩風の環境画",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-b4bb7d34-3533-4f53-9713-07d46ee3c58f.png",
+      "file": "style-a-painterly-v1.png",
+      "promptSource": "style-candidates.json",
+      "status": "unselected-candidate"
+    },
+    {
+      "id": "B",
+      "name": "ペン画と淡彩",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-fa48009c-888b-443d-9fe9-9262b9033587.png",
+      "file": "style-b-ink-wash-v1.png",
+      "promptSource": "style-candidates.json",
+      "status": "selected-style-reference"
+    },
+    {
+      "id": "C",
+      "name": "平面的なガッシュ",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-8696bc8a-e530-47dd-9aae-5d13754fb496.png",
+      "file": "style-c-gouache-v1.png",
+      "promptSource": "style-candidates.json",
+      "status": "unselected-candidate"
+    }
+  ]
+}

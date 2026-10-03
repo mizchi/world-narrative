@@ -1,0 +1,121 @@
+{
+  "formatVersion": "ash-estuary-character-art-direction/v1",
+  "id": "ash-ink-wash-characters-v1",
+  "styleId": "ash-ink-wash-v1",
+  "styleReference": {
+    "file": "style-b-ink-wash-v1.png",
+    "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de",
+    "role": "style-only"
+  },
+  "status": "first-visual-design",
+  "authorization": "ユーザーがシーン画と画風を承認し、同じ画風で人物画像の生成を依頼。",
+  "canonPolicy": "職業と本文の設定を参照。未記述の年齢・顔・髪・服装は今回の視覚デザイン案として保持し、世界の正史に自動追加しない。既存シーンの匿名人物には遡って名前を割り当てない。",
+  "framing": "縦長約2:3、一人の全身、3/4方向、顔と両足が読める、生成り紙の簡素な背景",
+  "reusableReferencePolicy": "次の人物入りシーンでは画風Bと、登場する人物の画像を別々の参照として添える。人物画像を顔・髪・衣服・道具の参照にし、背景やポーズまで固定しない。",
+  "commonPrompt": "Use case: illustration-story\nAsset type: a single full-length CHARACTER REFERENCE illustration for the original exploration game \"Ash Estuary\"; vertical portrait approximately 2:3, opaque background.\nInput image 1 is the approved STYLE reference B, an existing environment illustration. Match its actual fine, irregular pen contours, restrained hatching, delicate watercolor washes, visible warm paper, realistic human proportions, softly observed materials and muted palette. Translate that exact drawing language to a large clearly readable person. The small anonymous people in the reference are NOT character identity references.\nComposition: ONE person only, entire body from head to both boots, generous clean margin, subject about 80 percent of image height, eye-level three-quarter view. Clear individual face and silhouette; anatomically plausible visible hands, ordinary grounded posture. Sparse warm ivory paper background with a faint wash and just a suggestion of chalk paving at the feet. No elaborate environment, inset, second view, extra figure, frame, caption, labels or watermark.\nArt direction: Quiet, beautiful coastal working life with restrained unease. Pale limestone ivory, slate and gray-blue, muted moss, weathered brown and small rust accents; soft overcast light. Hand-drawn pen and pale watercolor throughout, including the face. Avoid photographic or cinematic skin, glossy 3D, oil paint, anime, cartoon exaggeration, exaggerated black outlines, saturated colors or fashion glamour.\nWorld invariants: Ordinary preindustrial coastal work clothes, practical repaired cloth, simple leather, wood and iron tools. No modern machinery, industrial uniform, fantasy armor, royal robes, weapons, heroic stance, glowing objects, magic, ghosts, readable memories, memory flashbacks, bodily corrosion or magical scars. These are living working people, capable and specific. This is a pre-choice reference portrait; do not depict any memory donation, choice result or hidden truth. Any record is closed or has indistinct marks only; no readable words or numbers.\nCharacter design to draw:\n",
+  "characters": [
+    {
+      "id": "ira",
+      "entityId": "actor.ira",
+      "name": "鐘守イラ",
+      "source": "../world.json",
+      "canonDescription": "港で配分の責任を負う。全員の暮らしを守りたいが、別の防潮手段を知らない。",
+      "design": {
+        "apparentAge": "40代半ば",
+        "presentation": "女性として描く初稿",
+        "face": "細長い顔、まっすぐな鼻、疲れの見える目",
+        "hair": "顎までの黒い髪、こめかみに少し灰色",
+        "silhouette": "細身、膝丈の青灰色の上着",
+        "clothes": "立ち襟の上着、生成りのシャツ、くすんだ苔色の細い肩布、茶色の実用靴",
+        "props": "閉じた配分帳、小さな鉄の鍵束",
+        "gesture": "帳面を脇に抱え、空いた手を開く"
+      },
+      "file": "characters/ira-v1.png",
+      "status": "generated-first-design",
+      "sha256": "f4c65313540ba48e6966c2a5f4381e49bd7d9d9fef8d9db3ae4ee7295be8ebad"
+    },
+    {
+      "id": "sui",
+      "entityId": "tide.sui",
+      "name": "水門修理人スイ",
+      "source": "../tide.proposal.json",
+      "canonDescription": "低庭の雨水槽を残したい修理人。母が自分の名を呼んだ晩の記憶を持つ。",
+      "design": {
+        "apparentAge": "20代後半",
+        "presentation": "中性的な外見の初稿",
+        "face": "短く角張った顔、太い眉、褐色の肌",
+        "hair": "短く波打つ濃い髪",
+        "silhouette": "小柄で引き締まった体、短い上着と膝当て",
+        "clothes": "袖をまくった生成りのシャツ、青緑の短い作業上着、黄土色の補修布、長靴",
+        "props": "点検縄の小さな輪、木柄の鉄工具",
+        "gesture": "片手で点検縄を持ち、もう片方を工具に添える"
+      },
+      "file": "characters/sui-v1.png",
+      "status": "generated-first-design",
+      "sha256": "976ffd205abea0a220402539aecb3194a769b3f219ca9f4acf1ea0070ea9118c"
+    },
+    {
+      "id": "asa",
+      "entityId": "tide.asa",
+      "name": "網職人アサ",
+      "source": "../tide.proposal.json",
+      "canonDescription": "干し場で次の漁の網を仕上げる。白い道は荷車の通り道でもある。",
+      "design": {
+        "apparentAge": "50代後半",
+        "presentation": "女性として描く初稿",
+        "face": "丸く幅のある顔、日焼けした肌、目尻の細い皺",
+        "hair": "灰色混じりの長い髪を低い一本の三つ編みにする",
+        "silhouette": "低めの背丈、丸い肩布と厚い網の束",
+        "clothes": "灰青の肩布、茶色の前掛け、足首丈の苔色の作業裙、平底靴",
+        "props": "木の網針、畳んだ漁網",
+        "gesture": "腕で畳んだ網を支え、網針を下向きに持つ"
+      },
+      "file": "characters/asa-v1.png",
+      "status": "generated-first-design",
+      "sha256": "c7840de697911651ab00d99ef4903fd96d59926ae6709daa10e586912277a5b7"
+    },
+    {
+      "id": "nene",
+      "entityId": "quarry.nene",
+      "name": "窯番ネネ",
+      "source": "../quarry.proposal.json",
+      "canonDescription": "今便の納品を急ぐ窯番。息子との記憶を提供するか迷っている。",
+      "design": {
+        "apparentAge": "40代前半",
+        "presentation": "女性（本文にも彼女とある）",
+        "face": "幅のある頬、強い眉、オリーブ色の肌",
+        "hair": "濃い髪を高めにまとめ、褪せた錆色の頭布を巻く",
+        "silhouette": "肩幅のある体、長い革前掛け",
+        "clothes": "生成りのシャツ、炭灰の裙、褪せた赤茶の革前掛け、頑丈な靴",
+        "props": "折り畳んだ作業手袋、控えめな鉄の火ばさみ",
+        "gesture": "手袋を持ち、火ばさみを地面近くで下向きに支える"
+      },
+      "file": "characters/nene-v1.png",
+      "status": "generated-first-design",
+      "sha256": "7fdab728e1b649391e197aa616bff87ddebf25db2efb014c1b81a914bf17fb54"
+    },
+    {
+      "id": "ado",
+      "entityId": "quarry.ado",
+      "name": "階段職人アド",
+      "source": "../quarry.proposal.json",
+      "canonDescription": "白い石段の修繕仕事が減り、窯の夜勤で支柱を点検している。",
+      "design": {
+        "apparentAge": "60歳前後",
+        "presentation": "男性として描く初稿",
+        "face": "四角い顔、薄い肌色、深い目元",
+        "hair": "短い白髪と短く整えた灰色の髭",
+        "silhouette": "背が高くがっしり、石灰色の腰丈の上着",
+        "clothes": "石灰色の作業上着、茶色の胴衣、灰色のゆったりしたズボン、擦れた厚底靴",
+        "props": "小さな木槌、巻いた工具布",
+        "gesture": "工具布を腰で持ち、体重を片脚に預ける"
+      },
+      "file": "characters/ado-v1.png",
+      "status": "generated-first-design",
+      "sha256": "d3d832df1961eea5999837c720bc8fa60adf7e680bdc63a1f42bf6ecf99e498c"
+    }
+  ],
+  "tool": "image_gen",
+  "requestedModel": "gpt-image-2.5",
+  "resolvedModel": null
+}

@@ -1,0 +1,16 @@
+{
+  "styleId": "ash-ink-wash-v1",
+  "target": "tide-repaired",
+  "reason": "閉塞した旧溝を開いた管として描かない",
+  "jobs": [
+    {
+      "id": "tide-repaired-correction",
+      "title": "剝がした道：旧溝の封鎖を修正",
+      "references": [
+        "/Users/mz/ghq/github.com/mizchi/world-narrative/examples/ash-estuary/art/scenes/tide-repaired-v1.png",
+        "/Users/mz/ghq/github.com/mizchi/world-narrative/examples/ash-estuary/art/style-b-ink-wash-v1.png"
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: a corrected scene illustration for \"Ash Estuary\", same wide landscape frame.\nInput images: Image 1 is the EDIT TARGET, the just-generated \"southern path repaired\" image. Image 2 is the approved style reference B.\nChange only one object: In the foreground excavation beneath the interrupted paving, the small old arched drainage opening currently appears hollow. Fill and seal that old opening completely with tightly fitted pale limestone rubble and mortar. The viewer must read it as a stopped, blocked drain, not an open functioning pipe. Preserve the exposed excavation and lifted paving around it; the path is still interrupted.\nKeep unchanged: Exact camera, composition, coastline, buildings, sluice and sea water, cistern, net frames, handcart, bundled net carrier, stacked slabs, rope barrier, tools, cloudy light, palette and all fine ink-and-watercolor texture. No added characters, changes of weather, text, other repairs or alterations to the water gate. Only correct the old drain's visibly blocked state."
+    }
+  ]
+}

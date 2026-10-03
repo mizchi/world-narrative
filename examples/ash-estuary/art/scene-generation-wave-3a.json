@@ -1,0 +1,75 @@
+{
+  "styleId": "ash-ink-wash-v1",
+  "images": [
+    {
+      "id": "quarry-ledger",
+      "title": "夜勤帳",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-65fe904e-859c-4fbb-be42-93dd06fee982.png",
+      "file": "scenes/quarry-ledger-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "7205a081fe2cf95963ef1316d766f6c2cd8be5d38fb02984d2446b37bcc8f8cd",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-channel",
+      "title": "届かない色水",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-eec1527c-8a5d-4f9d-a6bb-b6ee1ec047db.png",
+      "file": "scenes/quarry-channel-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "dc3a8e11de2b113b7e0d3628306696b074b9066b052ce909954428b7e06e3223",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-trial",
+      "title": "供述票と試験石板",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-9f3f0c5b-45e2-4a4b-aa1f-cee48c4c39c2.png",
+      "file": "scenes/quarry-trial-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "22dd78f48b7b980135590309a6a40175e25fb128e72cae7f363a87a3841346a0",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "tide-repaired",
+      "title": "剝がした道：旧溝の封鎖を修正",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-bd3dba40-347f-42c7-9afa-58420a4d3e02.png",
+      "file": "scenes/tide-repaired-v2.png",
+      "promptSource": "scene-prompts-correction-1.json",
+      "references": [
+        "scenes/tide-repaired-v1.png",
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "corrects": "scenes/tide-repaired-v1.png",
+      "reason": "旧溝の開口を石とモルタルで塞ぐ",
+      "sha256": "ffe45772b405389fae92fcacf50f93edc3d153fbd60a78f6f8a23c8a0ba57e32",
+      "width": 1672,
+      "height": 941
+    }
+  ]
+}

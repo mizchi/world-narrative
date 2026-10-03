@@ -1,0 +1,11 @@
+{
+  "rubricVersion": "lore-v1",
+  "sourceHashes": {
+    "src/contracts.ts": "a648f1388bc50187f99780e7ba3f55334d962164f332374f88f66e89273a3799",
+    "src/fixtures.ts": "d1503af04223a97aa7edcfd22e76e02554140a28ec290c2650f0af4b6cf4e5cd",
+    "src/judge.ts": "c26b5b9b4bbda45773943c375ff5955a91287fb2b9487200770a76ba44fb7407",
+    "src/jev.ts": "1cc1faf408d6354fe48f270642e08474671ea67d6e6842dd135344c7e7087932",
+    "src/benchmark.ts": "82301aaa73c48ef768427c97ccffed6b7780d0944f60f3b091fe0b4b37b6e232"
+  },
+  "fixtureHash": "3422123d7d78e4ed9416276006cb75bc2fccd24741cb844551f61784d63ab0da"
+}

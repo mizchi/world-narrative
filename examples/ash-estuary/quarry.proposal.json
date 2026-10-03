@@ -1,0 +1,765 @@
+{
+  "formatVersion": "world-narrative/v1",
+  "id": "quarry.proposal.v1",
+  "basedOnRevision": "ash-v0.1",
+  "namespace": "quarry",
+  "readSet": [
+    "author.editor",
+    "fact.description",
+    "memory.sacrificeAmplifies",
+    "place.quarry",
+    "quarry.channelSeen",
+    "quarry.choice",
+    "quarry.ledger",
+    "quarry.trialRead",
+    "rule.memory",
+    "tide.tested",
+    "truth.exception",
+    "world.powder"
+  ],
+  "writeSet": [
+    "quarry.ado",
+    "quarry.assertion.leakage",
+    "quarry.assertion.neneBelief",
+    "quarry.assertion.nightWork",
+    "quarry.assertion.pressure",
+    "quarry.assertion.trialRecord",
+    "quarry.assertion.work.1",
+    "quarry.assertion.work.2",
+    "quarry.assertion.work.3",
+    "quarry.channel",
+    "quarry.claim.channelRepair",
+    "quarry.claim.kilnRepair",
+    "quarry.claim.leakage",
+    "quarry.claim.neneBelief",
+    "quarry.claim.nightWork",
+    "quarry.claim.pressure",
+    "quarry.claim.singleCrew",
+    "quarry.claim.trialRecord",
+    "quarry.episode",
+    "quarry.fragment.channel",
+    "quarry.fragment.kiln",
+    "quarry.fragment.leave",
+    "quarry.fragment.ledger",
+    "quarry.fragment.nene",
+    "quarry.fragment.repaired-channel",
+    "quarry.fragment.trial",
+    "quarry.inspect-channel",
+    "quarry.intro.arrival",
+    "quarry.intro.familiar",
+    "quarry.intro.memory",
+    "quarry.kiln",
+    "quarry.leave",
+    "quarry.ledgerBook",
+    "quarry.nene",
+    "quarry.read-ledger",
+    "quarry.read-trial",
+    "quarry.repair-channel",
+    "quarry.repair-kiln",
+    "quarry.stairs",
+    "quarry.trial",
+    "quarry.wash"
+  ],
+  "operations": [
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "quarry.nene",
+        "kind": "person",
+        "name": "窯番ネネ",
+        "description": "今便の納品を急ぐ窯番。息子との記憶を提供するか迷っている。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "quarry.ado",
+        "kind": "person",
+        "name": "階段職人アド",
+        "description": "白い石段の修繕仕事が減り、窯の夜勤で支柱を点検している。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "quarry.kiln",
+        "kind": "item",
+        "name": "支柱のある焼成窯",
+        "description": "傷んだ窯台を木の支柱で支える。予定の焼成と夜勤の点検を続けている。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "quarry.channel",
+        "kind": "item",
+        "name": "北岸へ粉を運ぶ溝",
+        "description": "採石場から北岸の局所水門へ続く溝。南門とは接続していない。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "quarry.stairs",
+        "kind": "item",
+        "name": "白い石段",
+        "description": "見晴らし台から入り江を見せる階段。裏側の欠けと補修の停止は上から見えない。",
+        "gameRole": "background"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "quarry.ledgerBook",
+        "kind": "item",
+        "name": "夜勤帳",
+        "description": "賃金の前借り、修繕代、支柱点検の時刻を記す帳面。持ち出しには本人の承諾がいる。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "quarry.trial",
+        "kind": "item",
+        "name": "供述票と流量表",
+        "description": "提供前の本人の言葉と目盛りの読みを分けた旧作業箱の資料。番号を付けた試験石板と照合できる。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "quarry.wash",
+        "kind": "item",
+        "name": "溝沿いの洗い場",
+        "description": "溝を掘り直す間は二日閉める。上の井戸まで水を運ぶことになる。",
+        "gameRole": "background"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "quarry.claim.nightWork",
+        "subjectId": "quarry.kiln",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "窯台の傷みを木の支柱と夜勤の点検で補い、石段の補修は止まっている。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "窯台の傷みを木の支柱と夜勤の点検で補い、石段の補修は止まっている。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "quarry.claim.pressure",
+        "subjectId": "quarry.ledgerBook",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "夜勤帳には修繕代を賃金の前借りに回した欄と「記憶の提供を勧められた」との記入がある。労働契約は記憶提供への承諾ではない。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "夜勤帳には修繕代を賃金の前借りに回した欄と「記憶の提供を勧められた」との記入がある。労働契約は記憶提供への承諾ではない。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "quarry.claim.leakage",
+        "subjectId": "quarry.channel",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "溝の沈殿が粉を手前の捨て口へ逸らす。北岸の既存割当の損失であり、南門の流路とは別である。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "溝の沈殿が粉を手前の捨て口へ逸らす。北岸の既存割当の損失であり、南門の流路とは別である。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "quarry.claim.trialRecord",
+        "subjectId": "quarry.trial",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "本人が提供前に語った供述票と流量表が別々に残る。番号付き石板は記録した侵食境界と合う。石から記憶を読み取ったものではない。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "本人が提供前に語った供述票と流量表が別々に残る。番号付き石板は記録した侵食境界と合う。石から記憶を読み取ったものではない。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "quarry.claim.kilnRepair",
+        "subjectId": "quarry.kiln",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "窯台修理は四人の二十四時間を使い、夜勤を減らす。今便の焼成延期により南への未配分枠を二単位減らし、北岸の既存割当と石段の欠けは変えない。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "窯台修理は四人の二十四時間を使い、夜勤を減らす。今便の焼成延期により南への未配分枠を二単位減らし、北岸の既存割当と石段の欠けは変えない。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "quarry.claim.channelRepair",
+        "subjectId": "quarry.channel",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "溝修理は四人の二十四時間を使い、洗い場を二日閉める。北岸の既存割当の損失を減らすが、共有在庫を増やさない。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "溝修理は四人の二十四時間を使い、洗い場を二日閉める。北岸の既存割当の損失を減らすが、共有在庫を増やさない。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "quarry.claim.singleCrew",
+        "subjectId": "quarry.kiln",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "今回使える四人の作業員は一日だけ。窯台と溝の仕事を両方行うことはできない。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "今回使える四人の作業員は一日だけ。窯台と溝の仕事を両方行うことはできない。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "quarry.claim.neneBelief",
+        "subjectId": "rule.memory",
+        "predicateId": "memory.sacrificeAmplifies",
+        "value": {
+          "kind": "boolean",
+          "value": true
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "ネネは、深い悲しみを差し出せば少ない石でも守れると信じている。"
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "quarry.assertion.nightWork",
+        "claimId": "quarry.claim.nightWork",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "quarry.ledgerBook",
+          "locator": "quarry.md#2-3",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "quarry.assertion.pressure",
+        "claimId": "quarry.claim.pressure",
+        "layer": {
+          "kind": "record",
+          "documentId": "quarry.ledgerBook"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "quarry.ledgerBook",
+          "locator": "quarry.md#4-発見1",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "quarry.assertion.leakage",
+        "claimId": "quarry.claim.leakage",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "quarry.trial",
+          "locator": "quarry.md#4-発見2",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "quarry.assertion.trialRecord",
+        "claimId": "quarry.claim.trialRecord",
+        "layer": {
+          "kind": "record",
+          "documentId": "quarry.trial"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "quarry.trial",
+          "locator": "quarry.md#4-発見3-4",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "quarry.assertion.work.1",
+        "claimId": "quarry.claim.kilnRepair",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "quarry.ledgerBook",
+          "locator": "quarry.md#5-介入",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "quarry.assertion.work.2",
+        "claimId": "quarry.claim.channelRepair",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "quarry.ledgerBook",
+          "locator": "quarry.md#5-介入",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "quarry.assertion.work.3",
+        "claimId": "quarry.claim.singleCrew",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "quarry.ledgerBook",
+          "locator": "quarry.md#5-介入",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "quarry.assertion.neneBelief",
+        "claimId": "quarry.claim.neneBelief",
+        "layer": {
+          "kind": "belief",
+          "holderId": "quarry.nene",
+          "polarity": "believes"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "quarry.ledgerBook",
+          "locator": "quarry.md#2-信念",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addEpisode",
+      "episode": {
+        "id": "quarry.episode",
+        "title": "白い階段の欠け",
+        "locationId": "place.quarry",
+        "participants": [
+          "quarry.nene",
+          "quarry.ado"
+        ],
+        "intro": [
+          {
+            "id": "quarry.intro.arrival",
+            "condition": {
+              "op": "true"
+            },
+            "text": "アドは夜勤明けの踵を冷やしながら、階段を見上げた。「階段は上から見てくれ。裏を見た客は、修繕賃より先に哀れみをくれる」。ネネは窯台の支柱を押す。四人を一日使えるが、窯台と粉の溝を両方は直せないという。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "quarry.intro.memory",
+            "condition": {
+              "op": "not",
+              "condition": {
+                "op": "knows",
+                "claimId": "truth.exception"
+              }
+            },
+            "text": "ネネは納品表の余白に息子の名を書いて、すぐ隠した。「あの子のことなら、重い石になると思った。足りないなら、私から申し出ようか」。アドは返事をせず、夜勤帳を膝へ置く。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "quarry.intro.familiar",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "knows",
+                  "claimId": "truth.exception"
+                },
+                {
+                  "op": "any",
+                  "conditions": [
+                    {
+                      "op": "eq",
+                      "variable": "tide.tested",
+                      "value": true
+                    },
+                    {
+                      "op": "eq",
+                      "variable": "quarry.trialRead",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            "text": "あなたが届く粉と流路の記録を確かめたいと言うと、ネネは旧作業箱の鍵を探した。「これまで分かったことも、この溝で同じように使えるか見てほしい。私の申し出を決めるのは、そのあとにする」",
+            "disclosedClaimIds": [
+              "truth.exception"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "quarry.read-ledger",
+            "label": "一回の支柱点検を手伝い、夜勤帳を読む",
+            "text": "アドの点検を手伝い、承諾を得て帳面をその場で読む。賃金、修繕代、記憶提供の勧めを、同じ契約だと思い込まずに確認する。",
+            "condition": {
+              "op": "true"
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "quarry.ledger",
+                "value": true
+              },
+              {
+                "kind": "learn",
+                "claimId": "quarry.claim.nightWork",
+                "mode": "observed"
+              },
+              {
+                "kind": "learn",
+                "claimId": "quarry.claim.pressure",
+                "mode": "observed"
+              }
+            ]
+          },
+          {
+            "id": "quarry.inspect-channel",
+            "label": "三枚の蓋を開け、溝に色水を流す",
+            "text": "北岸への溝を歩き、沈殿と水位跡を見る。水門の作業係に声を掛け、色水がどの口へ向かうか確かめる。",
+            "condition": {
+              "op": "true"
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "quarry.channelSeen",
+                "value": true
+              },
+              {
+                "kind": "learn",
+                "claimId": "quarry.claim.leakage",
+                "mode": "observed"
+              }
+            ]
+          },
+          {
+            "id": "quarry.read-trial",
+            "label": "供述票、流量表、試験石板を照合する",
+            "text": "夜勤と水位跡をネネに示して鍵を借りる。提供前の供述、届いた粉の目盛り、石板の番号を別々に読み、潮後の境界が記録と合うか確かめる。",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "quarry.ledger",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "quarry.channelSeen",
+                  "value": true
+                }
+              ]
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "quarry.trialRead",
+                "value": true
+              },
+              {
+                "kind": "learn",
+                "claimId": "quarry.claim.trialRecord",
+                "mode": "observed"
+              },
+              {
+                "kind": "learn",
+                "claimId": "truth.exception",
+                "mode": "known"
+              }
+            ]
+          },
+          {
+            "id": "quarry.repair-kiln",
+            "label": "四人の一日で窯台を直す",
+            "text": "ネネの同意を得て、石段用に残した修繕材を窯台へ運ぶ。二十四時間の間、予定の焼成を止める。今回南へ回せる未配分枠は二単位減る。溝と石段は直せない。",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "quarry.ledger",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "quarry.choice",
+                  "value": "pending"
+                },
+                {
+                  "op": "gte",
+                  "variable": "world.powder",
+                  "value": 2
+                }
+              ]
+            },
+            "costHours": 24,
+            "effects": [
+              {
+                "kind": "add",
+                "variable": "world.powder",
+                "amount": -2
+              },
+              {
+                "kind": "set",
+                "variable": "quarry.choice",
+                "value": "kiln"
+              }
+            ]
+          },
+          {
+            "id": "quarry.repair-channel",
+            "label": "四人の一日で粉の溝を掘り直す",
+            "text": "水門係の同意を得て沈殿を掘り、捨て口への流れを直す。二十四時間働き、隣の洗い場を二日閉める。北岸の既存割当を届きやすくする仕事で、共有の粉は増えない。窯台と石段は残る。",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "quarry.channelSeen",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "quarry.choice",
+                  "value": "pending"
+                }
+              ]
+            },
+            "costHours": 24,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "quarry.choice",
+                "value": "channel"
+              }
+            ]
+          },
+          {
+            "id": "quarry.leave",
+            "label": "今回の仕事を見送り、判断を返す",
+            "text": "四人の仕事を決めず、ネネとアドに見送ると伝える。洗い場は開いたまま、支柱の夜勤と溝の損失も続く。誰かの記憶提供を、この返事の代わりに受理することはない。",
+            "condition": {
+              "op": "eq",
+              "variable": "quarry.choice",
+              "value": "pending"
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "quarry.choice",
+                "value": "leave"
+              }
+            ]
+          }
+        ],
+        "fragments": [
+          {
+            "id": "quarry.fragment.ledger",
+            "condition": {
+              "op": "eq",
+              "variable": "quarry.ledger",
+              "value": true
+            },
+            "text": "修繕代を前借りに回した欄の脇に、小さく「記憶の提供を勧められた」とある。アドは頁を押さえた。「夜に働く返事はした。思い出を差し出す返事まで、一緒にしたつもりはない」。帳面は彼の膝に残す。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "quarry.fragment.channel",
+            "condition": {
+              "op": "eq",
+              "variable": "quarry.channelSeen",
+              "value": true
+            },
+            "text": "色水の多くが、小水門へ着く前に捨て口から落ちた。洗い場の壁に白い溜まりがついている。運んだものが届いたという見込みを、流路の現物は支えなかった。次に何を納めるかを決める前に、今あるものの行方を調べられる。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "quarry.fragment.trial",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "quarry.trialRead",
+                  "value": true
+                },
+                {
+                  "op": "knows",
+                  "claimId": "truth.exception"
+                }
+              ]
+            },
+            "text": "箱の札には「供述は本人の言葉。流量は目盛りの読み。混ぜて転記するな」。雨宿りと亡妻との最後の食事、違う供述の二例でも、届いた粉が同量なら守られた石板の範囲は同じだった。漏れた流路では範囲が狭い。記憶の重さで粉は強くならない。この北岸の判断に使える照合は揃ったが、失われた記憶を返す仕組みにはならない。",
+            "disclosedClaimIds": [
+              "truth.exception"
+            ]
+          },
+          {
+            "id": "quarry.fragment.nene",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "quarry.trialRead",
+                  "value": true
+                },
+                {
+                  "op": "knows",
+                  "claimId": "truth.exception"
+                }
+              ]
+            },
+            "text": "ネネは余白の息子の名を消した。「今日は、あの子のことを差し出す申し出を取り下げる。窯の仕事は、それと別に決めたい」。それは彼女の返事だった。点検にも修理にも、記憶を差し出すことは条件にならない。",
+            "disclosedClaimIds": [
+              "truth.exception"
+            ]
+          },
+          {
+            "id": "quarry.fragment.kiln",
+            "condition": {
+              "op": "eq",
+              "variable": "quarry.choice",
+              "value": "kiln"
+            },
+            "text": "木の支柱を抜いたところに、新しい窯台が座った。ネネは夜勤の欄を一本消し、次の焼成を翌週へ移す。アドが階段用の材木の空いた場所を見る。「今夜は眠れる。でも、明日の修繕賃はまだ戻らない」。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "quarry.fragment.repaired-channel",
+            "condition": {
+              "op": "eq",
+              "variable": "quarry.choice",
+              "value": "channel"
+            },
+            "text": "掘り直した溝の色水は小水門へ届いた。洗い場には二日休みの札が掛かる。桶を持った住民が上の井戸へ歩き、アドは窯の支柱へ戻る。粉の行方を直した仕事は、別の人の水運びと同じ景色に並んだ。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "quarry.fragment.leave",
+            "condition": {
+              "op": "eq",
+              "variable": "quarry.choice",
+              "value": "leave"
+            },
+            "text": "ネネは予定どおりの焼成表を戻し、アドは次の支柱点検を指で数える。洗い場の桶は今日も使える。「決めなかった」と書いた札の裏には、続ける仕事の時刻が残った。",
+            "disclosedClaimIds": []
+          }
+        ],
+        "completion": {
+          "op": "not",
+          "condition": {
+            "op": "eq",
+            "variable": "quarry.choice",
+            "value": "pending"
+          }
+        }
+      }
+    }
+  ],
+  "notes": "quarry.mdをv1契約に実装。資料3・石板4を一つの照合行動にまとめて三調査とした。窯と溝は一日24時間の同じ人員で相互排他。窯修理は南へ回せる未配分枠を2減らすため、残り2以上を必要とする。北岸の既存割当は共有在庫と別で、溝修理は粉を増殖させない。秘密のknownは先にquarry.trialReadをsetしてから適用する。次月の買い取り条件や修繕収入、全域の配分を新しいauthorTruthにしない。"
+}

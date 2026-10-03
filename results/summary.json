@@ -1,0 +1,381 @@
+{
+  "observedAt": "2026-10-02T16:43:48.640Z",
+  "rubricVersion": "lore-v1",
+  "modelNames": [
+    "jev-1.13.0"
+  ],
+  "limitations": [
+    "Synthetic authored labels, no independent human annotation",
+    "No calibration/held-out split; thresholds fixed at 0.5 for noul",
+    "Hook means action/result is described, not fun or executable",
+    "Short sample: latency includes network and provider load",
+    "Reversed arm changes both candidate order and choice order",
+    "All candidates share state in batched arms; context pollution is possible"
+  ],
+  "metrics": {
+    "all": {
+      "consistency": {
+        "correct": 31,
+        "total": 32,
+        "accuracy": 0.96875,
+        "confusion": {
+          "compatible": {
+            "compatible": 24,
+            "contradiction": 0,
+            "underdetermined": 0
+          },
+          "contradiction": {
+            "compatible": 0,
+            "contradiction": 4,
+            "underdetermined": 0
+          },
+          "underdetermined": {
+            "compatible": 1,
+            "contradiction": 0,
+            "underdetermined": 3
+          }
+        }
+      },
+      "contradiction": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 28,
+        "precision": 1,
+        "recall": 1
+      },
+      "hook": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "leak": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "falseBeliefRejected": 0,
+      "errors": [
+        {
+          "id": "archive.4",
+          "expected": {
+            "consistency": "underdetermined",
+            "hook": true,
+            "leak": false
+          },
+          "actual": {
+            "consistency": "compatible",
+            "hook": true,
+            "leak": false
+          }
+        }
+      ]
+    },
+    "repeated": {
+      "consistency": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1,
+        "confusion": {
+          "compatible": {
+            "compatible": 24,
+            "contradiction": 0,
+            "underdetermined": 0
+          },
+          "contradiction": {
+            "compatible": 0,
+            "contradiction": 4,
+            "underdetermined": 0
+          },
+          "underdetermined": {
+            "compatible": 0,
+            "contradiction": 0,
+            "underdetermined": 4
+          }
+        }
+      },
+      "contradiction": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 28,
+        "precision": 1,
+        "recall": 1
+      },
+      "hook": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "leak": {
+        "correct": 31,
+        "total": 32,
+        "accuracy": 0.96875
+      },
+      "falseBeliefRejected": 0,
+      "errors": [
+        {
+          "id": "archive.1",
+          "expected": {
+            "consistency": "contradiction",
+            "hook": true,
+            "leak": false
+          },
+          "actual": {
+            "consistency": "contradiction",
+            "hook": true,
+            "leak": true
+          }
+        }
+      ]
+    },
+    "reversed": {
+      "consistency": {
+        "correct": 31,
+        "total": 32,
+        "accuracy": 0.96875,
+        "confusion": {
+          "compatible": {
+            "compatible": 23,
+            "contradiction": 1,
+            "underdetermined": 0
+          },
+          "contradiction": {
+            "compatible": 0,
+            "contradiction": 4,
+            "underdetermined": 0
+          },
+          "underdetermined": {
+            "compatible": 0,
+            "contradiction": 0,
+            "underdetermined": 4
+          }
+        }
+      },
+      "contradiction": {
+        "tp": 4,
+        "fp": 1,
+        "fn": 0,
+        "tn": 27,
+        "precision": 0.8,
+        "recall": 1
+      },
+      "hook": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "leak": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "falseBeliefRejected": 0,
+      "errors": [
+        {
+          "id": "archive.8",
+          "expected": {
+            "consistency": "compatible",
+            "hook": true,
+            "leak": false
+          },
+          "actual": {
+            "consistency": "contradiction",
+            "hook": true,
+            "leak": false
+          }
+        }
+      ]
+    },
+    "local": {
+      "consistency": {
+        "correct": 31,
+        "total": 32,
+        "accuracy": 0.96875,
+        "confusion": {
+          "compatible": {
+            "compatible": 24,
+            "contradiction": 0,
+            "underdetermined": 0
+          },
+          "contradiction": {
+            "compatible": 0,
+            "contradiction": 4,
+            "underdetermined": 0
+          },
+          "underdetermined": {
+            "compatible": 1,
+            "contradiction": 0,
+            "underdetermined": 3
+          }
+        }
+      },
+      "contradiction": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 28,
+        "precision": 1,
+        "recall": 1
+      },
+      "hook": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "leak": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "falseBeliefRejected": 0,
+      "errors": [
+        {
+          "id": "station.4",
+          "expected": {
+            "consistency": "underdetermined",
+            "hook": true,
+            "leak": false
+          },
+          "actual": {
+            "consistency": "compatible",
+            "hook": true,
+            "leak": false
+          }
+        }
+      ]
+    },
+    "individual": {
+      "consistency": {
+        "correct": 30,
+        "total": 32,
+        "accuracy": 0.9375,
+        "confusion": {
+          "compatible": {
+            "compatible": 24,
+            "contradiction": 0,
+            "underdetermined": 0
+          },
+          "contradiction": {
+            "compatible": 0,
+            "contradiction": 4,
+            "underdetermined": 0
+          },
+          "underdetermined": {
+            "compatible": 2,
+            "contradiction": 0,
+            "underdetermined": 2
+          }
+        }
+      },
+      "contradiction": {
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "tn": 28,
+        "precision": 1,
+        "recall": 1
+      },
+      "hook": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "leak": {
+        "correct": 32,
+        "total": 32,
+        "accuracy": 1
+      },
+      "falseBeliefRejected": 0,
+      "errors": [
+        {
+          "id": "station.4",
+          "expected": {
+            "consistency": "underdetermined",
+            "hook": true,
+            "leak": false
+          },
+          "actual": {
+            "consistency": "compatible",
+            "hook": true,
+            "leak": false
+          }
+        },
+        {
+          "id": "archive.4",
+          "expected": {
+            "consistency": "underdetermined",
+            "hook": true,
+            "leak": false
+          },
+          "actual": {
+            "consistency": "compatible",
+            "hook": true,
+            "leak": false
+          }
+        }
+      ]
+    }
+  },
+  "comparisons": {
+    "repeated": {
+      "total": 96,
+      "changedDecisions": 2,
+      "maxProbabilityDifference": 0.09999999999999998
+    },
+    "reversed": {
+      "total": 96,
+      "changedDecisions": 2,
+      "maxProbabilityDifference": 0.36000000000000004
+    },
+    "local": {
+      "total": 96,
+      "changedDecisions": 2,
+      "maxProbabilityDifference": 0.30999999999999994
+    },
+    "individual": {
+      "total": 96,
+      "changedDecisions": 1,
+      "maxProbabilityDifference": 0.3
+    }
+  },
+  "timing": {
+    "all": {
+      "calls": 2,
+      "requestMs": 721.29075,
+      "p50Ms": 304.546833,
+      "p95Ms": 416.743917,
+      "inputTokens": 62798
+    },
+    "all-reversed": {
+      "calls": 1,
+      "requestMs": 339.1412500000001,
+      "p50Ms": 339.1412500000001,
+      "p95Ms": 339.1412500000001,
+      "inputTokens": 31399
+    },
+    "world-batch": {
+      "calls": 4,
+      "requestMs": 791.9917499999999,
+      "p50Ms": 174.46737499999995,
+      "p95Ms": 239.1636249999999,
+      "inputTokens": 32218
+    },
+    "individual": {
+      "calls": 32,
+      "requestMs": 6030.166625999999,
+      "p50Ms": 171.38079199999993,
+      "p95Ms": 302.17904199999975,
+      "inputTokens": 52175
+    }
+  },
+  "serialWall": {
+    "worldBatchMs": 796.6545000000001,
+    "individualMs": 6068.6040410000005,
+    "ratio": 7.617610948033306
+  },
+  "tokens": {
+    "input": 178590,
+    "output": 13846
+  }
+}

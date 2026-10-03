@@ -1,0 +1,296 @@
+{
+  "formatVersion": "ash-estuary-character-production-prompts/v2",
+  "phase": "expression-atlases",
+  "styleId": "ash-ink-wash-v1",
+  "inputRoleOrder": [
+    "style-only",
+    "character-identity-and-costume"
+  ],
+  "jobs": [
+    {
+      "id": "ira-expressions",
+      "characterId": "ira",
+      "entityId": "actor.ira",
+      "name": "鐘守イラ",
+      "kind": "expressions",
+      "file": "characters/ira-expressions-v2.png",
+      "identityFile": "characters/ira-v1.png",
+      "layout": {
+        "columns": 2,
+        "rows": 2,
+        "order": "row-major"
+      },
+      "expressions": [
+        {
+          "id": "attentive",
+          "label": "普段の注意深さ",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "listening",
+          "label": "相手の話を聞く",
+          "region": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "concerned",
+          "label": "配分をためらう",
+          "region": {
+            "x": 0,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "soft-relief",
+          "label": "小さな安堵",
+          "region": {
+            "x": 0.5,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        }
+      ],
+      "prompt": "Use case: illustration-story\nAsset type: facial EXPRESSION REFERENCE ATLAS for ONE named character in the original game \"Ash Estuary\". One SQUARE image, opaque warm ivory paper background.\nInputs: Image 1 is STYLE B: fine irregular pen contours, restrained hatching, pale watercolor, muted coastal palette and warm paper. Image 2 is the character IDENTITY AND COSTUME reference. Preserve the exact same facial structure, skin, age, hair, neck, garment neckline, material colors and identifying shoulder details. This is facial acting, not a redesign or four different people.\nLayout: EXACTLY FOUR head-and-shoulders portraits in a clean 2 by 2 grid, one in each equal square QUADRANT. Each portrait centered in its own quadrant, all at the same scale, with the same nearly frontal camera and small 10-degree turn. Show the entire head/hair and neckline, cropped consistently at upper chest. Enough plain-paper breathing room at each quadrant boundary, absolutely no overlap between portraits. No panel borders, dividers, inset faces, fifth portrait, labels, words, numbers, title, icons, arrows, readable marks or watermark. Do not add full bodies, tools, scenery or hands.\nExpressions: visibly distinct but subtle, plausible expressions driven by this person's temperament. Change eyebrows, eyelids, mouth tension and gaze as specified; keep face identity and bone structure fixed. No exaggerated cartoon emotion, theatrical tears, raging villain, horror face, glamour retouching, photographic lighting or anime rendering. Match the established pen-and-watercolor treatment of faces. These expressions are reusable acting possibilities, not plot outcomes or statements of moral truth. No memories, relatives, magic or bodily effects.\nThe FOUR expressions in precise reading order TOP LEFT, TOP RIGHT, BOTTOM LEFT, BOTTOM RIGHT:\nIra, the SAME lean middle-aged woman with chin-length dark bob and slight gray temples, long narrow actual face, slate-blue upright collar and moss shoulder cloth.\nTOP LEFT: everyday attentive neutrality, steady eyes, relaxed closed lips.\nTOP RIGHT: patiently listening to a request, brows gently raised, eyes engaged toward a conversational partner, lips parted a little as if considering an answer.\nBOTTOM LEFT: quiet responsibility and hesitation, a small inward brow crease, eyes lower slightly, lips pressed gently; worried but neither cold nor villainous.\nBOTTOM RIGHT: tentative warm relief, tension around eyes eases and the mouth corners lift only a little, not a triumphant grin or a guaranteed story ending."
+    },
+    {
+      "id": "sui-expressions",
+      "characterId": "sui",
+      "entityId": "tide.sui",
+      "name": "水門修理人スイ",
+      "kind": "expressions",
+      "file": "characters/sui-expressions-v2.png",
+      "identityFile": "characters/sui-v1.png",
+      "layout": {
+        "columns": 2,
+        "rows": 2,
+        "order": "row-major"
+      },
+      "expressions": [
+        {
+          "id": "curious",
+          "label": "普段の好奇心",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "focused",
+          "label": "点検への集中",
+          "region": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "skeptical",
+          "label": "説明を疑う",
+          "region": {
+            "x": 0,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "small-discovery",
+          "label": "手掛かりへの小さな喜び",
+          "region": {
+            "x": 0.5,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        }
+      ],
+      "prompt": "Use case: illustration-story\nAsset type: facial EXPRESSION REFERENCE ATLAS for ONE named character in the original game \"Ash Estuary\". One SQUARE image, opaque warm ivory paper background.\nInputs: Image 1 is STYLE B: fine irregular pen contours, restrained hatching, pale watercolor, muted coastal palette and warm paper. Image 2 is the character IDENTITY AND COSTUME reference. Preserve the exact same facial structure, skin, age, hair, neck, garment neckline, material colors and identifying shoulder details. This is facial acting, not a redesign or four different people.\nLayout: EXACTLY FOUR head-and-shoulders portraits in a clean 2 by 2 grid, one in each equal square QUADRANT. Each portrait centered in its own quadrant, all at the same scale, with the same nearly frontal camera and small 10-degree turn. Show the entire head/hair and neckline, cropped consistently at upper chest. Enough plain-paper breathing room at each quadrant boundary, absolutely no overlap between portraits. No panel borders, dividers, inset faces, fifth portrait, labels, words, numbers, title, icons, arrows, readable marks or watermark. Do not add full bodies, tools, scenery or hands.\nExpressions: visibly distinct but subtle, plausible expressions driven by this person's temperament. Change eyebrows, eyelids, mouth tension and gaze as specified; keep face identity and bone structure fixed. No exaggerated cartoon emotion, theatrical tears, raging villain, horror face, glamour retouching, photographic lighting or anime rendering. Match the established pen-and-watercolor treatment of faces. These expressions are reusable acting possibilities, not plot outcomes or statements of moral truth. No memories, relatives, magic or bodily effects.\nThe FOUR expressions in precise reading order TOP LEFT, TOP RIGHT, BOTTOM LEFT, BOTTOM RIGHT:\nSui, the SAME young androgynous repairer with warm brown skin, short dark wavy hair, thick brows, actual face, gray tucked scarf, ivory collar and blue-green vest.\nTOP LEFT: open observant curiosity, calm lips, eyes alert.\nTOP RIGHT: concentrated inspection, brows knitted slightly, eyelids focused down, lips softly pursed; not angry.\nBOTTOM LEFT: measured skepticism, ONE eyebrow a little raised, narrowed questioning eyes, slight asymmetrical mouth tension; not a comedy smirk.\nBOTTOM RIGHT: a modest spark of pleasure on finding a useful clue, eyes brighten, mouth forms a small natural half-smile. Do not illustrate any actual clue or plot secret."
+    },
+    {
+      "id": "asa-expressions",
+      "characterId": "asa",
+      "entityId": "tide.asa",
+      "name": "網職人アサ",
+      "kind": "expressions",
+      "file": "characters/asa-expressions-v2.png",
+      "identityFile": "characters/asa-v1.png",
+      "layout": {
+        "columns": 2,
+        "rows": 2,
+        "order": "row-major"
+      },
+      "expressions": [
+        {
+          "id": "calm",
+          "label": "普段の落ち着き",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "explaining",
+          "label": "手仕事を説明する",
+          "region": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "firm",
+          "label": "仕事の負担を伝える",
+          "region": {
+            "x": 0,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "knowing-smile",
+          "label": "親しみのある笑み",
+          "region": {
+            "x": 0.5,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        }
+      ],
+      "prompt": "Use case: illustration-story\nAsset type: facial EXPRESSION REFERENCE ATLAS for ONE named character in the original game \"Ash Estuary\". One SQUARE image, opaque warm ivory paper background.\nInputs: Image 1 is STYLE B: fine irregular pen contours, restrained hatching, pale watercolor, muted coastal palette and warm paper. Image 2 is the character IDENTITY AND COSTUME reference. Preserve the exact same facial structure, skin, age, hair, neck, garment neckline, material colors and identifying shoulder details. This is facial acting, not a redesign or four different people.\nLayout: EXACTLY FOUR head-and-shoulders portraits in a clean 2 by 2 grid, one in each equal square QUADRANT. Each portrait centered in its own quadrant, all at the same scale, with the same nearly frontal camera and small 10-degree turn. Show the entire head/hair and neckline, cropped consistently at upper chest. Enough plain-paper breathing room at each quadrant boundary, absolutely no overlap between portraits. No panel borders, dividers, inset faces, fifth portrait, labels, words, numbers, title, icons, arrows, readable marks or watermark. Do not add full bodies, tools, scenery or hands.\nExpressions: visibly distinct but subtle, plausible expressions driven by this person's temperament. Change eyebrows, eyelids, mouth tension and gaze as specified; keep face identity and bone structure fixed. No exaggerated cartoon emotion, theatrical tears, raging villain, horror face, glamour retouching, photographic lighting or anime rendering. Match the established pen-and-watercolor treatment of faces. These expressions are reusable acting possibilities, not plot outcomes or statements of moral truth. No memories, relatives, magic or bodily effects.\nThe FOUR expressions in precise reading order TOP LEFT, TOP RIGHT, BOTTOM LEFT, BOTTOM RIGHT:\nAsa, the SAME older sun-weathered tan woman with gray-streaked hair and one braid over her anatomical left shoulder, actual face and smile lines, blue-gray shawl and ivory collar.\nTOP LEFT: relaxed practical calm, steady gaze, gently closed lips.\nTOP RIGHT: patient confident explanation, eyebrows rise gently and mouth opens just slightly mid-sentence, friendly engaged eyes.\nBOTTOM LEFT: firm concern about an inconvenient plan, eyebrows lower a little, lips held level, eyes look directly at the listener; a maker stating the real work involved, not rage.\nBOTTOM RIGHT: a warm knowing half-smile, crow's feet gather slightly, cheek lifts naturally, restrained ordinary amusement rather than an exaggerated laugh."
+    },
+    {
+      "id": "nene-expressions",
+      "characterId": "nene",
+      "entityId": "quarry.nene",
+      "name": "窯番ネネ",
+      "kind": "expressions",
+      "file": "characters/nene-expressions-v2.png",
+      "identityFile": "characters/nene-v1.png",
+      "layout": {
+        "columns": 2,
+        "rows": 2,
+        "order": "row-major"
+      },
+      "expressions": [
+        {
+          "id": "working",
+          "label": "普段の仕事顔",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "urgent",
+          "label": "急ぎの指示を出す",
+          "region": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "hesitant",
+          "label": "言葉をのみ込む",
+          "region": {
+            "x": 0,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "exhale",
+          "label": "ひと息つく",
+          "region": {
+            "x": 0.5,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        }
+      ],
+      "prompt": "Use case: illustration-story\nAsset type: facial EXPRESSION REFERENCE ATLAS for ONE named character in the original game \"Ash Estuary\". One SQUARE image, opaque warm ivory paper background.\nInputs: Image 1 is STYLE B: fine irregular pen contours, restrained hatching, pale watercolor, muted coastal palette and warm paper. Image 2 is the character IDENTITY AND COSTUME reference. Preserve the exact same facial structure, skin, age, hair, neck, garment neckline, material colors and identifying shoulder details. This is facial acting, not a redesign or four different people.\nLayout: EXACTLY FOUR head-and-shoulders portraits in a clean 2 by 2 grid, one in each equal square QUADRANT. Each portrait centered in its own quadrant, all at the same scale, with the same nearly frontal camera and small 10-degree turn. Show the entire head/hair and neckline, cropped consistently at upper chest. Enough plain-paper breathing room at each quadrant boundary, absolutely no overlap between portraits. No panel borders, dividers, inset faces, fifth portrait, labels, words, numbers, title, icons, arrows, readable marks or watermark. Do not add full bodies, tools, scenery or hands.\nExpressions: visibly distinct but subtle, plausible expressions driven by this person's temperament. Change eyebrows, eyelids, mouth tension and gaze as specified; keep face identity and bone structure fixed. No exaggerated cartoon emotion, theatrical tears, raging villain, horror face, glamour retouching, photographic lighting or anime rendering. Match the established pen-and-watercolor treatment of faces. These expressions are reusable acting possibilities, not plot outcomes or statements of moral truth. No memories, relatives, magic or bodily effects.\nThe FOUR expressions in precise reading order TOP LEFT, TOP RIGHT, BOTTOM LEFT, BOTTOM RIGHT:\nNene, the SAME strong working woman with olive skin, actual broad-cheeked face and strong brows, dark tied-up hair and faded rust headband, ivory collar and russet leather apron shoulder straps.\nTOP LEFT: focused neutral work face, steady eyes, relaxed mouth.\nTOP RIGHT: brisk urgent instructions, eyebrows drawn in focused attention, eyes look forward, mouth slightly open mid-command; competent urgency without shouting or villain anger.\nBOTTOM LEFT: private hesitation, eyes drop to one side, inner brow tightens a little, lips gently press after an unfinished sentence. No tears, son or memory visualization.\nBOTTOM RIGHT: a quiet exhale during an ordinary break, jaw relaxes, eyelids soften, smallest hint of a tired smile, no implication that a choice has been made."
+    },
+    {
+      "id": "ado-expressions",
+      "characterId": "ado",
+      "entityId": "quarry.ado",
+      "name": "階段職人アド",
+      "kind": "expressions",
+      "file": "characters/ado-expressions-v2.png",
+      "identityFile": "characters/ado-v1.png",
+      "layout": {
+        "columns": 2,
+        "rows": 2,
+        "order": "row-major"
+      },
+      "expressions": [
+        {
+          "id": "steady",
+          "label": "普段の職人顔",
+          "region": {
+            "x": 0,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "proud-explanation",
+          "label": "仕事を誇って語る",
+          "region": {
+            "x": 0.5,
+            "y": 0,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "tired",
+          "label": "夜勤の疲れ",
+          "region": {
+            "x": 0,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        },
+        {
+          "id": "wry-smile",
+          "label": "少し皮肉な笑み",
+          "region": {
+            "x": 0.5,
+            "y": 0.5,
+            "width": 0.5,
+            "height": 0.5
+          }
+        }
+      ],
+      "prompt": "Use case: illustration-story\nAsset type: facial EXPRESSION REFERENCE ATLAS for ONE named character in the original game \"Ash Estuary\". One SQUARE image, opaque warm ivory paper background.\nInputs: Image 1 is STYLE B: fine irregular pen contours, restrained hatching, pale watercolor, muted coastal palette and warm paper. Image 2 is the character IDENTITY AND COSTUME reference. Preserve the exact same facial structure, skin, age, hair, neck, garment neckline, material colors and identifying shoulder details. This is facial acting, not a redesign or four different people.\nLayout: EXACTLY FOUR head-and-shoulders portraits in a clean 2 by 2 grid, one in each equal square QUADRANT. Each portrait centered in its own quadrant, all at the same scale, with the same nearly frontal camera and small 10-degree turn. Show the entire head/hair and neckline, cropped consistently at upper chest. Enough plain-paper breathing room at each quadrant boundary, absolutely no overlap between portraits. No panel borders, dividers, inset faces, fifth portrait, labels, words, numbers, title, icons, arrows, readable marks or watermark. Do not add full bodies, tools, scenery or hands.\nExpressions: visibly distinct but subtle, plausible expressions driven by this person's temperament. Change eyebrows, eyelids, mouth tension and gaze as specified; keep face identity and bone structure fixed. No exaggerated cartoon emotion, theatrical tears, raging villain, horror face, glamour retouching, photographic lighting or anime rendering. Match the established pen-and-watercolor treatment of faces. These expressions are reusable acting possibilities, not plot outcomes or statements of moral truth. No memories, relatives, magic or bodily effects.\nThe FOUR expressions in precise reading order TOP LEFT, TOP RIGHT, BOTTOM LEFT, BOTTOM RIGHT:\nAdo, the SAME older broad-shouldered stone worker with actual square weathered face, short gray-white hair, close gray beard, chalk-gray dusty jacket, brown waistcoat and ivory collar.\nTOP LEFT: grounded, alert ordinary neutrality.\nTOP RIGHT: pride while explaining workmanship, eyes engage and brows lift a little, mouth slightly open in calm conversation, no boastful grin.\nBOTTOM LEFT: tired after night work, heavy upper eyelids and softened mouth, still attentive and self-possessed, not despairing, begging or visibly injured.\nBOTTOM RIGHT: a subtle wry half-smile with one mouth corner lifted, a little knowing eyebrow movement, warmth beneath dry humor. Keep beard and age lines consistent."
+    }
+  ]
+}

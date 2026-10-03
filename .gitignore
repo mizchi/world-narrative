@@ -1,0 +1,8 @@
+node_modules/
+.env
+.env.*
+results/private/
+.tmp/
+test-results/
+playwright-report/
+.DS_Store

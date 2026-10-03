@@ -1,0 +1,47 @@
+{
+  "formatVersion": "jev-review/v1",
+  "status": "needs-review",
+  "source": "api",
+  "inputHash": "ea3e84c9088978c2cd54f5b5aaa37669e323607701e108a6c2789e42607dbe1d",
+  "worldRevision": "ash-v0.1",
+  "rubric": "world-diff/v1",
+  "model": "jev-1.13.0",
+  "cacheKey": "2041bba096405d118930df96cb437bef8ad099e99cd5fdd5235324631a501d9a",
+  "checks": {
+    "contradiction": 0.7,
+    "unsupported": 0.6,
+    "earlyDisclosure": 0.45,
+    "playable": 0.96
+  },
+  "reasons": [
+    "contradiction",
+    "unsupported",
+    "earlyDisclosure"
+  ],
+  "ms": 318.759625,
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "contradiction": {
+        "type": "noul",
+        "noul": 0.7
+      },
+      "unsupported": {
+        "type": "noul",
+        "noul": 0.6
+      },
+      "earlyDisclosure": {
+        "type": "noul",
+        "noul": 0.45
+      },
+      "playable": {
+        "type": "noul",
+        "noul": 0.96
+      }
+    },
+    "usage": {
+      "input_tokens": 15757,
+      "output_tokens": 75
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "formatVersion": "ash-estuary-character-generation/v1",
+  "directionId": "ash-ink-wash-characters-v1",
+  "styleId": "ash-ink-wash-v1",
+  "generationMode": "built-in-imagegen",
+  "requestedModel": "gpt-image-2.5",
+  "resolvedModel": null,
+  "modelSelectionNote": "内蔵image_genにはモデル指定欄がなく、ユーザー指定モデルへの固定は確認できない。",
+  "designStatus": "first-visual-design",
+  "originalsPreserved": true,
+  "records": [
+    {
+      "id": "ira",
+      "entityId": "actor.ira",
+      "name": "鐘守イラ",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-1878ae21-3cdc-4f76-a465-c3d6984ce1c9.png",
+      "file": "characters/ira-v1.png",
+      "status": "generated-first-design",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "f4c65313540ba48e6966c2a5f4381e49bd7d9d9fef8d9db3ae4ee7295be8ebad",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-v1.json",
+        "jobId": "ira"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        }
+      ],
+      "canonSource": {
+        "file": "../world.json",
+        "entityId": "actor.ira",
+        "sha256": "b6eaece237a4da626b497e64812abf72b530a6d6cdef9ffa6ce5903d077cf93d"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null,
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "checks": [
+          "Bと同じペン画・淡彩と抑えた配色",
+          "全身、顔、衣服、仕事道具を識別可能",
+          "本文の人物設定を参照し、秘密や選択結果を図解していない"
+        ]
+      }
+    },
+    {
+      "id": "sui",
+      "entityId": "tide.sui",
+      "name": "水門修理人スイ",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-c5bd7d70-7ad8-4f62-b2d7-cc6b5657b4ee.png",
+      "file": "characters/sui-v1.png",
+      "status": "generated-first-design",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "976ffd205abea0a220402539aecb3194a769b3f219ca9f4acf1ea0070ea9118c",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-v1.json",
+        "jobId": "sui"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        }
+      ],
+      "canonSource": {
+        "file": "../tide.proposal.json",
+        "entityId": "tide.sui",
+        "sha256": "8afb5d48c283b63350187357c3724c3f8f4d8049ac71e8b1e74140e058af3da6"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null,
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "checks": [
+          "Bと同じペン画・淡彩と抑えた配色",
+          "全身、顔、衣服、仕事道具を識別可能",
+          "本文の人物設定を参照し、秘密や選択結果を図解していない"
+        ]
+      }
+    },
+    {
+      "id": "asa",
+      "entityId": "tide.asa",
+      "name": "網職人アサ",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-52bdcd57-b021-4a16-bad3-6a1d36ce28c0.png",
+      "file": "characters/asa-v1.png",
+      "status": "generated-first-design",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "c7840de697911651ab00d99ef4903fd96d59926ae6709daa10e586912277a5b7",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-v1.json",
+        "jobId": "asa"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        }
+      ],
+      "canonSource": {
+        "file": "../tide.proposal.json",
+        "entityId": "tide.asa",
+        "sha256": "8afb5d48c283b63350187357c3724c3f8f4d8049ac71e8b1e74140e058af3da6"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null,
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "checks": [
+          "Bと同じペン画・淡彩と抑えた配色",
+          "全身、顔、衣服、仕事道具を識別可能",
+          "本文の人物設定を参照し、秘密や選択結果を図解していない"
+        ]
+      }
+    },
+    {
+      "id": "nene",
+      "entityId": "quarry.nene",
+      "name": "窯番ネネ",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-c6a6243c-42c8-400d-8b31-9140c3105724.png",
+      "file": "characters/nene-v1.png",
+      "status": "generated-first-design",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "7fdab728e1b649391e197aa616bff87ddebf25db2efb014c1b81a914bf17fb54",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-v1.json",
+        "jobId": "nene"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        }
+      ],
+      "canonSource": {
+        "file": "../quarry.proposal.json",
+        "entityId": "quarry.nene",
+        "sha256": "20e4e8c85c0bdb07c744349193a8c46f3d09a2fcf3b7b6b2b949c3d8cd627f59"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null,
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "checks": [
+          "Bと同じペン画・淡彩と抑えた配色",
+          "全身、顔、衣服、仕事道具を識別可能",
+          "本文の人物設定を参照し、秘密や選択結果を図解していない"
+        ]
+      }
+    },
+    {
+      "id": "ado",
+      "entityId": "quarry.ado",
+      "name": "階段職人アド",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-6ba1f98a-d89f-4396-9b26-4d2af144a84b.png",
+      "file": "characters/ado-v1.png",
+      "status": "generated-first-design",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "d3d832df1961eea5999837c720bc8fa60adf7e680bdc63a1f42bf6ecf99e498c",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-v1.json",
+        "jobId": "ado"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        }
+      ],
+      "canonSource": {
+        "file": "../quarry.proposal.json",
+        "entityId": "quarry.ado",
+        "sha256": "20e4e8c85c0bdb07c744349193a8c46f3d09a2fcf3b7b6b2b949c3d8cd627f59"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null,
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "checks": [
+          "Bと同じペン画・淡彩と抑えた配色",
+          "全身、顔、衣服、仕事道具を識別可能",
+          "本文の人物設定を参照し、秘密や選択結果を図解していない"
+        ]
+      }
+    }
+  ]
+}

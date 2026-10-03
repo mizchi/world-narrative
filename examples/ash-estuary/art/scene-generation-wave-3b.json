@@ -1,0 +1,39 @@
+{
+  "styleId": "ash-ink-wash-v1",
+  "images": [
+    {
+      "id": "quarry-kiln-repaired",
+      "title": "窯台を直したあと",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-09ca3cbd-b593-4580-8149-4eb729ed7c25.png",
+      "file": "scenes/quarry-kiln-repaired-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "344e7c87d92bb1af4a509fed8b68b719d0a2331fc8cffec1ba806379981ace58",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-channel-repaired",
+      "title": "粉の溝を直したあと",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-2c82097a-7438-4501-ad30-99a287a72d8c.png",
+      "file": "scenes/quarry-channel-repaired-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "041b3a7c0a96295d4bb1524760e72380cbc784401280cc6124d275abeb6f3ba5",
+      "width": 1672,
+      "height": 941
+    }
+  ]
+}

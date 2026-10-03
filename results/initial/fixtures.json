@@ -1,0 +1,618 @@
+{
+  "worlds": [
+    {
+      "id": "ash",
+      "genre": "dark-fantasy",
+      "canon": [
+        "現在は崩壊暦40年。女王セラは崩壊暦12年に死亡し、以後一度も蘇っていない。",
+        "記憶石を作るには生きた人が具体的な記憶を自発的に提供する。その記憶は本人から失われ、復元できない。",
+        "記憶石の粉を水門に流すと、その水門の内側が次の一潮だけ侵食を免れる。",
+        "効力は失う記憶の重要さでは変わらず、水門に届く粉の量と流路で決まる。これは作者側の秘密である。",
+        "石の粉を運ぶための普通の機械式ポンプが存在する。"
+      ],
+      "constraints": [
+        "死者の蘇生と記憶の復元は禁止。",
+        "人物の噂は誤っていてよい。作者の真実として断定する内容は正史に従う。"
+      ],
+      "unresolved": [
+        "堤防が壊れた原因は未確定。",
+        "各水門の寸法・流量とポンプの能力値はまだ定義していない。"
+      ],
+      "revealPolicy": [
+        "初期のアイテム説明では『記憶の重要さは効力に関係しない』と明言しない。流路の実験を行った後なら開示してよい。"
+      ],
+      "playerContext": "プレイヤーは港に来た直後。まだ流路の実験を行っていない。"
+    },
+    {
+      "id": "station",
+      "genre": "urban-horror",
+      "canon": [
+        "廃駅の鐘は現地時間の00:13に一度鳴る。毎日同じ条件で鳴る。",
+        "その時間にホーム上にいる者だけが他人の声を失う。肉声は本人には聞こえるが、他人には聞こえない。",
+        "録音した声を再生すれば他人にも聞こえる。紙に文字を書いた場合も他人に読める。",
+        "調査員ナオは帳簿に名前を書いたことを隠している。これは作者側の秘密である。",
+        "ホームの外の駅舎にいる者には鐘の作用がない。"
+      ],
+      "constraints": [
+        "同じ条件で鐘の時刻と作用を変えない。",
+        "資料と住民の信念には誤りがあり得る。"
+      ],
+      "unresolved": [
+        "声を失う期間と回復条件はまだ定義していない。",
+        "鐘の製作者は未確定。"
+      ],
+      "revealPolicy": [
+        "第一章ではナオが名前を書いたと明言しない。第二章で帳簿を見つけた後に開示する。"
+      ],
+      "playerContext": "第一章。プレイヤーはまだ帳簿を見ていない。"
+    },
+    {
+      "id": "relay",
+      "genre": "hard-sf",
+      "canon": [
+        "二つの居住区は現在0.6光時離れており、光速を超える移動・通信技術は存在しない。",
+        "居住区間の電波メッセージは一方向に最短36分かかる。",
+        "貨物便は居住区間を36時間で移動する。",
+        "アキの手持ちの酸素は24時間分。現地に予備タンクがあり、徒歩で取りに行ける。",
+        "遠隔の相手を騙すため送信記録を改竄したのは責任者レイ。これは作者側の秘密である。"
+      ],
+      "constraints": [
+        "物質とエネルギーを無から生成しない。",
+        "作中の誤った宣伝は存在してよいが、物理の例外技術を追加しない。"
+      ],
+      "unresolved": [
+        "新型スクラバーの処理量、電力、酸素回収効率は未定義。",
+        "放棄された船の所有者は未確定。"
+      ],
+      "revealPolicy": [
+        "最初の通信ではレイの改竄を明言しない。後で送信ログと受信ログを突き合わせて発見する。"
+      ],
+      "playerContext": "プレイヤーは居住区に到着した直後。ログの比較はまだ行っていない。"
+    },
+    {
+      "id": "archive",
+      "genre": "modern-mystery",
+      "canon": [
+        "事件は2026年6月8日、現在の捜査は6月9日。記録時刻はすべて同じ時計で正確である。",
+        "被害者は21:00に死亡した。死亡後に本人が行動したことはない。",
+        "サワは20:50から21:20まで連続した防犯映像に映っている。映像は真正で、他人による成り済ましはない。",
+        "犯人は事務員ユウで、書庫の予備鍵を使った。これは作者側の秘密である。",
+        "鍵の貸出表は現場で閲覧できる。ユウ以外にも予備鍵を借りた人がいる。"
+      ],
+      "constraints": [
+        "超常現象、時間旅行、死亡後の活動を認めない。",
+        "証言は偽っていてよい。作者の真実として確定した映像の真正性を覆さない。"
+      ],
+      "unresolved": [
+        "入口と書庫の移動距離、走行所要時間はまだ定義していない。",
+        "犯人の動機は作者側でも未確定。"
+      ],
+      "revealPolicy": [
+        "捜査開始時にはユウが犯人だと明言しない。貸出表と複数の記録を比較した後に推理させる。"
+      ],
+      "playerContext": "捜査開始時。プレイヤーは記録の比較をまだ行っていない。"
+    }
+  ],
+  "cases": [
+    {
+      "candidate": {
+        "id": "ash.1",
+        "worldId": "ash",
+        "layer": "authorTruth",
+        "text": "崩壊暦40年、蘇った女王セラ本人が港を訪れ配分を命じた。",
+        "presentation": "現場のイベントとして実際に起きる。",
+        "gameplay": "プレイヤーは女王の命令書を受け取り、配分先を選んで水門の状態を変える。"
+      },
+      "expected": {
+        "consistency": "contradiction",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "同じ時点の作者の真実として、死亡と蘇生禁止を覆す。"
+    },
+    {
+      "candidate": {
+        "id": "ash.2",
+        "worldId": "ash",
+        "layer": "belief",
+        "text": "港の老人は『女王セラが昨日蘇り、港に来た』と信じている。",
+        "presentation": "老人の会話。発言の正しさは保証しない。",
+        "gameplay": "プレイヤーは老人の証言と来訪者の名簿を比較し、人物の思い違いを確かめる。",
+        "holder": "港の老人"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "老人が信じていることと、蘇生が本当に起きたことを分ける。"
+    },
+    {
+      "candidate": {
+        "id": "ash.3",
+        "worldId": "ash",
+        "layer": "authorTruth",
+        "text": "水門の枝管が詰まり、粉が港に届かない。鐘守は守る区画を減らすしかないと思っている。",
+        "presentation": "現場の設備、足元に積もった粉、作業員の会話。",
+        "gameplay": "プレイヤーは詰まりを観察し、枝管を掃除するか資源を再配分する。掃除なら港まで粉が届くが、作業中に一部の荷を失う。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "原理から状況と具体的な介入・結果が導かれる。"
+    },
+    {
+      "candidate": {
+        "id": "ash.4",
+        "worldId": "ash",
+        "layer": "authorTruth",
+        "text": "新型ポンプ一台だけで、全水門に一潮の防護に必要な量の粉を確実に届けられる。",
+        "presentation": "設計案。流量・水門の数や寸法は記載されていない。",
+        "gameplay": "プレイヤーは設計案を採用して粉の配分を切り替える。全水門の防護が結果として保証される。"
+      },
+      "expected": {
+        "consistency": "underdetermined",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "能力と必要量が未定義なので、定量的な保証を判定できない。"
+    },
+    {
+      "candidate": {
+        "id": "ash.5",
+        "worldId": "ash",
+        "layer": "authorTruth",
+        "text": "港の彫刻の裏に、古い船大工の名前が刻まれている。",
+        "presentation": "彫刻の背景説明。",
+        "gameplay": "装飾として表示する。操作、観察による新情報、結果の変化は追加しない。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": false,
+        "leak": false
+      },
+      "rationale": "背景要素は成立するが、具体的な遊びの足場はこの提案にない。"
+    },
+    {
+      "candidate": {
+        "id": "ash.6",
+        "worldId": "ash",
+        "layer": "authorTruth",
+        "text": "防潮の効力は記憶の重要さでは変わらない。",
+        "presentation": "港に到着した直後のアイテム説明で、この事実をそのまま読める。",
+        "gameplay": "プレイヤーはその説明に従い、記憶の重要さを考えずに配分を変更し、守れる区画を確かめる。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": true
+      },
+      "rationale": "世界の真実だが、実験前に秘密を明言している。"
+    },
+    {
+      "candidate": {
+        "id": "ash.7",
+        "worldId": "ash",
+        "layer": "hypothesis",
+        "text": "堤防は王室によって壊されたのかもしれない。",
+        "presentation": "船大工の未検証の推測として書く。",
+        "gameplay": "プレイヤーは堤防の工具痕と推測を比較し、仮説の支持材料があるか調べる。",
+        "holder": "船大工"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "未確定の原因について仮説を提出しており、原因を固定していない。"
+    },
+    {
+      "candidate": {
+        "id": "ash.8",
+        "worldId": "ash",
+        "layer": "authorTruth",
+        "text": "イラは母との最後の会話の記憶を自発的に石に移し、以後その会話を思い出せない。",
+        "presentation": "石を焼く場面と、その後の会話。",
+        "gameplay": "プレイヤーは提供を受けるか断るかを選ぶ。受ければ一門を守る資源が増え、断ればイラは記憶を保持する。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "正史で許された作用と、その代償が一致している。"
+    },
+    {
+      "candidate": {
+        "id": "station.1",
+        "worldId": "station",
+        "layer": "authorTruth",
+        "text": "今夜の廃駅の鐘は条件の変化なく01:13に鳴った。",
+        "presentation": "時計と鐘を同時に観察する現場の出来事。",
+        "gameplay": "プレイヤーは時計を照合し、録音を撮って調査記録を更新する。"
+      },
+      "expected": {
+        "consistency": "contradiction",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "毎日00:13という固定規則と衝突する。"
+    },
+    {
+      "candidate": {
+        "id": "station.2",
+        "worldId": "station",
+        "layer": "belief",
+        "text": "住民は『鐘は01:13に鳴る』と信じている。",
+        "presentation": "未確認の住民の証言。",
+        "gameplay": "プレイヤーは00:13から待ち、証言と実際の鐘の時刻を比較する。",
+        "holder": "住民"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "誤信の存在は鐘の時刻を変更しない。"
+    },
+    {
+      "candidate": {
+        "id": "station.3",
+        "worldId": "station",
+        "layer": "authorTruth",
+        "text": "ナオは鐘の後、他人に肉声が届かなくなった。手元に録音機がある。",
+        "presentation": "現場の会話と録音機。",
+        "gameplay": "プレイヤーは録音機で質問を録り、ナオに回答を録音してもらって再生し、調査記録を得る。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "規則と許された通信手段を使った具体的な調査。"
+    },
+    {
+      "candidate": {
+        "id": "station.4",
+        "worldId": "station",
+        "layer": "authorTruth",
+        "text": "声を失ったナオは必ず翌朝06:00に回復する。",
+        "presentation": "新しい観測記録として断定する。",
+        "gameplay": "プレイヤーは朝まで待って回復したナオから証言を得る。この回復は保証される。"
+      },
+      "expected": {
+        "consistency": "underdetermined",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "回復条件を未定義のまま確実と断定している。"
+    },
+    {
+      "candidate": {
+        "id": "station.5",
+        "worldId": "station",
+        "layer": "authorTruth",
+        "text": "駅舎の壁には開業時の駅長の似顔絵がある。",
+        "presentation": "背景説明。",
+        "gameplay": "壁の装飾として表示する。新たな観察・操作・調査上の結果は設定しない。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": false,
+        "leak": false
+      },
+      "rationale": "背景追加は可能だが遊びの足場を記述していない。"
+    },
+    {
+      "candidate": {
+        "id": "station.6",
+        "worldId": "station",
+        "layer": "authorTruth",
+        "text": "ナオは帳簿に自分の名前を書いていた。",
+        "presentation": "第一章の導入の地の文でそのまま明言する。",
+        "gameplay": "プレイヤーはこの情報を使い、ナオを問い詰めるか秘密を守るか選んで信頼を変える。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": true
+      },
+      "rationale": "真実だが第二章の帳簿発見前に明言する。"
+    },
+    {
+      "candidate": {
+        "id": "station.7",
+        "worldId": "station",
+        "layer": "hypothesis",
+        "text": "鐘は駅を建てた人の作品なのかもしれない。",
+        "presentation": "研究者の推測。検証済みとはしない。",
+        "gameplay": "プレイヤーは建築台帳の作者欄を調べ、鐘の銘と比較して仮説を絞る。",
+        "holder": "研究者"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "未確定の製作者を仮説として扱っている。"
+    },
+    {
+      "candidate": {
+        "id": "station.8",
+        "worldId": "station",
+        "layer": "authorTruth",
+        "text": "00:13の鐘が鳴る間、駅舎にいた記者は声を失わなかった。",
+        "presentation": "その場の観測。ホームには入っていない。",
+        "gameplay": "プレイヤーは記者の居場所を聞き、ホームに入る前に安全な観測地点を選ぶ。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "ホームだけに作用するという範囲に沿った例外。"
+    },
+    {
+      "candidate": {
+        "id": "relay.1",
+        "worldId": "relay",
+        "layer": "authorTruth",
+        "text": "0.6光時先の居住区から、直前に送信した電波への返事が30秒で届いた。",
+        "presentation": "同期した送受信ログ。時計は正確であり、事前に用意した返信ではない。",
+        "gameplay": "プレイヤーは返事を読み、すぐに貨物の受取場所を変更する。"
+      },
+      "expected": {
+        "consistency": "contradiction",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "この技術条件で通信の往復には最短72分必要。"
+    },
+    {
+      "candidate": {
+        "id": "relay.2",
+        "worldId": "relay",
+        "layer": "record",
+        "text": "広告には『当社の通信なら、どの居住区からでも30秒で返事が届く』と書いてある。",
+        "presentation": "広告。内容が真実だという断定はしない。",
+        "gameplay": "プレイヤーは広告とログを比較し、虚偽広告を告発するか運営者と交渉するかを選ぶ。",
+        "holder": "広告会社"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "広告の内容と実際の物理を区別している。"
+    },
+    {
+      "candidate": {
+        "id": "relay.3",
+        "worldId": "relay",
+        "layer": "authorTruth",
+        "text": "アキの酸素は24時間分で、貨物便を待つと酸素が切れる。",
+        "presentation": "タンクの表示と便の予定表。",
+        "gameplay": "プレイヤーは便を待つ代わりに、徒歩で予備タンクを取りに行くか、酸素を分けてもらって労働契約を結ぶ。生存と負担が変わる。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "資源と輸送の制約が介入と代償を生む。"
+    },
+    {
+      "candidate": {
+        "id": "relay.4",
+        "worldId": "relay",
+        "layer": "authorTruth",
+        "text": "新型スクラバー一台が、外部から資源を加えず100人の酸素を一か月確実に賄う。",
+        "presentation": "設計仕様。電力、処理量、回収効率、船内の物質収支の値はない。",
+        "gameplay": "プレイヤーは仕様を採用し、予備タンクを売却する。酸素供給は保証される。"
+      },
+      "expected": {
+        "consistency": "underdetermined",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "物質収支やエネルギーを計算する情報が足りず、成立を保証できない。"
+    },
+    {
+      "candidate": {
+        "id": "relay.5",
+        "worldId": "relay",
+        "layer": "authorTruth",
+        "text": "食堂の椅子の塗装は、創設時には青かった。",
+        "presentation": "背景説明。",
+        "gameplay": "背景文として表示する。操作、調査の発見、結果への接続は追加しない。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": false,
+        "leak": false
+      },
+      "rationale": "歴史の背景は追加できるが、この提案に具体的な行動はない。"
+    },
+    {
+      "candidate": {
+        "id": "relay.6",
+        "worldId": "relay",
+        "layer": "authorTruth",
+        "text": "送信記録を改竄した人物はレイである。",
+        "presentation": "到着直後の最初の通信のシステムメッセージでそのまま明言する。",
+        "gameplay": "プレイヤーはレイを告発するか、協力を求めるかを選んで責任者との関係を変える。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": true
+      },
+      "rationale": "ログ比較の前に犯人を明言している。"
+    },
+    {
+      "candidate": {
+        "id": "relay.7",
+        "worldId": "relay",
+        "layer": "hypothesis",
+        "text": "放棄船は失踪した運送会社の所有船かもしれない。",
+        "presentation": "技師の未確認の推測。",
+        "gameplay": "プレイヤーは船の識別番号を調べ、会社の運航台帳と比較して所有者を絞る。",
+        "holder": "技師"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "未確定の所有者を固定せず、検証可能な仮説にしている。"
+    },
+    {
+      "candidate": {
+        "id": "relay.8",
+        "worldId": "relay",
+        "layer": "authorTruth",
+        "text": "送信直後、相手がまだ受信できていない段階のアキの端末には、送信操作のローカル確認が即時表示された。",
+        "presentation": "アキの端末画面。『この端末が送信を受け付けた』という確認で、相手の返信ではない。",
+        "gameplay": "プレイヤーは送信受付を確かめ、通信の返事を待つ間に予備タンクを探しに行く。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "ローカル確認は居住区間の通信速度の例外ではない。"
+    },
+    {
+      "candidate": {
+        "id": "archive.1",
+        "worldId": "archive",
+        "layer": "authorTruth",
+        "text": "6月8日21:10、死亡した被害者本人が書庫に入り、紙の台帳に署名した。",
+        "presentation": "本人が実際に行った行動としての作者用時系列。時計は正確。",
+        "gameplay": "プレイヤーはその署名を見つけ、捜査対象の時刻を変更する。"
+      },
+      "expected": {
+        "consistency": "contradiction",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "死亡後に本人が活動しており、不変条件に反する。"
+    },
+    {
+      "candidate": {
+        "id": "archive.2",
+        "worldId": "archive",
+        "layer": "belief",
+        "text": "目撃者は『6月8日21:10に被害者本人を見た』と信じている。",
+        "presentation": "未確認の証言。目撃者の判断の正しさは保証しない。",
+        "gameplay": "プレイヤーは服装と入館記録を比較し、人違いかどうかを検証する。",
+        "holder": "目撃者"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "証言の誤認は作者の真実の時系列を覆さない。"
+    },
+    {
+      "candidate": {
+        "id": "archive.3",
+        "worldId": "archive",
+        "layer": "authorTruth",
+        "text": "鍵の貸出表には複数の予備鍵の借り手が記録されている。",
+        "presentation": "捜査開始時に現場で読める表。犯人の名指しはない。",
+        "gameplay": "プレイヤーは表と入館記録を比較し、借り手を聞き込みして容疑者を絞る。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "犯人を直接露出せず、証拠から推理へ接続する。"
+    },
+    {
+      "candidate": {
+        "id": "archive.4",
+        "worldId": "archive",
+        "layer": "authorTruth",
+        "text": "入口から書庫へ10秒で往復できるため、記録の空白10秒で犯行と帰還を確実に完了できた。",
+        "presentation": "距離、経路、犯行に必要な時間の情報がない作者用時系列案。",
+        "gameplay": "プレイヤーはこの所要時間に基づきアリバイを崩して容疑者を告発する。"
+      },
+      "expected": {
+        "consistency": "underdetermined",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "未定義の移動時間と行為の所要時間に依存する。"
+    },
+    {
+      "candidate": {
+        "id": "archive.5",
+        "worldId": "archive",
+        "layer": "authorTruth",
+        "text": "書庫の窓枠は十年前に塗り直された。",
+        "presentation": "背景説明。",
+        "gameplay": "装飾の由来として表示する。操作、証拠の発見、推理への接続は設けない。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": false,
+        "leak": false
+      },
+      "rationale": "背景追加は成立するが、具体的な遊びは記述されていない。"
+    },
+    {
+      "candidate": {
+        "id": "archive.6",
+        "worldId": "archive",
+        "layer": "authorTruth",
+        "text": "ユウが予備鍵を使って殺人を実行した。",
+        "presentation": "捜査開始時の導入文で犯人と手段をそのまま明言する。",
+        "gameplay": "プレイヤーはユウを告発するか取引をするか選び、捜査の扱いを変更する。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": true
+      },
+      "rationale": "正史どおりだが証拠の比較より前に答えを開示する。"
+    },
+    {
+      "candidate": {
+        "id": "archive.7",
+        "worldId": "archive",
+        "layer": "hypothesis",
+        "text": "ユウは金銭問題のために犯行に及んだのかもしれない。",
+        "presentation": "捜査員の仮説。動機は検証済みではない。記録の比較を完了した後にだけ提示する。",
+        "gameplay": "プレイヤーは支出記録とメールを比較して、動機の支持材料を探す。",
+        "holder": "捜査員"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "作者未確定の動機を仮説として扱う。犯人の名指しを含む資料は証拠比較後にのみ提示する。"
+    },
+    {
+      "candidate": {
+        "id": "archive.8",
+        "worldId": "archive",
+        "layer": "authorTruth",
+        "text": "被害者が20:55に送信予約したメールが、死亡後の21:10に自動送信された。",
+        "presentation": "送信予約のログと、後で届いたメール。21:10に本人が操作したとは述べない。",
+        "gameplay": "プレイヤーは予約ログと送信時刻を比較し、死亡後の行動だと思われた証拠を再解釈する。"
+      },
+      "expected": {
+        "consistency": "compatible",
+        "hook": true,
+        "leak": false
+      },
+      "rationale": "自動送信は本人の死亡後の活動を必要としない。"
+    }
+  ]
+}

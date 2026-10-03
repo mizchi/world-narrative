@@ -1,0 +1,41 @@
+{
+  "observedAt": "2026-10-02T16:54:44.643Z",
+  "response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "tide.contradiction": {
+        "type": "noul",
+        "noul": 0.06
+      },
+      "tide.earlyDisclosure": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "tide.actionResult": {
+        "type": "noul",
+        "noul": 0.98
+      },
+      "quarry.contradiction": {
+        "type": "noul",
+        "noul": 0.07
+      },
+      "quarry.earlyDisclosure": {
+        "type": "noul",
+        "noul": 0.08
+      },
+      "quarry.actionResult": {
+        "type": "noul",
+        "noul": 0.97
+      },
+      "sharedDependency": {
+        "type": "noul",
+        "noul": 0.62
+      }
+    },
+    "usage": {
+      "input_tokens": 6818,
+      "output_tokens": 154
+    }
+  },
+  "ms": 265.617834
+}

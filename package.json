@@ -1,0 +1,27 @@
+{
+  "name": "world-narrative",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@10.28.2",
+  "scripts": {
+    "test": "node --test tests/*.test.ts",
+    "typecheck": "tsc --noEmit",
+    "benchmark:dry": "node src/benchmark.ts --dry",
+    "benchmark": "node src/benchmark.ts",
+    "narrative": "node src/cli.ts",
+    "demo": "node src/cli.ts demo --project .tmp/demo-project --out .tmp/demo-game",
+    "serve": "node src/player/server.ts .tmp/demo-game --port 4173",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^24.19.1",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "zod": "^4.6.5"
+  }
+}

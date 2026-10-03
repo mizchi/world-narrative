@@ -1,0 +1,660 @@
+{
+  "formatVersion": "ash-estuary-character-production/v2",
+  "id": "ash-ink-wash-character-production-v2",
+  "styleId": "ash-ink-wash-v1",
+  "styleReference": {
+    "file": "style-b-ink-wash-v1.png",
+    "role": "style-only",
+    "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+  },
+  "basedOnDirection": "character-art-direction.json",
+  "userRequest": "人物画集が全員同じ画角で、設定としてはいいが、そのまま使うには厳しい。三面図と、キャラクターを表すポーズと表情の画像を分離する。",
+  "productionMode": "three-kinds",
+  "modeDecision": "任意の分け方の確認を提示し、回答がない状態では推奨した三種類で進めると伝えた。",
+  "status": "generated",
+  "assetKinds": {
+    "turnaround": {
+      "purpose": "体格・服の構造・髪を確認する外見の参照",
+      "viewOrder": [
+        "front",
+        "left-profile",
+        "back"
+      ],
+      "pose": "同じ縮尺の自然なAポーズ。手持ち品は外し、身体に付けた物だけ保持。",
+      "framing": "横長3:2、全身三方向"
+    },
+    "pose": {
+      "purpose": "対話・人物紹介・場面のための演技画",
+      "framing": "各人物の動作に合わせて画角・寄り・縦横比を変える",
+      "copyPolicy": "ポーズは一例。後続シーンにそのまま固定しない。"
+    },
+    "expressions": {
+      "purpose": "顔の同一性と感情の演技を比較する表情参照",
+      "layout": "正方形2×2、同じ寄りで4表情",
+      "framePolicy": "表情領域は規格化された四分割の制作指定。ゲームに切り出すときは画像の実際の境界と余白を確認する。"
+    }
+  },
+  "characters": [
+    {
+      "id": "ira",
+      "entityId": "actor.ira",
+      "name": "鐘守イラ",
+      "identityReference": {
+        "file": "characters/ira-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "f4c65313540ba48e6966c2a5f4381e49bd7d9d9fef8d9db3ae4ee7295be8ebad"
+      },
+      "assets": {
+        "turnaround": {
+          "id": "ira-turnaround",
+          "file": "characters/ira-turnaround-v2.png",
+          "promptSource": {
+            "file": "character-prompts-turnaround-v2.json",
+            "jobId": "ira-turnaround"
+          },
+          "status": "generated",
+          "sha256": "8919b6cd82d9538372842f18fe138fd16a43fe90616a72c294a1734243671855",
+          "width": 1536,
+          "height": 1024
+        },
+        "pose": {
+          "id": "ira-pose",
+          "file": "characters/ira-pose-v2.png",
+          "promptSource": {
+            "file": "character-prompts-pose-v2.json",
+            "jobId": "ira-pose"
+          },
+          "status": "generated",
+          "framing": "横長3:2、机越しの腰から上、左側から見た斜めの画角",
+          "pose": "腰掛け、閉じた帳面に片手を置き、もう片方を小さく開く",
+          "expression": "相手の頼みを聞く、応えたいが即答できない",
+          "sha256": "6fe5e9a4ede759ab43cd279f1aaf48bd12f87fb4ebe50b7c6f1b9197cb1cbc58",
+          "width": 1536,
+          "height": 1024
+        },
+        "expressions": {
+          "id": "ira-expressions",
+          "file": "characters/ira-expressions-v2.png",
+          "promptSource": {
+            "file": "character-prompts-expressions-v2.json",
+            "jobId": "ira-expressions"
+          },
+          "status": "generated",
+          "layout": {
+            "columns": 2,
+            "rows": 2,
+            "order": "row-major"
+          },
+          "expressions": [
+            {
+              "id": "attentive",
+              "label": "普段の注意深さ",
+              "region": {
+                "x": 0,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "listening",
+              "label": "相手の話を聞く",
+              "region": {
+                "x": 0.5,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "concerned",
+              "label": "配分をためらう",
+              "region": {
+                "x": 0,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "soft-relief",
+              "label": "小さな安堵",
+              "region": {
+                "x": 0.5,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            }
+          ],
+          "sha256": "189510c8f11f258932772c7aa95bf828e1e63ebb9e2bdb3e2cf15ff7f926ca1d",
+          "width": 1254,
+          "height": 1254,
+          "layoutReview": "4人ではなく同一人物の4表情。各四分割内に頭・顔を収めた配置を目視確認。"
+        }
+      }
+    },
+    {
+      "id": "sui",
+      "entityId": "tide.sui",
+      "name": "水門修理人スイ",
+      "identityReference": {
+        "file": "characters/sui-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "976ffd205abea0a220402539aecb3194a769b3f219ca9f4acf1ea0070ea9118c"
+      },
+      "assets": {
+        "turnaround": {
+          "id": "sui-turnaround",
+          "file": "characters/sui-turnaround-v2.png",
+          "promptSource": {
+            "file": "character-prompts-turnaround-v2.json",
+            "jobId": "sui-turnaround"
+          },
+          "status": "generated",
+          "sha256": "df0e62859d83a0b9694c85d95b75f198d9bddb070bf01f19f32cab923d9ec2b9",
+          "width": 1536,
+          "height": 1024
+        },
+        "pose": {
+          "id": "sui-pose",
+          "file": "characters/sui-pose-v2.png",
+          "promptSource": {
+            "file": "character-prompts-pose-v2.json",
+            "jobId": "sui-pose"
+          },
+          "status": "generated",
+          "framing": "横長3:2、低い位置から見るしゃがんだ姿",
+          "pose": "石の縁に片膝をつき、点検縄を下ろしながら覗き込む",
+          "expression": "手掛かりを探す集中、確かめようとする疑問",
+          "sha256": "573dcd4cc2d647833a1bcb384b9c975772e4fad0e2497481537e6ec768c5618e",
+          "width": 1536,
+          "height": 1024
+        },
+        "expressions": {
+          "id": "sui-expressions",
+          "file": "characters/sui-expressions-v2.png",
+          "promptSource": {
+            "file": "character-prompts-expressions-v2.json",
+            "jobId": "sui-expressions"
+          },
+          "status": "generated",
+          "layout": {
+            "columns": 2,
+            "rows": 2,
+            "order": "row-major"
+          },
+          "expressions": [
+            {
+              "id": "curious",
+              "label": "普段の好奇心",
+              "region": {
+                "x": 0,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "focused",
+              "label": "点検への集中",
+              "region": {
+                "x": 0.5,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "skeptical",
+              "label": "説明を疑う",
+              "region": {
+                "x": 0,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "small-discovery",
+              "label": "手掛かりへの小さな喜び",
+              "region": {
+                "x": 0.5,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            }
+          ],
+          "sha256": "696384fe6b337f2c0cc0460963381aecc56dd6136f56e8791bc61c8a6cffd3ba",
+          "width": 1254,
+          "height": 1254,
+          "layoutReview": "4人ではなく同一人物の4表情。各四分割内に頭・顔を収めた配置を目視確認。"
+        }
+      }
+    },
+    {
+      "id": "asa",
+      "entityId": "tide.asa",
+      "name": "網職人アサ",
+      "identityReference": {
+        "file": "characters/asa-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "c7840de697911651ab00d99ef4903fd96d59926ae6709daa10e586912277a5b7"
+      },
+      "assets": {
+        "turnaround": {
+          "id": "asa-turnaround",
+          "file": "characters/asa-turnaround-v2.png",
+          "promptSource": {
+            "file": "character-prompts-turnaround-v2.json",
+            "jobId": "asa-turnaround"
+          },
+          "status": "generated",
+          "sha256": "ef5bd5c1c34c20edfb3c6ef383342da400ff4956558039e9b68632bca125a959",
+          "width": 1536,
+          "height": 1024
+        },
+        "pose": {
+          "id": "asa-pose",
+          "file": "characters/asa-pose-v2.png",
+          "promptSource": {
+            "file": "character-prompts-pose-v2.json",
+            "jobId": "asa-pose"
+          },
+          "status": "generated",
+          "framing": "正方形、顔と網を繕う手元の寄り",
+          "pose": "腰掛けたまま網を引き、網針を通す",
+          "expression": "手仕事への落ち着いた自信、会話中の小さな笑み",
+          "sha256": "04a234dd3996f6cb7c54330ae2881b0277eff5673660918ede9e3410618f8f7a",
+          "width": 1254,
+          "height": 1254
+        },
+        "expressions": {
+          "id": "asa-expressions",
+          "file": "characters/asa-expressions-v2.png",
+          "promptSource": {
+            "file": "character-prompts-expressions-v2.json",
+            "jobId": "asa-expressions"
+          },
+          "status": "generated",
+          "layout": {
+            "columns": 2,
+            "rows": 2,
+            "order": "row-major"
+          },
+          "expressions": [
+            {
+              "id": "calm",
+              "label": "普段の落ち着き",
+              "region": {
+                "x": 0,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "explaining",
+              "label": "手仕事を説明する",
+              "region": {
+                "x": 0.5,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "firm",
+              "label": "仕事の負担を伝える",
+              "region": {
+                "x": 0,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "knowing-smile",
+              "label": "親しみのある笑み",
+              "region": {
+                "x": 0.5,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            }
+          ],
+          "sha256": "f4ae0709d8e80b8fb0bde3be5c14ebb7fe6c59f6a029713dce09525f97e4f2cf",
+          "width": 1254,
+          "height": 1254,
+          "layoutReview": "4人ではなく同一人物の4表情。各四分割内に頭・顔を収めた配置を目視確認。"
+        }
+      }
+    },
+    {
+      "id": "nene",
+      "entityId": "quarry.nene",
+      "name": "窯番ネネ",
+      "identityReference": {
+        "file": "characters/nene-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "7fdab728e1b649391e197aa616bff87ddebf25db2efb014c1b81a914bf17fb54"
+      },
+      "assets": {
+        "turnaround": {
+          "id": "nene-turnaround",
+          "file": "characters/nene-turnaround-v2.png",
+          "promptSource": {
+            "file": "character-prompts-turnaround-v2.json",
+            "jobId": "nene-turnaround"
+          },
+          "status": "generated",
+          "sha256": "68e2de2dd7bc1c2784f8a3aafc2ca55030f572fe477ce3643770e74be6c758a4",
+          "width": 1536,
+          "height": 1024
+        },
+        "pose": {
+          "id": "nene-pose",
+          "file": "characters/nene-pose-v2.png",
+          "promptSource": {
+            "file": "character-prompts-pose-v2.json",
+            "jobId": "nene-pose"
+          },
+          "status": "generated",
+          "framing": "縦長4:5、真正面に近い胸から腰の画角",
+          "pose": "作業を中断し、手袋を前掛けの胸元で握る",
+          "expression": "納品を急ぎながらも、言いかけたことをためらう",
+          "sha256": "cc5f3b2cc2346d5c6958cb714b1c81838f192e9aa76fa32eb68d263cf29e03d9",
+          "width": 1122,
+          "height": 1402
+        },
+        "expressions": {
+          "id": "nene-expressions",
+          "file": "characters/nene-expressions-v2.png",
+          "promptSource": {
+            "file": "character-prompts-expressions-v2.json",
+            "jobId": "nene-expressions"
+          },
+          "status": "generated",
+          "layout": {
+            "columns": 2,
+            "rows": 2,
+            "order": "row-major"
+          },
+          "expressions": [
+            {
+              "id": "working",
+              "label": "普段の仕事顔",
+              "region": {
+                "x": 0,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "urgent",
+              "label": "急ぎの指示を出す",
+              "region": {
+                "x": 0.5,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "hesitant",
+              "label": "言葉をのみ込む",
+              "region": {
+                "x": 0,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "exhale",
+              "label": "ひと息つく",
+              "region": {
+                "x": 0.5,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            }
+          ],
+          "sha256": "e88bb3a5204292a9fe7afea222ba3072e886796cd30b1fafb680dceff424625a",
+          "width": 1254,
+          "height": 1254,
+          "layoutReview": "4人ではなく同一人物の4表情。各四分割内に頭・顔を収めた配置を目視確認。"
+        }
+      }
+    },
+    {
+      "id": "ado",
+      "entityId": "quarry.ado",
+      "name": "階段職人アド",
+      "identityReference": {
+        "file": "characters/ado-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "d3d832df1961eea5999837c720bc8fa60adf7e680bdc63a1f42bf6ecf99e498c"
+      },
+      "assets": {
+        "turnaround": {
+          "id": "ado-turnaround",
+          "file": "characters/ado-turnaround-v2.png",
+          "promptSource": {
+            "file": "character-prompts-turnaround-v2.json",
+            "jobId": "ado-turnaround"
+          },
+          "status": "generated",
+          "sha256": "c97cac0b70584169c6376c3546d43202e7be54d3c4332ab8ca26dce28719f0c3",
+          "width": 1536,
+          "height": 1024
+        },
+        "pose": {
+          "id": "ado-pose",
+          "file": "characters/ado-pose-v2.png",
+          "promptSource": {
+            "file": "character-prompts-pose-v2.json",
+            "jobId": "ado-pose"
+          },
+          "status": "generated",
+          "framing": "横長3:2、石に腰掛けた膝上の画角、少し低い視点",
+          "pose": "石段に腰掛け、木槌を膝に置き、片手で材の面を示す",
+          "expression": "疲れの中にある職人の誇り、小さな皮肉を含む笑み",
+          "sha256": "6870181367c49e852ad3b63622f4945a0230c6dfc128d91d0a17530566456b64",
+          "width": 1536,
+          "height": 1024
+        },
+        "expressions": {
+          "id": "ado-expressions",
+          "file": "characters/ado-expressions-v2.png",
+          "promptSource": {
+            "file": "character-prompts-expressions-v2.json",
+            "jobId": "ado-expressions"
+          },
+          "status": "generated",
+          "layout": {
+            "columns": 2,
+            "rows": 2,
+            "order": "row-major"
+          },
+          "expressions": [
+            {
+              "id": "steady",
+              "label": "普段の職人顔",
+              "region": {
+                "x": 0,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "proud-explanation",
+              "label": "仕事を誇って語る",
+              "region": {
+                "x": 0.5,
+                "y": 0,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 0,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "tired",
+              "label": "夜勤の疲れ",
+              "region": {
+                "x": 0,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 0,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            },
+            {
+              "id": "wry-smile",
+              "label": "少し皮肉な笑み",
+              "region": {
+                "x": 0.5,
+                "y": 0.5,
+                "width": 0.5,
+                "height": 0.5
+              },
+              "pixelRegion": {
+                "x": 627,
+                "y": 627,
+                "width": 627,
+                "height": 627
+              }
+            }
+          ],
+          "sha256": "d9507c716eb163c18d894916812422bc521caa103134c56da011e008dc16d918",
+          "width": 1254,
+          "height": 1254,
+          "layoutReview": "4人ではなく同一人物の4表情。各四分割内に頭・顔を収めた配置を目視確認。"
+        }
+      }
+    }
+  ],
+  "canonPolicy": "元の職業と本文を参照し、視覚デザイン案を世界の正史へ自動追加しない。表情は演技の候補であり、物語の分岐条件や結果ではない。",
+  "referencePolicy": "Bで筆致と配色、三面図で衣服と体格、表情集で顔、ポーズ画で演技の候補を参照する。画像ごとの役割をプロンプトに明記し、ポーズや表情を全員共通にしない。",
+  "qualityLimit": "生成した三面図は制作参照。厳密な投影や縫い目の寸法を保証する3D設計図ではない。",
+  "generationMode": "built-in-imagegen",
+  "requestedModel": "gpt-image-2.5",
+  "resolvedModel": null
+}

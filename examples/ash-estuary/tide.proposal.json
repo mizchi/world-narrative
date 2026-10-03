@@ -1,0 +1,818 @@
+{
+  "formatVersion": "world-narrative/v1",
+  "id": "tide.proposal.v1",
+  "basedOnRevision": "ash-v0.1",
+  "namespace": "tide",
+  "readSet": [
+    "author.editor",
+    "fact.description",
+    "memory.sacrificeAmplifies",
+    "place.tide",
+    "quarry.trialRead",
+    "rule.memory",
+    "tide.decision",
+    "tide.inspected",
+    "tide.recordsRead",
+    "tide.repaired",
+    "tide.tested",
+    "truth.exception",
+    "world.powder"
+  ],
+  "writeSet": [
+    "tide.asa",
+    "tide.assertion.fact.1",
+    "tide.assertion.fact.2",
+    "tide.assertion.fact.3",
+    "tide.assertion.fact.4",
+    "tide.assertion.log",
+    "tide.assertion.measurement",
+    "tide.assertion.suiBelief",
+    "tide.book",
+    "tide.cistern",
+    "tide.claim.cisternCost",
+    "tide.claim.diversion",
+    "tide.claim.log",
+    "tide.claim.measurement",
+    "tide.claim.racksCost",
+    "tide.claim.repairCost",
+    "tide.claim.suiBelief",
+    "tide.episode",
+    "tide.fork",
+    "tide.fragment.cistern",
+    "tide.fragment.diversion",
+    "tide.fragment.leave",
+    "tide.fragment.racks",
+    "tide.fragment.record",
+    "tide.fragment.repaired",
+    "tide.fragment.split",
+    "tide.fragment.test",
+    "tide.inspect",
+    "tide.intro.arrival",
+    "tide.intro.familiar",
+    "tide.intro.memory",
+    "tide.leave",
+    "tide.protect-both",
+    "tide.protect-cistern",
+    "tide.protect-racks",
+    "tide.racks",
+    "tide.read-records",
+    "tide.repair",
+    "tide.rope",
+    "tide.sui",
+    "tide.test"
+  ],
+  "operations": [
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "tide.sui",
+        "kind": "person",
+        "name": "水門修理人スイ",
+        "description": "低庭の雨水槽を残したい修理人。母が自分の名を呼んだ晩の記憶を持つ。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "tide.asa",
+        "kind": "person",
+        "name": "網職人アサ",
+        "description": "干し場で次の漁の網を仕上げる。白い道は荷車の通り道でもある。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "tide.fork",
+        "kind": "item",
+        "name": "南門の分岐板",
+        "description": "雨水槽側と干し場側の枝に水を振り分ける木の板。道の下には使われない旧溝がある。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "tide.cistern",
+        "kind": "item",
+        "name": "低庭の雨水槽",
+        "description": "住民が雨水を貯める石造りの槽。失えば坂の上から水を運ぶ必要がある。",
+        "gameRole": "background"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "tide.racks",
+        "kind": "item",
+        "name": "干し場の網掛け枠",
+        "description": "網を掛ける金属の枠。失えば次の漁へ向けた網の仕上げが遅れる。",
+        "gameRole": "background"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "tide.book",
+        "kind": "item",
+        "name": "先代の検量帳",
+        "description": "粉の投入量、板の位置、潮後の侵食境界を記す。提供前の供述題も別欄にある。",
+        "gameRole": "interactive"
+      }
+    },
+    {
+      "kind": "addEntity",
+      "entity": {
+        "id": "tide.rope",
+        "kind": "item",
+        "name": "点検縄と計量砂",
+        "description": "南門の道具箱にある点検縄、灯り、目印の砂。砂を防潮の効力試験に使うことはない。",
+        "gameRole": "background"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "tide.claim.diversion",
+        "subjectId": "tide.fork",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "道の下の堆積物が粉の一部を使われない旧溝へ逸らし、二つの居住区へ届く量を減らす。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "道の下の堆積物が粉の一部を使われない旧溝へ逸らし、二つの居住区へ届く量を減らす。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "tide.claim.cisternCost",
+        "subjectId": "tide.cistern",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "分岐板を雨水槽側へ集中すれば粉四単位で槽を一潮守れる。干し場側の保護は失われる。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "分岐板を雨水槽側へ集中すれば粉四単位で槽を一潮守れる。干し場側の保護は失われる。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "tide.claim.racksCost",
+        "subjectId": "tide.racks",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "分岐板を干し場側へ集中すれば粉四単位で枠を一潮守れる。雨水槽側の保護は失われる。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "分岐板を干し場側へ集中すれば粉四単位で枠を一潮守れる。雨水槽側の保護は失われる。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "tide.claim.repairCost",
+        "subjectId": "tide.fork",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "白い道を剝いで旧溝を塞ぐ修理は十二時間かかる。修理と流路試験の後なら六単位を分け、雨水槽と干し場をともに一潮守れる。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "白い道を剝いで旧溝を塞ぐ修理は十二時間かかる。修理と流路試験の後なら六単位を分け、雨水槽と干し場をともに一潮守れる。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "tide.claim.log",
+        "subjectId": "tide.book",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "検量帳には同じ投入量で板だけを替えた二潮の侵食境界と、提供前に語られた記憶の題が別欄で記されている。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "検量帳には同じ投入量で板だけを替えた二潮の侵食境界と、提供前に語られた記憶の題が別欄で記されている。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "tide.claim.measurement",
+        "subjectId": "tide.fork",
+        "predicateId": "fact.description",
+        "value": {
+          "kind": "text",
+          "value": "同量の目印の砂で板の位置を替えた試験は、旧溝への損失を再現した。砂では防護の効力を試していない。"
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "同量の目印の砂で板の位置を替えた試験は、旧溝への損失を再現した。砂では防護の効力を試していない。"
+      }
+    },
+    {
+      "kind": "addClaim",
+      "claim": {
+        "id": "tide.claim.suiBelief",
+        "subjectId": "rule.memory",
+        "predicateId": "memory.sacrificeAmplifies",
+        "value": {
+          "kind": "boolean",
+          "value": true
+        },
+        "scope": {
+          "branchId": "main",
+          "time": "atemporal",
+          "conditionId": "always"
+        },
+        "text": "スイは、大切な記憶なら少ない粉でも広く守れるのではないかと信じている。"
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "tide.assertion.fact.1",
+        "claimId": "tide.claim.diversion",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "tide.book",
+          "locator": "tide.md#2-5",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "tide.assertion.fact.2",
+        "claimId": "tide.claim.cisternCost",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "tide.book",
+          "locator": "tide.md#2-5",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "tide.assertion.fact.3",
+        "claimId": "tide.claim.racksCost",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "tide.book",
+          "locator": "tide.md#2-5",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "tide.assertion.fact.4",
+        "claimId": "tide.claim.repairCost",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "tide.book",
+          "locator": "tide.md#2-5",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "tide.assertion.log",
+        "claimId": "tide.claim.log",
+        "layer": {
+          "kind": "record",
+          "documentId": "tide.book"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "tide.book",
+          "locator": "tide.md#4-発見2",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "tide.assertion.measurement",
+        "claimId": "tide.claim.measurement",
+        "layer": {
+          "kind": "authorTruth",
+          "polarity": "assert"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "tide.book",
+          "locator": "tide.md#4-発見3",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addAssertion",
+      "assertion": {
+        "id": "tide.assertion.suiBelief",
+        "claimId": "tide.claim.suiBelief",
+        "layer": {
+          "kind": "belief",
+          "holderId": "tide.sui",
+          "polarity": "believes"
+        },
+        "status": "proposed",
+        "source": {
+          "artifactId": "tide.book",
+          "locator": "tide.md#2-人物と信念",
+          "authorId": "author.editor"
+        }
+      }
+    },
+    {
+      "kind": "addEpisode",
+      "episode": {
+        "id": "tide.episode",
+        "title": "白い道を剝ぐ",
+        "locationId": "place.tide",
+        "participants": [
+          "tide.sui",
+          "tide.asa"
+        ],
+        "intro": [
+          {
+            "id": "tide.intro.arrival",
+            "condition": {
+              "op": "true"
+            },
+            "text": "スイが水門の札を裏返す。「潮までに、どちらへ流すか決めたい。槽にも枠にも暮らしがあるんだ」。アサは敷石に荷車の跡を指でなぞる。「道を剝ぐなら、この先の網は誰が担ぐ？」",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "tide.intro.memory",
+            "condition": {
+              "op": "not",
+              "condition": {
+                "op": "knows",
+                "claimId": "truth.exception"
+              }
+            },
+            "text": "スイはためらいながら口を開く。「母が私の名を呼んだ晩を、まだ持っている。あれを差し出せば足りるだろうか。……失ったあと、私は何を頼りに母を思う？」",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "tide.intro.familiar",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "knows",
+                  "claimId": "truth.exception"
+                },
+                {
+                  "op": "any",
+                  "conditions": [
+                    {
+                      "op": "eq",
+                      "variable": "tide.tested",
+                      "value": true
+                    },
+                    {
+                      "op": "eq",
+                      "variable": "quarry.trialRead",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            "text": "あなたが、記憶の重さより届く粉と流路を確かめたいと言うと、スイは道の下を指した。「それなら、この門でも確かめてくれ。帳面だけで、誰かの水を決めたくない」",
+            "disclosedClaimIds": [
+              "truth.exception"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "id": "tide.inspect",
+            "label": "道の下の分岐を点検する",
+            "text": "スイから点検縄を借り、灯りを持って旧溝へ降りる。白い沈着の筋と、分岐板の下の堆積物を現物で確かめる。",
+            "condition": {
+              "op": "true"
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "tide.inspected",
+                "value": true
+              },
+              {
+                "kind": "learn",
+                "claimId": "tide.claim.diversion",
+                "mode": "observed"
+              }
+            ]
+          },
+          {
+            "id": "tide.read-records",
+            "label": "先代の検量帳を現物と重ねる",
+            "text": "見つけた筋をスイに示し、帳面を借りる。粉の量、板の位置、補修した脚の番号を、現物の印と照合する。",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.inspected",
+              "value": true
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "tide.recordsRead",
+                "value": true
+              },
+              {
+                "kind": "learn",
+                "claimId": "tide.claim.log",
+                "mode": "observed"
+              }
+            ]
+          },
+          {
+            "id": "tide.test",
+            "label": "同量の砂で流路を試す",
+            "text": "淡水に目印の砂を入れ、板の位置ごとの回収量を量る。砂は防護の効力の代わりにはならない。先代の潮後の記録を合わせて、今回使える判断をまとめる。",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "tide.inspected",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.recordsRead",
+                  "value": true
+                }
+              ]
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "tide.tested",
+                "value": true
+              },
+              {
+                "kind": "learn",
+                "claimId": "tide.claim.measurement",
+                "mode": "observed"
+              },
+              {
+                "kind": "learn",
+                "claimId": "truth.exception",
+                "mode": "known"
+              }
+            ]
+          },
+          {
+            "id": "tide.repair",
+            "label": "白い道を剝ぎ、旧溝を塞ぐ",
+            "text": "十二時間かけて敷石を持ち上げ、粉が逸れる旧溝を塞ぐ。スイは石を運び、アサは荷車を道の手前へ戻す。修理だけでは粉も配分も増えない。",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "tide.inspected",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.repaired",
+                  "value": false
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.decision",
+                  "value": "pending"
+                }
+              ]
+            },
+            "costHours": 12,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "tide.repaired",
+                "value": true
+              }
+            ]
+          },
+          {
+            "id": "tide.protect-cistern",
+            "label": "雨水槽側へ四単位を流す",
+            "text": "分岐板を低庭へ向け、共有の配分枠から四単位を使う。住民の水を残すため、干し場を守る流れを閉じる。これで南門の今回の配分を決める。",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "tide.inspected",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.recordsRead",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.decision",
+                  "value": "pending"
+                },
+                {
+                  "op": "gte",
+                  "variable": "world.powder",
+                  "value": 4
+                }
+              ]
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "add",
+                "variable": "world.powder",
+                "amount": -4
+              },
+              {
+                "kind": "set",
+                "variable": "tide.decision",
+                "value": "cistern"
+              }
+            ]
+          },
+          {
+            "id": "tide.protect-racks",
+            "label": "干し場側へ四単位を流す",
+            "text": "分岐板を干し場へ向け、共有の配分枠から四単位を使う。次の漁の網を残すため、雨水槽を守る流れを閉じる。これで南門の今回の配分を決める。",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "tide.inspected",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.recordsRead",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.decision",
+                  "value": "pending"
+                },
+                {
+                  "op": "gte",
+                  "variable": "world.powder",
+                  "value": 4
+                }
+              ]
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "add",
+                "variable": "world.powder",
+                "amount": -4
+              },
+              {
+                "kind": "set",
+                "variable": "tide.decision",
+                "value": "racks"
+              }
+            ]
+          },
+          {
+            "id": "tide.protect-both",
+            "label": "修理した分岐で六単位を分ける",
+            "text": "流路を試し直した分岐で六単位を使い、雨水槽と干し場へ流す。道を剝いだ跡を踏み越えて、二枚の配分札を掛ける。南門に回せる枠は使い切る。",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "tide.repaired",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.tested",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.recordsRead",
+                  "value": true
+                },
+                {
+                  "op": "eq",
+                  "variable": "tide.decision",
+                  "value": "pending"
+                },
+                {
+                  "op": "gte",
+                  "variable": "world.powder",
+                  "value": 6
+                }
+              ]
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "add",
+                "variable": "world.powder",
+                "amount": -6
+              },
+              {
+                "kind": "set",
+                "variable": "tide.decision",
+                "value": "split"
+              }
+            ]
+          },
+          {
+            "id": "tide.leave",
+            "label": "今回は保護を見送り、桶と網を運ぶ",
+            "text": "粉の配分を決めずに、桶と網を高所へ運ぶ手伝いをする。スイは空欄の札を伏せる。設備を失う負担を、人が潮のあとに引き受ける。",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.decision",
+              "value": "pending"
+            },
+            "costHours": 1,
+            "effects": [
+              {
+                "kind": "set",
+                "variable": "tide.decision",
+                "value": "leave"
+              }
+            ]
+          }
+        ],
+        "fragments": [
+          {
+            "id": "tide.fragment.diversion",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.inspected",
+              "value": true
+            },
+            "text": "灯りの端で白い粉の筋が曲がり、人の住まない旧溝へ落ちていた。アサが縄を引く。「門に入れれば、全部こっちへ来ると思ってた」。見えたのは流れの偏りだ。これだけで粉の効力までは言えない。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "tide.fragment.record",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.recordsRead",
+              "value": true
+            },
+            "text": "帳面の一行は短い。「二日、板は右。干し場の三番脚まで残る。前回と同量。左の槽、縁が欠ける」。番号を付けた補修跡が、目の前の脚と重なる。供述の題は別の欄にあり、石から読んだ記憶ではなかった。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "tide.fragment.test",
+            "condition": {
+              "op": "all",
+              "conditions": [
+                {
+                  "op": "eq",
+                  "variable": "tide.tested",
+                  "value": true
+                },
+                {
+                  "op": "knows",
+                  "claimId": "truth.exception"
+                }
+              ]
+            },
+            "text": "同量の砂でも、板を替えると回収する袋の重さが変わった。帳面には「昨日の朝飯」と「娘を見送った朝」という別の供述があるが、同量・同配置の潮後の境界は同じだった。スイは母の名を書きかけた札を伏せる。この門で配分を決めるなら、記憶の大切さより、届く粉の量と流路を確かめる根拠が揃った。",
+            "disclosedClaimIds": [
+              "truth.exception"
+            ]
+          },
+          {
+            "id": "tide.fragment.repaired",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.repaired",
+              "value": true
+            },
+            "text": "旧溝を塞いだ石の上を、水が分岐板へ戻ってくる。白い道の一部はもう歩けない。アサは網の束を量り、「一束ずつなら、私でも担げる」と言った。道が消えた費用は、その背へ移る。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "tide.fragment.cistern",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.decision",
+              "value": "cistern"
+            },
+            "text": "雨水槽の札に四つの印がついた。スイは蓋の石を撫でる。アサは干し場の網を外し始めた。「槽の水はうちも使う。けれど、網を仕上げる場所は探さなきゃ」。選んだ側にも、もう片方を失う暮らしがある。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "tide.fragment.racks",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.decision",
+              "value": "racks"
+            },
+            "text": "干し場の札に四つの印がついた。アサは糸を張り直し、スイは空の桶を数える。「網が残れば漁に出られる。水は坂から運ぼう」。桶の列は、次の潮よりあとまで続く。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "tide.fragment.split",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.decision",
+              "value": "split"
+            },
+            "text": "六つの印を二枚の札へ分けた。槽の水と網の枠を一潮だけ残せる。道の向こうで荷車が止まり、荷主が網の束を肩に上げる。誰も歓声を上げない。残せたものを確かめてから、壊した道の仕事へ戻る。",
+            "disclosedClaimIds": []
+          },
+          {
+            "id": "tide.fragment.leave",
+            "condition": {
+              "op": "eq",
+              "variable": "tide.decision",
+              "value": "leave"
+            },
+            "text": "桶と網が坂の上へ積まれた。門の札には保護する区画を書かない。アサは枠のボルトを拾い、「これを次の枠に使えれば」と手の中で転がす。粉を使わなかった判断にも、潮後の労働は残る。",
+            "disclosedClaimIds": []
+          }
+        ],
+        "completion": {
+          "op": "not",
+          "condition": {
+            "op": "eq",
+            "variable": "tide.decision",
+            "value": "pending"
+          }
+        }
+      }
+    }
+  ],
+  "notes": "tide.mdをv1契約に実装。日時は訪問時の残り時間で判断し、前日という固定文言は使わない。南門の今回の配分枠は共有6単位、片側4、修理・試験後の両側6。南の配分は一回だけ選ぶ。秘密は点検・帳面・試験を揃えた後にknownとし、先にtide.testedをsetする。結果は設備の保護と景観・運搬・水運びの別の負担を記す。堤防の原因やイラの結末は確定しない。"
+}

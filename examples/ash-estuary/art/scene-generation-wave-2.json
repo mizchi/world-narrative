@@ -1,0 +1,53 @@
+{
+  "styleId": "ash-ink-wash-v1",
+  "images": [
+    {
+      "id": "tide-inspection",
+      "title": "道の下の分岐",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-d5cce639-d90f-48ec-a76c-976460ae8ae4.png",
+      "file": "scenes/tide-inspection-v1.png",
+      "promptSource": "scene-prompts-wave-2.json",
+      "references": [
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "a69bbf312909eb80e7b555c1c65c2181c4029334d5b6c0527e4c93491b23904b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "tide-trial",
+      "title": "同量の砂で試す",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-1dcf3d24-56ec-4653-bd8c-dabfc62d5b5b.png",
+      "file": "scenes/tide-trial-v1.png",
+      "promptSource": "scene-prompts-wave-2.json",
+      "references": [
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "68701502c0fbf8884edfd2397a01cfd4448c66e202506553df1bf3ce173e7c19",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "tide-repaired",
+      "title": "剝がした道",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-2a9f7898-3c87-404b-a812-05adf40df833.png",
+      "file": "scenes/tide-repaired-v1.png",
+      "promptSource": "scene-prompts-wave-2.json",
+      "references": [
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "468703175924a8cc87649bdd10f1619d3e044405124445bea528879de848f09d",
+      "width": 1672,
+      "height": 941
+    }
+  ]
+}

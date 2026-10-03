@@ -1,0 +1,26 @@
+{
+  "recordedAt": "2026-10-02T17:30:46.498Z",
+  "model": "jev-1.13.0",
+  "rubric": "world-diff/v1",
+  "sources": {
+    "src/world/semantic.ts": "fba74cb5ef7e9cf2bb745d656b1682681b92a77aff195e10b861bc002c18dd1e",
+    "src/jev.ts": "1cc1faf408d6354fe48f270642e08474671ea67d6e6842dd135344c7e7087932",
+    "src/world/types.ts": "c2135ef76e16171b99a594f2a4f4c8a2d844c7b8c168b13dfd671accae87999d"
+  },
+  "cases": [
+    {
+      "id": "tide",
+      "inputHash": "ea3e84c9088978c2cd54f5b5aaa37669e323607701e108a6c2789e42607dbe1d",
+      "status": "needs-review",
+      "ms": 318.759625,
+      "inputTokens": 15757
+    },
+    {
+      "id": "quarry",
+      "inputHash": "aa368aa4990183bf326429fe04b3a6f019a15659325f5db12e1e46ba95c4f5e3",
+      "status": "needs-review",
+      "ms": 354.535041,
+      "inputTokens": 21773
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "formatVersion": "ash-estuary-art-direction/v1",
+  "id": "ash-ink-wash-v1",
+  "status": "selected",
+  "selection": {
+    "candidate": "B",
+    "userMessage": "B"
+  },
+  "reference": {
+    "file": "style-b-ink-wash-v1.png",
+    "role": "style",
+    "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+  },
+  "medium": "ペン画と淡彩（採用画像の実際の筆致を優先）",
+  "tone": "静かで美しい。生活と維持の負担に、不穏さがにじむ。",
+  "palette": [
+    "白亜・象牙色の石",
+    "灰色・青灰色の水と空",
+    "くすんだ苔色・青緑",
+    "木の茶色と少量の錆色"
+  ],
+  "lighting": "柔らかな曇天。内部の調査だけ小さな実用灯。",
+  "framing": "横長約16:9。景観は地に足のついた全景、調査は道具や作業の寄り。",
+  "people": "名前のある人物は三面図で体格と衣服、表情集で顔を参照する。動作・画角・表情は場面ごとに指定し、ポーズ画は演技の一例として扱う。匿名の作業者には名前を割り当てない。",
+  "commonPrompt": "Use case: illustration-story\nAsset type: one environment or scene illustration for the original exploration game \"Ash Estuary\"; wide landscape, approximately 16:9, edge-to-edge, opaque background.\nInput images: Image 1 is the approved STYLE reference B. Match its actual fine pen contours, soft watercolor washes, restrained realistic observation, subtle warm paper grain, and material detail. It is a style reference; do not copy its water gate or net yard into a different location. Each additional image must have an explicit role in the scene-specific instructions: LOCATION/OBJECT continuity or named CHARACTER identity. Preserve the relevant spatial/material details or face/hair/clothing respectively; none replaces reference B as the art style.\nArt direction: Quiet, beautiful, slightly uneasy coastal life. Hand-drawn pen and pale watercolor, readable space, irregular fine lines, restrained cross-hatching, delicate gray-blue atmospheric distance. Chalk-white and warm-ivory limestone, slate-gray water and sky, muted moss and blue-green, weathered brown wood and small rust accents. Soft overcast daylight, legible shadows, no crushed black or saturated cinema grading. Keep the detailed observational character of reference B rather than flattening it or switching to an oil painting.\nWorld and visual invariants: Small preindustrial coastal settlement; ordinary human-scale architecture and maintenance. Labor and everyday materials carry the story. Memory stones have no visible readable memories or supernatural glow. No ghosts, flashbacks inside stones, restored memories, giant castles, modern machinery, monsters, fighting, magical birds, bodily corrosion, or apocalyptic destruction. No readable words, numerals, labels, arrows, captions, UI, border or watermark. Written records use indistinct pen strokes. Avoid hero poses. When a named character appears, supply their turnaround for body/clothing continuity and, where needed, their expression atlas for face continuity. Preserve face, hair, garment silhouette and identifying work tools. Specify a scene-appropriate camera, gesture and facial expression; any expressive-pose reference is an acting example, not a fixed pose. Anonymous background workers remain anonymous.",
+  "tool": "image_gen",
+  "requestedModel": "gpt-image-2.5",
+  "resolvedModel": null,
+  "characterDirection": "character-production-plan-v2.json",
+  "referenceRolePolicy": "Bは画風参照。追加画像の役割（場所・物体または人物の外見）を各プロンプトで明記する。",
+  "characterReferences": [
+    {
+      "entityId": "actor.ira",
+      "file": "characters/ira-turnaround-v2.png",
+      "sha256": "8919b6cd82d9538372842f18fe138fd16a43fe90616a72c294a1734243671855",
+      "role": "character-identity-and-costume",
+      "faceReference": {
+        "file": "characters/ira-expressions-v2.png",
+        "sha256": "189510c8f11f258932772c7aa95bf828e1e63ebb9e2bdb3e2cf15ff7f926ca1d",
+        "role": "facial-identity-and-expression"
+      },
+      "performanceExample": {
+        "file": "characters/ira-pose-v2.png",
+        "sha256": "6fe5e9a4ede759ab43cd279f1aaf48bd12f87fb4ebe50b7c6f1b9197cb1cbc58",
+        "role": "acting-example"
+      },
+      "initialDesignReference": {
+        "file": "characters/ira-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "f4c65313540ba48e6966c2a5f4381e49bd7d9d9fef8d9db3ae4ee7295be8ebad"
+      },
+      "designStatus": "production-reference-v2"
+    },
+    {
+      "entityId": "tide.sui",
+      "file": "characters/sui-turnaround-v2.png",
+      "sha256": "df0e62859d83a0b9694c85d95b75f198d9bddb070bf01f19f32cab923d9ec2b9",
+      "role": "character-identity-and-costume",
+      "faceReference": {
+        "file": "characters/sui-expressions-v2.png",
+        "sha256": "696384fe6b337f2c0cc0460963381aecc56dd6136f56e8791bc61c8a6cffd3ba",
+        "role": "facial-identity-and-expression"
+      },
+      "performanceExample": {
+        "file": "characters/sui-pose-v2.png",
+        "sha256": "573dcd4cc2d647833a1bcb384b9c975772e4fad0e2497481537e6ec768c5618e",
+        "role": "acting-example"
+      },
+      "initialDesignReference": {
+        "file": "characters/sui-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "976ffd205abea0a220402539aecb3194a769b3f219ca9f4acf1ea0070ea9118c"
+      },
+      "designStatus": "production-reference-v2"
+    },
+    {
+      "entityId": "tide.asa",
+      "file": "characters/asa-turnaround-v2.png",
+      "sha256": "ef5bd5c1c34c20edfb3c6ef383342da400ff4956558039e9b68632bca125a959",
+      "role": "character-identity-and-costume",
+      "faceReference": {
+        "file": "characters/asa-expressions-v2.png",
+        "sha256": "f4ae0709d8e80b8fb0bde3be5c14ebb7fe6c59f6a029713dce09525f97e4f2cf",
+        "role": "facial-identity-and-expression"
+      },
+      "performanceExample": {
+        "file": "characters/asa-pose-v2.png",
+        "sha256": "04a234dd3996f6cb7c54330ae2881b0277eff5673660918ede9e3410618f8f7a",
+        "role": "acting-example"
+      },
+      "initialDesignReference": {
+        "file": "characters/asa-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "c7840de697911651ab00d99ef4903fd96d59926ae6709daa10e586912277a5b7"
+      },
+      "designStatus": "production-reference-v2"
+    },
+    {
+      "entityId": "quarry.nene",
+      "file": "characters/nene-turnaround-v2.png",
+      "sha256": "68e2de2dd7bc1c2784f8a3aafc2ca55030f572fe477ce3643770e74be6c758a4",
+      "role": "character-identity-and-costume",
+      "faceReference": {
+        "file": "characters/nene-expressions-v2.png",
+        "sha256": "e88bb3a5204292a9fe7afea222ba3072e886796cd30b1fafb680dceff424625a",
+        "role": "facial-identity-and-expression"
+      },
+      "performanceExample": {
+        "file": "characters/nene-pose-v2.png",
+        "sha256": "cc5f3b2cc2346d5c6958cb714b1c81838f192e9aa76fa32eb68d263cf29e03d9",
+        "role": "acting-example"
+      },
+      "initialDesignReference": {
+        "file": "characters/nene-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "7fdab728e1b649391e197aa616bff87ddebf25db2efb014c1b81a914bf17fb54"
+      },
+      "designStatus": "production-reference-v2"
+    },
+    {
+      "entityId": "quarry.ado",
+      "file": "characters/ado-turnaround-v2.png",
+      "sha256": "c97cac0b70584169c6376c3546d43202e7be54d3c4332ab8ca26dce28719f0c3",
+      "role": "character-identity-and-costume",
+      "faceReference": {
+        "file": "characters/ado-expressions-v2.png",
+        "sha256": "d9507c716eb163c18d894916812422bc521caa103134c56da011e008dc16d918",
+        "role": "facial-identity-and-expression"
+      },
+      "performanceExample": {
+        "file": "characters/ado-pose-v2.png",
+        "sha256": "6870181367c49e852ad3b63622f4945a0230c6dfc128d91d0a17530566456b64",
+        "role": "acting-example"
+      },
+      "initialDesignReference": {
+        "file": "characters/ado-v1.png",
+        "role": "identity-basis-v1",
+        "sha256": "d3d832df1961eea5999837c720bc8fa60adf7e680bdc63a1f42bf6ecf99e498c"
+      },
+      "designStatus": "production-reference-v2"
+    }
+  ],
+  "initialCharacterDirection": "character-art-direction.json"
+}

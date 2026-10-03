@@ -1,0 +1,3670 @@
+{
+  "observedAt": "2026-10-02T16:43:48.638Z",
+  "rubricVersion": "lore-v1",
+  "calls": [
+    {
+      "mode": "all",
+      "iteration": 0,
+      "caseIds": [
+        "ash.1",
+        "ash.2",
+        "ash.3",
+        "ash.4",
+        "ash.5",
+        "ash.6",
+        "ash.7",
+        "ash.8",
+        "station.1",
+        "station.2",
+        "station.3",
+        "station.4",
+        "station.5",
+        "station.6",
+        "station.7",
+        "station.8",
+        "relay.1",
+        "relay.2",
+        "relay.3",
+        "relay.4",
+        "relay.5",
+        "relay.6",
+        "relay.7",
+        "relay.8",
+        "archive.1",
+        "archive.2",
+        "archive.3",
+        "archive.4",
+        "archive.5",
+        "archive.6",
+        "archive.7",
+        "archive.8"
+      ],
+      "ms": 416.743917,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0,
+              "contradiction": 1,
+              "underdetermined": 0
+            }
+          },
+          "ash.1.hook": {
+            "type": "noul",
+            "noul": 0.88
+          },
+          "ash.1.leak": {
+            "type": "noul",
+            "noul": 0.33
+          },
+          "ash.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.94,
+            "probabilities": {
+              "compatible": 0.96,
+              "contradiction": 0.04,
+              "underdetermined": 0
+            }
+          },
+          "ash.2.hook": {
+            "type": "noul",
+            "noul": 0.79
+          },
+          "ash.2.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "ash.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.55,
+            "probabilities": {
+              "compatible": 0.7,
+              "contradiction": 0.01,
+              "underdetermined": 0.29
+            }
+          },
+          "ash.3.hook": {
+            "type": "noul",
+            "noul": 0.97
+          },
+          "ash.3.leak": {
+            "type": "noul",
+            "noul": 0.14
+          },
+          "ash.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.86,
+            "probabilities": {
+              "compatible": 0.04,
+              "contradiction": 0.05,
+              "underdetermined": 0.91
+            }
+          },
+          "ash.4.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "ash.4.leak": {
+            "type": "noul",
+            "noul": 0.16
+          },
+          "ash.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "ash.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "ash.5.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "ash.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.82,
+            "probabilities": {
+              "compatible": 0.89,
+              "contradiction": 0.1,
+              "underdetermined": 0.01
+            }
+          },
+          "ash.6.hook": {
+            "type": "noul",
+            "noul": 0.87
+          },
+          "ash.6.leak": {
+            "type": "noul",
+            "noul": 0.93
+          },
+          "ash.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "ash.7.hook": {
+            "type": "noul",
+            "noul": 0.68
+          },
+          "ash.7.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "ash.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "ash.8.hook": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "ash.8.leak": {
+            "type": "noul",
+            "noul": 0.15
+          },
+          "station.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.01,
+              "contradiction": 0.99,
+              "underdetermined": 0
+            }
+          },
+          "station.1.hook": {
+            "type": "noul",
+            "noul": 0.88
+          },
+          "station.1.leak": {
+            "type": "noul",
+            "noul": 0.07
+          },
+          "station.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.63,
+            "probabilities": {
+              "compatible": 0.75,
+              "contradiction": 0.24,
+              "underdetermined": 0.01
+            }
+          },
+          "station.2.hook": {
+            "type": "noul",
+            "noul": 0.8
+          },
+          "station.2.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "station.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.73,
+            "probabilities": {
+              "compatible": 0.8099999999999999,
+              "contradiction": 0.03,
+              "underdetermined": 0.16
+            }
+          },
+          "station.3.hook": {
+            "type": "noul",
+            "noul": 0.93
+          },
+          "station.3.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "station.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.29,
+            "probabilities": {
+              "compatible": 0.38,
+              "contradiction": 0.1,
+              "underdetermined": 0.52
+            }
+          },
+          "station.4.hook": {
+            "type": "noul",
+            "noul": 0.85
+          },
+          "station.4.leak": {
+            "type": "noul",
+            "noul": 0.2
+          },
+          "station.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "station.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "station.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "station.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.96,
+            "probabilities": {
+              "compatible": 0.98,
+              "contradiction": 0.01,
+              "underdetermined": 0.01
+            }
+          },
+          "station.6.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "station.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "station.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "station.7.hook": {
+            "type": "noul",
+            "noul": 0.76
+          },
+          "station.7.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "station.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.96,
+            "probabilities": {
+              "compatible": 0.97,
+              "contradiction": 0.02,
+              "underdetermined": 0.01
+            }
+          },
+          "station.8.hook": {
+            "type": "noul",
+            "noul": 0.79
+          },
+          "station.8.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "relay.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.01,
+              "contradiction": 0.99,
+              "underdetermined": 0
+            }
+          },
+          "relay.1.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "relay.1.leak": {
+            "type": "noul",
+            "noul": 0.18
+          },
+          "relay.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.47,
+            "probabilities": {
+              "compatible": 0.64,
+              "contradiction": 0.35,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.2.hook": {
+            "type": "noul",
+            "noul": 0.75
+          },
+          "relay.2.leak": {
+            "type": "noul",
+            "noul": 0.11
+          },
+          "relay.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.64,
+            "probabilities": {
+              "compatible": 0.76,
+              "contradiction": 0.15,
+              "underdetermined": 0.09
+            }
+          },
+          "relay.3.hook": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "relay.3.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "relay.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.45,
+            "probabilities": {
+              "compatible": 0.03,
+              "contradiction": 0.34,
+              "underdetermined": 0.63
+            }
+          },
+          "relay.4.hook": {
+            "type": "noul",
+            "noul": 0.95
+          },
+          "relay.4.leak": {
+            "type": "noul",
+            "noul": 0.12
+          },
+          "relay.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "relay.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "relay.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "relay.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.92,
+            "probabilities": {
+              "compatible": 0.95,
+              "contradiction": 0.05,
+              "underdetermined": 0
+            }
+          },
+          "relay.6.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "relay.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "relay.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.7.hook": {
+            "type": "noul",
+            "noul": 0.8
+          },
+          "relay.7.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "relay.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.92,
+            "probabilities": {
+              "compatible": 0.94,
+              "contradiction": 0.05,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.8.hook": {
+            "type": "noul",
+            "noul": 0.86
+          },
+          "relay.8.leak": {
+            "type": "noul",
+            "noul": 0.11
+          },
+          "archive.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.01,
+              "contradiction": 0.99,
+              "underdetermined": 0
+            }
+          },
+          "archive.1.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "archive.1.leak": {
+            "type": "noul",
+            "noul": 0.49
+          },
+          "archive.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.81,
+            "probabilities": {
+              "compatible": 0.88,
+              "contradiction": 0.12,
+              "underdetermined": 0
+            }
+          },
+          "archive.2.hook": {
+            "type": "noul",
+            "noul": 0.69
+          },
+          "archive.2.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "archive.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.97,
+            "probabilities": {
+              "compatible": 0.98,
+              "contradiction": 0.01,
+              "underdetermined": 0.01
+            }
+          },
+          "archive.3.hook": {
+            "type": "noul",
+            "noul": 0.85
+          },
+          "archive.3.leak": {
+            "type": "noul",
+            "noul": 0.11
+          },
+          "archive.4.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.05,
+            "probabilities": {
+              "compatible": 0.37,
+              "contradiction": 0.3,
+              "underdetermined": 0.33
+            }
+          },
+          "archive.4.hook": {
+            "type": "noul",
+            "noul": 0.82
+          },
+          "archive.4.leak": {
+            "type": "noul",
+            "noul": 0.34
+          },
+          "archive.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "archive.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "archive.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "archive.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.79,
+            "probabilities": {
+              "compatible": 0.86,
+              "contradiction": 0.11,
+              "underdetermined": 0.03
+            }
+          },
+          "archive.6.hook": {
+            "type": "noul",
+            "noul": 0.82
+          },
+          "archive.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "archive.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "archive.7.hook": {
+            "type": "noul",
+            "noul": 0.62
+          },
+          "archive.7.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "archive.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.69,
+            "probabilities": {
+              "compatible": 0.79,
+              "contradiction": 0.19,
+              "underdetermined": 0.02
+            }
+          },
+          "archive.8.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "archive.8.leak": {
+            "type": "noul",
+            "noul": 0.15
+          }
+        },
+        "usage": {
+          "input_tokens": 31399,
+          "output_tokens": 2741
+        }
+      }
+    },
+    {
+      "mode": "all",
+      "iteration": 1,
+      "caseIds": [
+        "ash.1",
+        "ash.2",
+        "ash.3",
+        "ash.4",
+        "ash.5",
+        "ash.6",
+        "ash.7",
+        "ash.8",
+        "station.1",
+        "station.2",
+        "station.3",
+        "station.4",
+        "station.5",
+        "station.6",
+        "station.7",
+        "station.8",
+        "relay.1",
+        "relay.2",
+        "relay.3",
+        "relay.4",
+        "relay.5",
+        "relay.6",
+        "relay.7",
+        "relay.8",
+        "archive.1",
+        "archive.2",
+        "archive.3",
+        "archive.4",
+        "archive.5",
+        "archive.6",
+        "archive.7",
+        "archive.8"
+      ],
+      "ms": 304.546833,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 0,
+              "contradiction": 1,
+              "underdetermined": 0
+            }
+          },
+          "ash.1.hook": {
+            "type": "noul",
+            "noul": 0.85
+          },
+          "ash.1.leak": {
+            "type": "noul",
+            "noul": 0.32
+          },
+          "ash.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.91,
+            "probabilities": {
+              "compatible": 0.94,
+              "contradiction": 0.06,
+              "underdetermined": 0
+            }
+          },
+          "ash.2.hook": {
+            "type": "noul",
+            "noul": 0.78
+          },
+          "ash.2.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "ash.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.43,
+            "probabilities": {
+              "compatible": 0.62,
+              "contradiction": 0.01,
+              "underdetermined": 0.37
+            }
+          },
+          "ash.3.hook": {
+            "type": "noul",
+            "noul": 0.97
+          },
+          "ash.3.leak": {
+            "type": "noul",
+            "noul": 0.14
+          },
+          "ash.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.86,
+            "probabilities": {
+              "compatible": 0.04,
+              "contradiction": 0.05,
+              "underdetermined": 0.91
+            }
+          },
+          "ash.4.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "ash.4.leak": {
+            "type": "noul",
+            "noul": 0.17
+          },
+          "ash.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "ash.5.hook": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "ash.5.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "ash.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.83,
+            "probabilities": {
+              "compatible": 0.89,
+              "contradiction": 0.1,
+              "underdetermined": 0.01
+            }
+          },
+          "ash.6.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "ash.6.leak": {
+            "type": "noul",
+            "noul": 0.93
+          },
+          "ash.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "ash.7.hook": {
+            "type": "noul",
+            "noul": 0.69
+          },
+          "ash.7.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "ash.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "ash.8.hook": {
+            "type": "noul",
+            "noul": 0.97
+          },
+          "ash.8.leak": {
+            "type": "noul",
+            "noul": 0.16
+          },
+          "station.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.97,
+            "probabilities": {
+              "compatible": 0.01,
+              "contradiction": 0.98,
+              "underdetermined": 0.01
+            }
+          },
+          "station.1.hook": {
+            "type": "noul",
+            "noul": 0.88
+          },
+          "station.1.leak": {
+            "type": "noul",
+            "noul": 0.07
+          },
+          "station.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.58,
+            "probabilities": {
+              "compatible": 0.71,
+              "contradiction": 0.28,
+              "underdetermined": 0.01
+            }
+          },
+          "station.2.hook": {
+            "type": "noul",
+            "noul": 0.77
+          },
+          "station.2.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "station.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.6,
+            "probabilities": {
+              "compatible": 0.73,
+              "contradiction": 0.05,
+              "underdetermined": 0.22
+            }
+          },
+          "station.3.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "station.3.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "station.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.3,
+            "probabilities": {
+              "compatible": 0.38,
+              "contradiction": 0.09,
+              "underdetermined": 0.53
+            }
+          },
+          "station.4.hook": {
+            "type": "noul",
+            "noul": 0.85
+          },
+          "station.4.leak": {
+            "type": "noul",
+            "noul": 0.21
+          },
+          "station.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "station.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "station.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "station.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.95,
+            "probabilities": {
+              "compatible": 0.97,
+              "contradiction": 0.02,
+              "underdetermined": 0.01
+            }
+          },
+          "station.6.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "station.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "station.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "station.7.hook": {
+            "type": "noul",
+            "noul": 0.75
+          },
+          "station.7.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "station.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.91,
+            "probabilities": {
+              "compatible": 0.94,
+              "contradiction": 0.05,
+              "underdetermined": 0.01
+            }
+          },
+          "station.8.hook": {
+            "type": "noul",
+            "noul": 0.79
+          },
+          "station.8.leak": {
+            "type": "noul",
+            "noul": 0.07
+          },
+          "relay.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.01,
+              "contradiction": 0.99,
+              "underdetermined": 0
+            }
+          },
+          "relay.1.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "relay.1.leak": {
+            "type": "noul",
+            "noul": 0.2
+          },
+          "relay.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.56,
+            "probabilities": {
+              "compatible": 0.7,
+              "contradiction": 0.29,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.2.hook": {
+            "type": "noul",
+            "noul": 0.73
+          },
+          "relay.2.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "relay.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.49,
+            "probabilities": {
+              "compatible": 0.66,
+              "contradiction": 0.22,
+              "underdetermined": 0.12
+            }
+          },
+          "relay.3.hook": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "relay.3.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "relay.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.37,
+            "probabilities": {
+              "compatible": 0.03,
+              "contradiction": 0.39,
+              "underdetermined": 0.58
+            }
+          },
+          "relay.4.hook": {
+            "type": "noul",
+            "noul": 0.94
+          },
+          "relay.4.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "relay.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "relay.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "relay.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "relay.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.96,
+            "probabilities": {
+              "compatible": 0.97,
+              "contradiction": 0.02,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.6.hook": {
+            "type": "noul",
+            "noul": 0.84
+          },
+          "relay.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "relay.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.7.hook": {
+            "type": "noul",
+            "noul": 0.78
+          },
+          "relay.7.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "relay.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.91,
+            "probabilities": {
+              "compatible": 0.94,
+              "contradiction": 0.05,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.8.hook": {
+            "type": "noul",
+            "noul": 0.83
+          },
+          "relay.8.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "archive.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.01,
+              "contradiction": 0.99,
+              "underdetermined": 0
+            }
+          },
+          "archive.1.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "archive.1.leak": {
+            "type": "noul",
+            "noul": 0.51
+          },
+          "archive.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.79,
+            "probabilities": {
+              "compatible": 0.86,
+              "contradiction": 0.14,
+              "underdetermined": 0
+            }
+          },
+          "archive.2.hook": {
+            "type": "noul",
+            "noul": 0.71
+          },
+          "archive.2.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "archive.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.98,
+              "contradiction": 0.01,
+              "underdetermined": 0.01
+            }
+          },
+          "archive.3.hook": {
+            "type": "noul",
+            "noul": 0.84
+          },
+          "archive.3.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "archive.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.12,
+            "probabilities": {
+              "compatible": 0.29,
+              "contradiction": 0.3,
+              "underdetermined": 0.41
+            }
+          },
+          "archive.4.hook": {
+            "type": "noul",
+            "noul": 0.82
+          },
+          "archive.4.leak": {
+            "type": "noul",
+            "noul": 0.43
+          },
+          "archive.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "archive.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "archive.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "archive.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.82,
+            "probabilities": {
+              "compatible": 0.88,
+              "contradiction": 0.09,
+              "underdetermined": 0.03
+            }
+          },
+          "archive.6.hook": {
+            "type": "noul",
+            "noul": 0.79
+          },
+          "archive.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "archive.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "archive.7.hook": {
+            "type": "noul",
+            "noul": 0.66
+          },
+          "archive.7.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "archive.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.71,
+            "probabilities": {
+              "compatible": 0.81,
+              "contradiction": 0.18,
+              "underdetermined": 0.01
+            }
+          },
+          "archive.8.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "archive.8.leak": {
+            "type": "noul",
+            "noul": 0.17
+          }
+        },
+        "usage": {
+          "input_tokens": 31399,
+          "output_tokens": 2744
+        }
+      }
+    },
+    {
+      "mode": "all-reversed",
+      "iteration": 0,
+      "caseIds": [
+        "ash.1",
+        "ash.2",
+        "ash.3",
+        "ash.4",
+        "ash.5",
+        "ash.6",
+        "ash.7",
+        "ash.8",
+        "station.1",
+        "station.2",
+        "station.3",
+        "station.4",
+        "station.5",
+        "station.6",
+        "station.7",
+        "station.8",
+        "relay.1",
+        "relay.2",
+        "relay.3",
+        "relay.4",
+        "relay.5",
+        "relay.6",
+        "relay.7",
+        "relay.8",
+        "archive.1",
+        "archive.2",
+        "archive.3",
+        "archive.4",
+        "archive.5",
+        "archive.6",
+        "archive.7",
+        "archive.8"
+      ],
+      "ms": 339.1412500000001,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.8.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.32,
+            "probabilities": {
+              "underdetermined": 0.02,
+              "contradiction": 0.55,
+              "compatible": 0.43
+            }
+          },
+          "archive.8.hook": {
+            "type": "noul",
+            "noul": 0.87
+          },
+          "archive.8.leak": {
+            "type": "noul",
+            "noul": 0.18
+          },
+          "archive.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0,
+              "compatible": 0.99
+            }
+          },
+          "archive.7.hook": {
+            "type": "noul",
+            "noul": 0.6
+          },
+          "archive.7.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "archive.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.63,
+            "probabilities": {
+              "underdetermined": 0.03,
+              "contradiction": 0.22,
+              "compatible": 0.75
+            }
+          },
+          "archive.6.hook": {
+            "type": "noul",
+            "noul": 0.77
+          },
+          "archive.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "archive.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0,
+              "compatible": 1
+            }
+          },
+          "archive.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "archive.5.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "archive.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.22,
+            "probabilities": {
+              "underdetermined": 0.48,
+              "contradiction": 0.23,
+              "compatible": 0.29
+            }
+          },
+          "archive.4.hook": {
+            "type": "noul",
+            "noul": 0.85
+          },
+          "archive.4.leak": {
+            "type": "noul",
+            "noul": 0.27
+          },
+          "archive.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0,
+              "compatible": 0.99
+            }
+          },
+          "archive.3.hook": {
+            "type": "noul",
+            "noul": 0.8
+          },
+          "archive.3.leak": {
+            "type": "noul",
+            "noul": 0.11
+          },
+          "archive.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.86,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0.09,
+              "compatible": 0.91
+            }
+          },
+          "archive.2.hook": {
+            "type": "noul",
+            "noul": 0.71
+          },
+          "archive.2.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "archive.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.99,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0.99,
+              "compatible": 0.01
+            }
+          },
+          "archive.1.hook": {
+            "type": "noul",
+            "noul": 0.86
+          },
+          "archive.1.leak": {
+            "type": "noul",
+            "noul": 0.46
+          },
+          "relay.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.93,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0.03,
+              "compatible": 0.96
+            }
+          },
+          "relay.8.hook": {
+            "type": "noul",
+            "noul": 0.79
+          },
+          "relay.8.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "relay.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0,
+              "compatible": 0.99
+            }
+          },
+          "relay.7.hook": {
+            "type": "noul",
+            "noul": 0.68
+          },
+          "relay.7.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "relay.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.95,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0.03,
+              "compatible": 0.97
+            }
+          },
+          "relay.6.hook": {
+            "type": "noul",
+            "noul": 0.86
+          },
+          "relay.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "relay.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0,
+              "compatible": 1
+            }
+          },
+          "relay.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "relay.5.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "relay.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.5,
+            "probabilities": {
+              "underdetermined": 0.66,
+              "contradiction": 0.27,
+              "compatible": 0.07
+            }
+          },
+          "relay.4.hook": {
+            "type": "noul",
+            "noul": 0.93
+          },
+          "relay.4.leak": {
+            "type": "noul",
+            "noul": 0.14
+          },
+          "relay.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.56,
+            "probabilities": {
+              "underdetermined": 0.13,
+              "contradiction": 0.16,
+              "compatible": 0.71
+            }
+          },
+          "relay.3.hook": {
+            "type": "noul",
+            "noul": 0.95
+          },
+          "relay.3.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "relay.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.87,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0.08,
+              "compatible": 0.92
+            }
+          },
+          "relay.2.hook": {
+            "type": "noul",
+            "noul": 0.79
+          },
+          "relay.2.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "relay.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.96,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0.97,
+              "compatible": 0.02
+            }
+          },
+          "relay.1.hook": {
+            "type": "noul",
+            "noul": 0.91
+          },
+          "relay.1.leak": {
+            "type": "noul",
+            "noul": 0.19
+          },
+          "station.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.92,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0.04,
+              "compatible": 0.95
+            }
+          },
+          "station.8.hook": {
+            "type": "noul",
+            "noul": 0.79
+          },
+          "station.8.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "station.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0,
+              "compatible": 0.99
+            }
+          },
+          "station.7.hook": {
+            "type": "noul",
+            "noul": 0.67
+          },
+          "station.7.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "station.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.97,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0.01,
+              "compatible": 0.98
+            }
+          },
+          "station.6.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "station.6.leak": {
+            "type": "noul",
+            "noul": 0.95
+          },
+          "station.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0,
+              "compatible": 1
+            }
+          },
+          "station.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "station.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "station.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.28,
+            "probabilities": {
+              "underdetermined": 0.52,
+              "contradiction": 0.04,
+              "compatible": 0.44
+            }
+          },
+          "station.4.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "station.4.leak": {
+            "type": "noul",
+            "noul": 0.16
+          },
+          "station.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.7,
+            "probabilities": {
+              "underdetermined": 0.19,
+              "contradiction": 0.01,
+              "compatible": 0.8
+            }
+          },
+          "station.3.hook": {
+            "type": "noul",
+            "noul": 0.94
+          },
+          "station.3.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "station.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.85,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0.1,
+              "compatible": 0.9
+            }
+          },
+          "station.2.hook": {
+            "type": "noul",
+            "noul": 0.82
+          },
+          "station.2.leak": {
+            "type": "noul",
+            "noul": 0.07
+          },
+          "station.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.98,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0.99,
+              "compatible": 0.01
+            }
+          },
+          "station.1.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "station.1.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "ash.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0,
+              "compatible": 0.99
+            }
+          },
+          "ash.8.hook": {
+            "type": "noul",
+            "noul": 0.95
+          },
+          "ash.8.leak": {
+            "type": "noul",
+            "noul": 0.16
+          },
+          "ash.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "underdetermined": 0.01,
+              "contradiction": 0,
+              "compatible": 0.99
+            }
+          },
+          "ash.7.hook": {
+            "type": "noul",
+            "noul": 0.64
+          },
+          "ash.7.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "ash.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.92,
+            "probabilities": {
+              "underdetermined": 0.02,
+              "contradiction": 0.04,
+              "compatible": 0.94
+            }
+          },
+          "ash.6.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "ash.6.leak": {
+            "type": "noul",
+            "noul": 0.91
+          },
+          "ash.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0,
+              "compatible": 1
+            }
+          },
+          "ash.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "ash.5.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "ash.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.88,
+            "probabilities": {
+              "underdetermined": 0.92,
+              "contradiction": 0.05,
+              "compatible": 0.03
+            }
+          },
+          "ash.4.hook": {
+            "type": "noul",
+            "noul": 0.93
+          },
+          "ash.4.leak": {
+            "type": "noul",
+            "noul": 0.19
+          },
+          "ash.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.38,
+            "probabilities": {
+              "underdetermined": 0.4,
+              "contradiction": 0.02,
+              "compatible": 0.58
+            }
+          },
+          "ash.3.hook": {
+            "type": "noul",
+            "noul": 0.97
+          },
+          "ash.3.leak": {
+            "type": "noul",
+            "noul": 0.21
+          },
+          "ash.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.84,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 0.1,
+              "compatible": 0.9
+            }
+          },
+          "ash.2.hook": {
+            "type": "noul",
+            "noul": 0.8
+          },
+          "ash.2.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "ash.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.99,
+            "probabilities": {
+              "underdetermined": 0,
+              "contradiction": 1,
+              "compatible": 0
+            }
+          },
+          "ash.1.hook": {
+            "type": "noul",
+            "noul": 0.78
+          },
+          "ash.1.leak": {
+            "type": "noul",
+            "noul": 0.38
+          }
+        },
+        "usage": {
+          "input_tokens": 31399,
+          "output_tokens": 2746
+        }
+      }
+    },
+    {
+      "mode": "world-batch",
+      "iteration": 0,
+      "caseIds": [
+        "ash.1",
+        "ash.2",
+        "ash.3",
+        "ash.4",
+        "ash.5",
+        "ash.6",
+        "ash.7",
+        "ash.8"
+      ],
+      "ms": 172.601625,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0,
+              "contradiction": 1,
+              "underdetermined": 0
+            }
+          },
+          "ash.1.hook": {
+            "type": "noul",
+            "noul": 0.74
+          },
+          "ash.1.leak": {
+            "type": "noul",
+            "noul": 0.11
+          },
+          "ash.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.94,
+            "probabilities": {
+              "compatible": 0.96,
+              "contradiction": 0.04,
+              "underdetermined": 0
+            }
+          },
+          "ash.2.hook": {
+            "type": "noul",
+            "noul": 0.78
+          },
+          "ash.2.leak": {
+            "type": "noul",
+            "noul": 0.07
+          },
+          "ash.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.55,
+            "probabilities": {
+              "compatible": 0.7,
+              "contradiction": 0.01,
+              "underdetermined": 0.29
+            }
+          },
+          "ash.3.hook": {
+            "type": "noul",
+            "noul": 0.97
+          },
+          "ash.3.leak": {
+            "type": "noul",
+            "noul": 0.12
+          },
+          "ash.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.83,
+            "probabilities": {
+              "compatible": 0.08,
+              "contradiction": 0.04,
+              "underdetermined": 0.88
+            }
+          },
+          "ash.4.hook": {
+            "type": "noul",
+            "noul": 0.87
+          },
+          "ash.4.leak": {
+            "type": "noul",
+            "noul": 0.19
+          },
+          "ash.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "ash.5.hook": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "ash.5.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "ash.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.65,
+            "probabilities": {
+              "compatible": 0.77,
+              "contradiction": 0.22,
+              "underdetermined": 0.01
+            }
+          },
+          "ash.6.hook": {
+            "type": "noul",
+            "noul": 0.84
+          },
+          "ash.6.leak": {
+            "type": "noul",
+            "noul": 0.94
+          },
+          "ash.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "ash.7.hook": {
+            "type": "noul",
+            "noul": 0.64
+          },
+          "ash.7.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "ash.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "ash.8.hook": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "ash.8.leak": {
+            "type": "noul",
+            "noul": 0.11
+          }
+        },
+        "usage": {
+          "input_tokens": 8129,
+          "output_tokens": 689
+        }
+      }
+    },
+    {
+      "mode": "world-batch",
+      "iteration": 0,
+      "caseIds": [
+        "station.1",
+        "station.2",
+        "station.3",
+        "station.4",
+        "station.5",
+        "station.6",
+        "station.7",
+        "station.8"
+      ],
+      "ms": 239.1636249999999,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.01,
+              "contradiction": 0.99,
+              "underdetermined": 0
+            }
+          },
+          "station.1.hook": {
+            "type": "noul",
+            "noul": 0.91
+          },
+          "station.1.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "station.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.87,
+            "probabilities": {
+              "compatible": 0.92,
+              "contradiction": 0.08,
+              "underdetermined": 0
+            }
+          },
+          "station.2.hook": {
+            "type": "noul",
+            "noul": 0.78
+          },
+          "station.2.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "station.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.77,
+            "probabilities": {
+              "compatible": 0.84,
+              "contradiction": 0.04,
+              "underdetermined": 0.12
+            }
+          },
+          "station.3.hook": {
+            "type": "noul",
+            "noul": 0.94
+          },
+          "station.3.leak": {
+            "type": "noul",
+            "noul": 0.09
+          },
+          "station.4.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.53,
+            "probabilities": {
+              "compatible": 0.69,
+              "contradiction": 0.05,
+              "underdetermined": 0.26
+            }
+          },
+          "station.4.hook": {
+            "type": "noul",
+            "noul": 0.88
+          },
+          "station.4.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "station.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "station.5.hook": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "station.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "station.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.71,
+            "probabilities": {
+              "compatible": 0.81,
+              "contradiction": 0.18,
+              "underdetermined": 0.01
+            }
+          },
+          "station.6.hook": {
+            "type": "noul",
+            "noul": 0.91
+          },
+          "station.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "station.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "station.7.hook": {
+            "type": "noul",
+            "noul": 0.82
+          },
+          "station.7.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "station.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.96,
+            "probabilities": {
+              "compatible": 0.97,
+              "contradiction": 0.02,
+              "underdetermined": 0.01
+            }
+          },
+          "station.8.hook": {
+            "type": "noul",
+            "noul": 0.75
+          },
+          "station.8.leak": {
+            "type": "noul",
+            "noul": 0.06
+          }
+        },
+        "usage": {
+          "input_tokens": 7912,
+          "output_tokens": 686
+        }
+      }
+    },
+    {
+      "mode": "world-batch",
+      "iteration": 0,
+      "caseIds": [
+        "relay.1",
+        "relay.2",
+        "relay.3",
+        "relay.4",
+        "relay.5",
+        "relay.6",
+        "relay.7",
+        "relay.8"
+      ],
+      "ms": 205.75912500000004,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.95,
+            "probabilities": {
+              "compatible": 0.03,
+              "contradiction": 0.97,
+              "underdetermined": 0
+            }
+          },
+          "relay.1.hook": {
+            "type": "noul",
+            "noul": 0.87
+          },
+          "relay.1.leak": {
+            "type": "noul",
+            "noul": 0.22
+          },
+          "relay.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.88,
+            "probabilities": {
+              "compatible": 0.93,
+              "contradiction": 0.07,
+              "underdetermined": 0
+            }
+          },
+          "relay.2.hook": {
+            "type": "noul",
+            "noul": 0.75
+          },
+          "relay.2.leak": {
+            "type": "noul",
+            "noul": 0.08
+          },
+          "relay.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.71,
+            "probabilities": {
+              "compatible": 0.81,
+              "contradiction": 0.13,
+              "underdetermined": 0.06
+            }
+          },
+          "relay.3.hook": {
+            "type": "noul",
+            "noul": 0.93
+          },
+          "relay.3.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "relay.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.74,
+            "probabilities": {
+              "compatible": 0.05,
+              "contradiction": 0.12,
+              "underdetermined": 0.83
+            }
+          },
+          "relay.4.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "relay.4.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "relay.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "relay.5.hook": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "relay.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "relay.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.94,
+            "probabilities": {
+              "compatible": 0.97,
+              "contradiction": 0.03,
+              "underdetermined": 0
+            }
+          },
+          "relay.6.hook": {
+            "type": "noul",
+            "noul": 0.92
+          },
+          "relay.6.leak": {
+            "type": "noul",
+            "noul": 0.97
+          },
+          "relay.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.96,
+            "probabilities": {
+              "compatible": 0.98,
+              "contradiction": 0,
+              "underdetermined": 0.02
+            }
+          },
+          "relay.7.hook": {
+            "type": "noul",
+            "noul": 0.86
+          },
+          "relay.7.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "relay.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.95,
+            "probabilities": {
+              "compatible": 0.96,
+              "contradiction": 0.03,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.8.hook": {
+            "type": "noul",
+            "noul": 0.84
+          },
+          "relay.8.leak": {
+            "type": "noul",
+            "noul": 0.09
+          }
+        },
+        "usage": {
+          "input_tokens": 8076,
+          "output_tokens": 689
+        }
+      }
+    },
+    {
+      "mode": "world-batch",
+      "iteration": 0,
+      "caseIds": [
+        "archive.1",
+        "archive.2",
+        "archive.3",
+        "archive.4",
+        "archive.5",
+        "archive.6",
+        "archive.7",
+        "archive.8"
+      ],
+      "ms": 174.46737499999995,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0,
+              "contradiction": 1,
+              "underdetermined": 0
+            }
+          },
+          "archive.1.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "archive.1.leak": {
+            "type": "noul",
+            "noul": 0.42
+          },
+          "archive.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.88,
+            "probabilities": {
+              "compatible": 0.92,
+              "contradiction": 0.08,
+              "underdetermined": 0
+            }
+          },
+          "archive.2.hook": {
+            "type": "noul",
+            "noul": 0.75
+          },
+          "archive.2.leak": {
+            "type": "noul",
+            "noul": 0.07
+          },
+          "archive.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "archive.3.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "archive.3.leak": {
+            "type": "noul",
+            "noul": 0.11
+          },
+          "archive.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.12,
+            "probabilities": {
+              "compatible": 0.31,
+              "contradiction": 0.28,
+              "underdetermined": 0.41
+            }
+          },
+          "archive.4.hook": {
+            "type": "noul",
+            "noul": 0.82
+          },
+          "archive.4.leak": {
+            "type": "noul",
+            "noul": 0.38
+          },
+          "archive.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "archive.5.hook": {
+            "type": "noul",
+            "noul": 0.07
+          },
+          "archive.5.leak": {
+            "type": "noul",
+            "noul": 0.06
+          },
+          "archive.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.52,
+            "probabilities": {
+              "compatible": 0.67,
+              "contradiction": 0.31,
+              "underdetermined": 0.02
+            }
+          },
+          "archive.6.hook": {
+            "type": "noul",
+            "noul": 0.71
+          },
+          "archive.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "archive.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.97,
+            "probabilities": {
+              "compatible": 0.98,
+              "contradiction": 0,
+              "underdetermined": 0.02
+            }
+          },
+          "archive.7.hook": {
+            "type": "noul",
+            "noul": 0.8
+          },
+          "archive.7.leak": {
+            "type": "noul",
+            "noul": 0.1
+          },
+          "archive.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.97,
+            "probabilities": {
+              "compatible": 0.97,
+              "contradiction": 0.02,
+              "underdetermined": 0.01
+            }
+          },
+          "archive.8.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "archive.8.leak": {
+            "type": "noul",
+            "noul": 0.14
+          }
+        },
+        "usage": {
+          "input_tokens": 8101,
+          "output_tokens": 689
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "ash.1"
+      ],
+      "ms": 212.25874999999996,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.98,
+            "probabilities": {
+              "compatible": 0.01,
+              "contradiction": 0.99,
+              "underdetermined": 0
+            }
+          },
+          "ash.1.hook": {
+            "type": "noul",
+            "noul": 0.8
+          },
+          "ash.1.leak": {
+            "type": "noul",
+            "noul": 0.14
+          }
+        },
+        "usage": {
+          "input_tokens": 1660,
+          "output_tokens": 91
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "ash.2"
+      ],
+      "ms": 151.70995799999992,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.9,
+            "probabilities": {
+              "compatible": 0.93,
+              "contradiction": 0.07,
+              "underdetermined": 0
+            }
+          },
+          "ash.2.hook": {
+            "type": "noul",
+            "noul": 0.63
+          },
+          "ash.2.leak": {
+            "type": "noul",
+            "noul": 0.06
+          }
+        },
+        "usage": {
+          "input_tokens": 1669,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "ash.3"
+      ],
+      "ms": 149.66229199999998,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.67,
+            "probabilities": {
+              "compatible": 0.78,
+              "contradiction": 0.01,
+              "underdetermined": 0.21
+            }
+          },
+          "ash.3.hook": {
+            "type": "noul",
+            "noul": 0.96
+          },
+          "ash.3.leak": {
+            "type": "noul",
+            "noul": 0.15
+          }
+        },
+        "usage": {
+          "input_tokens": 1697,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "ash.4"
+      ],
+      "ms": 165.24400000000014,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.78,
+            "probabilities": {
+              "compatible": 0.08,
+              "contradiction": 0.07,
+              "underdetermined": 0.85
+            }
+          },
+          "ash.4.hook": {
+            "type": "noul",
+            "noul": 0.81
+          },
+          "ash.4.leak": {
+            "type": "noul",
+            "noul": 0.23
+          }
+        },
+        "usage": {
+          "input_tokens": 1680,
+          "output_tokens": 92
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "ash.5"
+      ],
+      "ms": 154.0932499999999,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "ash.5.hook": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "ash.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          }
+        },
+        "usage": {
+          "input_tokens": 1645,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "ash.6"
+      ],
+      "ms": 196.12970799999994,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.79,
+            "probabilities": {
+              "compatible": 0.86,
+              "contradiction": 0.13,
+              "underdetermined": 0.01
+            }
+          },
+          "ash.6.hook": {
+            "type": "noul",
+            "noul": 0.67
+          },
+          "ash.6.leak": {
+            "type": "noul",
+            "noul": 0.94
+          }
+        },
+        "usage": {
+          "input_tokens": 1672,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "ash.7"
+      ],
+      "ms": 162.1013750000002,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "ash.7.hook": {
+            "type": "noul",
+            "noul": 0.57
+          },
+          "ash.7.leak": {
+            "type": "noul",
+            "noul": 0.07
+          }
+        },
+        "usage": {
+          "input_tokens": 1662,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "ash.8"
+      ],
+      "ms": 195.46358299999974,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "ash.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.92,
+            "probabilities": {
+              "compatible": 0.94,
+              "contradiction": 0.01,
+              "underdetermined": 0.05
+            }
+          },
+          "ash.8.hook": {
+            "type": "noul",
+            "noul": 0.94
+          },
+          "ash.8.leak": {
+            "type": "noul",
+            "noul": 0.17
+          }
+        },
+        "usage": {
+          "input_tokens": 1680,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "station.1"
+      ],
+      "ms": 166.90937499999973,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.92,
+            "probabilities": {
+              "compatible": 0.04,
+              "contradiction": 0.95,
+              "underdetermined": 0.01
+            }
+          },
+          "station.1.hook": {
+            "type": "noul",
+            "noul": 0.83
+          },
+          "station.1.leak": {
+            "type": "noul",
+            "noul": 0.07
+          }
+        },
+        "usage": {
+          "input_tokens": 1579,
+          "output_tokens": 91
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "station.2"
+      ],
+      "ms": 157.44683299999997,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.9,
+            "probabilities": {
+              "compatible": 0.93,
+              "contradiction": 0.07,
+              "underdetermined": 0
+            }
+          },
+          "station.2.hook": {
+            "type": "noul",
+            "noul": 0.7
+          },
+          "station.2.leak": {
+            "type": "noul",
+            "noul": 0.05
+          }
+        },
+        "usage": {
+          "input_tokens": 1575,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "station.3"
+      ],
+      "ms": 172.16883300000018,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.57,
+            "probabilities": {
+              "compatible": 0.71,
+              "contradiction": 0.02,
+              "underdetermined": 0.27
+            }
+          },
+          "station.3.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "station.3.leak": {
+            "type": "noul",
+            "noul": 0.11
+          }
+        },
+        "usage": {
+          "input_tokens": 1587,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "station.4"
+      ],
+      "ms": 159.95358299999998,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.4.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.51,
+            "probabilities": {
+              "compatible": 0.67,
+              "contradiction": 0.04,
+              "underdetermined": 0.28
+            }
+          },
+          "station.4.hook": {
+            "type": "noul",
+            "noul": 0.91
+          },
+          "station.4.leak": {
+            "type": "noul",
+            "noul": 0.11
+          }
+        },
+        "usage": {
+          "input_tokens": 1579,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "station.5"
+      ],
+      "ms": 160.95175000000063,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "station.5.hook": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "station.5.leak": {
+            "type": "noul",
+            "noul": 0.04
+          }
+        },
+        "usage": {
+          "input_tokens": 1566,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "station.6"
+      ],
+      "ms": 157.72154200000023,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.68,
+            "probabilities": {
+              "compatible": 0.79,
+              "contradiction": 0.2,
+              "underdetermined": 0.01
+            }
+          },
+          "station.6.hook": {
+            "type": "noul",
+            "noul": 0.8
+          },
+          "station.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          }
+        },
+        "usage": {
+          "input_tokens": 1583,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "station.7"
+      ],
+      "ms": 228.78441700000076,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0.99,
+              "contradiction": 0,
+              "underdetermined": 0.01
+            }
+          },
+          "station.7.hook": {
+            "type": "noul",
+            "noul": 0.75
+          },
+          "station.7.leak": {
+            "type": "noul",
+            "noul": 0.08
+          }
+        },
+        "usage": {
+          "input_tokens": 1586,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "station.8"
+      ],
+      "ms": 203.74883299999965,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "station.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.95,
+            "probabilities": {
+              "compatible": 0.96,
+              "contradiction": 0.01,
+              "underdetermined": 0.03
+            }
+          },
+          "station.8.hook": {
+            "type": "noul",
+            "noul": 0.68
+          },
+          "station.8.leak": {
+            "type": "noul",
+            "noul": 0.08
+          }
+        },
+        "usage": {
+          "input_tokens": 1589,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "relay.1"
+      ],
+      "ms": 181.83137500000066,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.85,
+            "probabilities": {
+              "compatible": 0.1,
+              "contradiction": 0.9,
+              "underdetermined": 0
+            }
+          },
+          "relay.1.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "relay.1.leak": {
+            "type": "noul",
+            "noul": 0.33
+          }
+        },
+        "usage": {
+          "input_tokens": 1619,
+          "output_tokens": 91
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "relay.2"
+      ],
+      "ms": 332.2843330000005,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.69,
+            "probabilities": {
+              "compatible": 0.8,
+              "contradiction": 0.2,
+              "underdetermined": 0
+            }
+          },
+          "relay.2.hook": {
+            "type": "noul",
+            "noul": 0.54
+          },
+          "relay.2.leak": {
+            "type": "noul",
+            "noul": 0.09
+          }
+        },
+        "usage": {
+          "input_tokens": 1629,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "relay.3"
+      ],
+      "ms": 302.17904199999975,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.29,
+            "probabilities": {
+              "compatible": 0.53,
+              "contradiction": 0.11,
+              "underdetermined": 0.36
+            }
+          },
+          "relay.3.hook": {
+            "type": "noul",
+            "noul": 0.89
+          },
+          "relay.3.leak": {
+            "type": "noul",
+            "noul": 0.06
+          }
+        },
+        "usage": {
+          "input_tokens": 1623,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "relay.4"
+      ],
+      "ms": 204.0698339999999,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.4.consistency": {
+            "type": "choice",
+            "choice": "underdetermined",
+            "confidence": 0.56,
+            "probabilities": {
+              "compatible": 0.12,
+              "contradiction": 0.17,
+              "underdetermined": 0.71
+            }
+          },
+          "relay.4.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "relay.4.leak": {
+            "type": "noul",
+            "noul": 0.07
+          }
+        },
+        "usage": {
+          "input_tokens": 1627,
+          "output_tokens": 92
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "relay.5"
+      ],
+      "ms": 154.52808299999924,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "relay.5.hook": {
+            "type": "noul",
+            "noul": 0.04
+          },
+          "relay.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          }
+        },
+        "usage": {
+          "input_tokens": 1583,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "relay.6"
+      ],
+      "ms": 179.10195899999962,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.86,
+            "probabilities": {
+              "compatible": 0.91,
+              "contradiction": 0.09,
+              "underdetermined": 0
+            }
+          },
+          "relay.6.hook": {
+            "type": "noul",
+            "noul": 0.84
+          },
+          "relay.6.leak": {
+            "type": "noul",
+            "noul": 0.97
+          }
+        },
+        "usage": {
+          "input_tokens": 1610,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "relay.7"
+      ],
+      "ms": 163.3245420000003,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.96,
+            "probabilities": {
+              "compatible": 0.97,
+              "contradiction": 0,
+              "underdetermined": 0.03
+            }
+          },
+          "relay.7.hook": {
+            "type": "noul",
+            "noul": 0.84
+          },
+          "relay.7.leak": {
+            "type": "noul",
+            "noul": 0.06
+          }
+        },
+        "usage": {
+          "input_tokens": 1601,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "relay.8"
+      ],
+      "ms": 178.4020419999997,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "relay.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.97,
+            "probabilities": {
+              "compatible": 0.98,
+              "contradiction": 0.01,
+              "underdetermined": 0.01
+            }
+          },
+          "relay.8.hook": {
+            "type": "noul",
+            "noul": 0.83
+          },
+          "relay.8.leak": {
+            "type": "noul",
+            "noul": 0.09
+          }
+        },
+        "usage": {
+          "input_tokens": 1649,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "archive.1"
+      ],
+      "ms": 176.7102500000001,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.1.consistency": {
+            "type": "choice",
+            "choice": "contradiction",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 0,
+              "contradiction": 1,
+              "underdetermined": 0
+            }
+          },
+          "archive.1.hook": {
+            "type": "noul",
+            "noul": 0.9
+          },
+          "archive.1.leak": {
+            "type": "noul",
+            "noul": 0.17
+          }
+        },
+        "usage": {
+          "input_tokens": 1653,
+          "output_tokens": 91
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "archive.2"
+      ],
+      "ms": 161.64587500000016,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.2.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.76,
+            "probabilities": {
+              "compatible": 0.84,
+              "contradiction": 0.16,
+              "underdetermined": 0
+            }
+          },
+          "archive.2.hook": {
+            "type": "noul",
+            "noul": 0.55
+          },
+          "archive.2.leak": {
+            "type": "noul",
+            "noul": 0.07
+          }
+        },
+        "usage": {
+          "input_tokens": 1653,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "archive.3"
+      ],
+      "ms": 169.4969999999994,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.3.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.99,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "archive.3.hook": {
+            "type": "noul",
+            "noul": 0.74
+          },
+          "archive.3.leak": {
+            "type": "noul",
+            "noul": 0.07
+          }
+        },
+        "usage": {
+          "input_tokens": 1647,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "archive.4"
+      ],
+      "ms": 190.53187499999967,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.4.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.12,
+            "probabilities": {
+              "compatible": 0.41,
+              "contradiction": 0.19,
+              "underdetermined": 0.4
+            }
+          },
+          "archive.4.hook": {
+            "type": "noul",
+            "noul": 0.61
+          },
+          "archive.4.leak": {
+            "type": "noul",
+            "noul": 0.25
+          }
+        },
+        "usage": {
+          "input_tokens": 1665,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "archive.5"
+      ],
+      "ms": 171.38079199999993,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.5.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 1,
+            "probabilities": {
+              "compatible": 1,
+              "contradiction": 0,
+              "underdetermined": 0
+            }
+          },
+          "archive.5.hook": {
+            "type": "noul",
+            "noul": 0.05
+          },
+          "archive.5.leak": {
+            "type": "noul",
+            "noul": 0.05
+          }
+        },
+        "usage": {
+          "input_tokens": 1621,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "archive.6"
+      ],
+      "ms": 299.8246250000002,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.6.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.78,
+            "probabilities": {
+              "compatible": 0.86,
+              "contradiction": 0.12,
+              "underdetermined": 0.02
+            }
+          },
+          "archive.6.hook": {
+            "type": "noul",
+            "noul": 0.53
+          },
+          "archive.6.leak": {
+            "type": "noul",
+            "noul": 0.96
+          }
+        },
+        "usage": {
+          "input_tokens": 1639,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "archive.7"
+      ],
+      "ms": 155.7045419999995,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.7.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.93,
+            "probabilities": {
+              "compatible": 0.96,
+              "contradiction": 0,
+              "underdetermined": 0.04
+            }
+          },
+          "archive.7.hook": {
+            "type": "noul",
+            "noul": 0.58
+          },
+          "archive.7.leak": {
+            "type": "noul",
+            "noul": 0.11
+          }
+        },
+        "usage": {
+          "input_tokens": 1667,
+          "output_tokens": 89
+        }
+      }
+    },
+    {
+      "mode": "individual",
+      "iteration": 0,
+      "caseIds": [
+        "archive.8"
+      ],
+      "ms": 214.8023750000002,
+      "response": {
+        "model": "jev-1.13.0",
+        "answers": {
+          "archive.8.consistency": {
+            "type": "choice",
+            "choice": "compatible",
+            "confidence": 0.93,
+            "probabilities": {
+              "compatible": 0.95,
+              "contradiction": 0.04,
+              "underdetermined": 0.01
+            }
+          },
+          "archive.8.hook": {
+            "type": "noul",
+            "noul": 0.86
+          },
+          "archive.8.leak": {
+            "type": "noul",
+            "noul": 0.1
+          }
+        },
+        "usage": {
+          "input_tokens": 1680,
+          "output_tokens": 89
+        }
+      }
+    }
+  ]
+}

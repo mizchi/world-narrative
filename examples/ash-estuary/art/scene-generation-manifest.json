@@ -1,0 +1,203 @@
+{
+  "formatVersion": "ash-estuary-scene-generation/v1",
+  "styleId": "ash-ink-wash-v1",
+  "images": [
+    {
+      "id": "tide-arrival",
+      "title": "南の古い水門",
+      "file": "style-b-ink-wash-v1.png",
+      "promptSource": "style-candidates.json",
+      "references": [],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "selected-reference-reused",
+      "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "harbor-arrival",
+      "title": "入り江の港",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-9362986c-4bbc-4503-87a8-9fd8e35ce42d.png",
+      "file": "scenes/harbor-arrival-v1.png",
+      "promptSource": "scene-prompts-wave-1.json",
+      "references": [
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "b8804eb00a4c391f23eb7a2b26b6fe05610b9a5bf992c2a41e26dcc924a38d86",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-arrival",
+      "title": "北の採石場",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-aae5420e-ce6c-4d2c-9b8f-4ca5f12b23f7.png",
+      "file": "scenes/quarry-arrival-v1.png",
+      "promptSource": "scene-prompts-wave-1.json",
+      "references": [
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "5b5f74691b4a6fa6f5179f66a27100837aed1726ebac8b2d414ce09950c39e01",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "tide-inspection",
+      "title": "道の下の分岐",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-d5cce639-d90f-48ec-a76c-976460ae8ae4.png",
+      "file": "scenes/tide-inspection-v1.png",
+      "promptSource": "scene-prompts-wave-2.json",
+      "references": [
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "a69bbf312909eb80e7b555c1c65c2181c4029334d5b6c0527e4c93491b23904b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "tide-trial",
+      "title": "同量の砂で試す",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-1dcf3d24-56ec-4653-bd8c-dabfc62d5b5b.png",
+      "file": "scenes/tide-trial-v1.png",
+      "promptSource": "scene-prompts-wave-2.json",
+      "references": [
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "68701502c0fbf8884edfd2397a01cfd4448c66e202506553df1bf3ce173e7c19",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "tide-repaired",
+      "title": "剝がした道",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-2a9f7898-3c87-404b-a812-05adf40df833.png",
+      "file": "scenes/tide-repaired-v1.png",
+      "promptSource": "scene-prompts-wave-2.json",
+      "references": [
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "superseded-draft",
+      "sha256": "468703175924a8cc87649bdd10f1619d3e044405124445bea528879de848f09d",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-ledger",
+      "title": "夜勤帳",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-65fe904e-859c-4fbb-be42-93dd06fee982.png",
+      "file": "scenes/quarry-ledger-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "7205a081fe2cf95963ef1316d766f6c2cd8be5d38fb02984d2446b37bcc8f8cd",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-channel",
+      "title": "届かない色水",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-eec1527c-8a5d-4f9d-a6bb-b6ee1ec047db.png",
+      "file": "scenes/quarry-channel-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "dc3a8e11de2b113b7e0d3628306696b074b9066b052ce909954428b7e06e3223",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-trial",
+      "title": "供述票と試験石板",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-9f3f0c5b-45e2-4a4b-aa1f-cee48c4c39c2.png",
+      "file": "scenes/quarry-trial-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "22dd78f48b7b980135590309a6a40175e25fb128e72cae7f363a87a3841346a0",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "tide-repaired",
+      "title": "剝がした道：旧溝の封鎖を修正",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-bd3dba40-347f-42c7-9afa-58420a4d3e02.png",
+      "file": "scenes/tide-repaired-v2.png",
+      "promptSource": "scene-prompts-correction-1.json",
+      "references": [
+        "scenes/tide-repaired-v1.png",
+        "style-b-ink-wash-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "corrects": "scenes/tide-repaired-v1.png",
+      "reason": "旧溝の開口を石とモルタルで塞ぐ",
+      "sha256": "ffe45772b405389fae92fcacf50f93edc3d153fbd60a78f6f8a23c8a0ba57e32",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-kiln-repaired",
+      "title": "窯台を直したあと",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-09ca3cbd-b593-4580-8149-4eb729ed7c25.png",
+      "file": "scenes/quarry-kiln-repaired-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "344e7c87d92bb1af4a509fed8b68b719d0a2331fc8cffec1ba806379981ace58",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "quarry-channel-repaired",
+      "title": "粉の溝を直したあと",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-2c82097a-7438-4501-ad30-99a287a72d8c.png",
+      "file": "scenes/quarry-channel-repaired-v1.png",
+      "promptSource": "scene-prompts-wave-3.json",
+      "references": [
+        "style-b-ink-wash-v1.png",
+        "scenes/quarry-arrival-v1.png"
+      ],
+      "tool": "image_gen",
+      "resolvedModel": null,
+      "status": "generated",
+      "sha256": "041b3a7c0a96295d4bb1524760e72380cbc784401280cc6124d275abeb6f3ba5",
+      "width": 1672,
+      "height": 941
+    }
+  ]
+}

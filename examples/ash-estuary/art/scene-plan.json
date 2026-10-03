@@ -1,0 +1,334 @@
+{
+  "formatVersion": "ash-estuary-art-plan/v1",
+  "status": "generated",
+  "styleReference": "style-b-ink-wash-v1.png",
+  "notes": [
+    "ユーザーがBを選定。採用画風を参照して全11シーンを展開する。",
+    "画風・トーンを確定後、採用参照画像と共通プロンプトを毎回使う。",
+    "同じ人物の寄り画を使う場合は、先に人物デザインを固定する。",
+    "プレイヤー向け出力への組込みは画像採用後に別途行う。",
+    "到着画・調査画は修理前の状態に限定。修理後は該当する別画像を使い、現在状態と取り違えない。"
+  ],
+  "scenes": [
+    {
+      "id": "harbor-arrival",
+      "title": "入り江の港",
+      "sourceIds": [
+        "place.harbor",
+        "actor.ira"
+      ],
+      "locationId": "place.harbor",
+      "condition": {
+        "op": "true"
+      },
+      "disclosedClaimIds": [],
+      "visual": "港の倉と船着場、配分用の道具。日常の仕事と白い入り江の全景。袋の印を数量保証として描かない。",
+      "status": "generated",
+      "image": "scenes/harbor-arrival-v1.png",
+      "stage": "arrival"
+    },
+    {
+      "id": "tide-arrival",
+      "title": "南の古い水門",
+      "sourceIds": [
+        "place.tide",
+        "tide.intro.arrival"
+      ],
+      "locationId": "place.tide",
+      "condition": {
+        "op": "eq",
+        "variable": "tide.repaired",
+        "value": false
+      },
+      "disclosedClaimIds": [],
+      "visual": "未修理の白い道、水門、雨水槽、金属の干し枠と網。今回の画風比較に使う到着場面。",
+      "status": "generated",
+      "image": "style-b-ink-wash-v1.png",
+      "stage": "arrival"
+    },
+    {
+      "id": "tide-inspection",
+      "title": "道の下の分岐",
+      "sourceIds": [
+        "tide.inspect",
+        "tide.fragment.diversion"
+      ],
+      "locationId": "place.tide",
+      "condition": {
+        "op": "all",
+        "conditions": [
+          {
+            "op": "eq",
+            "variable": "tide.inspected",
+            "value": true
+          },
+          {
+            "op": "eq",
+            "variable": "tide.repaired",
+            "value": false
+          }
+        ]
+      },
+      "disclosedClaimIds": [],
+      "visual": "灯りと点検縄で旧溝を調べ、白い沈着の筋と分岐板を観察する。流れの偏りを示し、粉の効力の秘密を図解しない。",
+      "status": "generated",
+      "image": "scenes/tide-inspection-v1.png",
+      "stage": "discovery"
+    },
+    {
+      "id": "tide-trial",
+      "title": "同量の砂で試す",
+      "sourceIds": [
+        "tide.test",
+        "tide.fragment.test"
+      ],
+      "locationId": "place.tide",
+      "condition": {
+        "op": "all",
+        "conditions": [
+          {
+            "op": "all",
+            "conditions": [
+              {
+                "op": "eq",
+                "variable": "tide.tested",
+                "value": true
+              },
+              {
+                "op": "knows",
+                "claimId": "truth.exception"
+              }
+            ]
+          },
+          {
+            "op": "eq",
+            "variable": "tide.repaired",
+            "value": false
+          }
+        ]
+      },
+      "disclosedClaimIds": [
+        "truth.exception"
+      ],
+      "visual": "淡水・目印の砂・回収袋・帳面を照合する作業。砂を魔法の防護剤として光らせず、記憶を石から読み出す絵にしない。",
+      "status": "generated",
+      "image": "scenes/tide-trial-v1.png",
+      "stage": "discovery"
+    },
+    {
+      "id": "tide-repaired",
+      "title": "剝がした道",
+      "sourceIds": [
+        "tide.repair",
+        "tide.fragment.repaired"
+      ],
+      "locationId": "place.tide",
+      "condition": {
+        "op": "eq",
+        "variable": "tide.repaired",
+        "value": true
+      },
+      "disclosedClaimIds": [],
+      "visual": "剝いだ敷石と塞いだ旧溝。通れなくなった道の手前に荷車が止まり、運ぶ仕事の負担が残る。修理だけで両方を保護した結果にしない。",
+      "status": "generated",
+      "image": "scenes/tide-repaired-v2.png",
+      "stage": "after-action"
+    },
+    {
+      "id": "quarry-arrival",
+      "title": "北の採石場",
+      "sourceIds": [
+        "place.quarry",
+        "quarry.intro.arrival"
+      ],
+      "locationId": "place.quarry",
+      "condition": {
+        "op": "any",
+        "conditions": [
+          {
+            "op": "eq",
+            "variable": "quarry.choice",
+            "value": "pending"
+          },
+          {
+            "op": "eq",
+            "variable": "quarry.choice",
+            "value": "leave"
+          }
+        ]
+      },
+      "disclosedClaimIds": [],
+      "visual": "美しい白い階段と、その裏の窯台の支柱、粉を運ぶ溝。誇りと日々の補修の両方を読める景観。",
+      "status": "generated",
+      "image": "scenes/quarry-arrival-v1.png",
+      "stage": "arrival"
+    },
+    {
+      "id": "quarry-ledger",
+      "title": "夜勤帳",
+      "sourceIds": [
+        "quarry.read-ledger",
+        "quarry.fragment.ledger"
+      ],
+      "locationId": "place.quarry",
+      "condition": {
+        "op": "all",
+        "conditions": [
+          {
+            "op": "eq",
+            "variable": "quarry.ledger",
+            "value": true
+          },
+          {
+            "op": "any",
+            "conditions": [
+              {
+                "op": "eq",
+                "variable": "quarry.choice",
+                "value": "pending"
+              },
+              {
+                "op": "eq",
+                "variable": "quarry.choice",
+                "value": "leave"
+              }
+            ]
+          }
+        ]
+      },
+      "disclosedClaimIds": [],
+      "visual": "作業者の膝に残した帳面、支柱点検の道具。本文はUIで出すので、画像中に読める契約文・固有名詞を描かない。",
+      "status": "generated",
+      "image": "scenes/quarry-ledger-v1.png",
+      "stage": "discovery"
+    },
+    {
+      "id": "quarry-channel",
+      "title": "届かない色水",
+      "sourceIds": [
+        "quarry.inspect-channel",
+        "quarry.fragment.channel"
+      ],
+      "locationId": "place.quarry",
+      "condition": {
+        "op": "all",
+        "conditions": [
+          {
+            "op": "eq",
+            "variable": "quarry.channelSeen",
+            "value": true
+          },
+          {
+            "op": "any",
+            "conditions": [
+              {
+                "op": "eq",
+                "variable": "quarry.choice",
+                "value": "pending"
+              },
+              {
+                "op": "eq",
+                "variable": "quarry.choice",
+                "value": "leave"
+              }
+            ]
+          }
+        ]
+      },
+      "disclosedClaimIds": [],
+      "visual": "三枚の蓋を開けた溝、捨て口へ流れる色水、洗い場の白い溜まり。色水は普通の流路の目印。",
+      "status": "generated",
+      "image": "scenes/quarry-channel-v1.png",
+      "stage": "discovery"
+    },
+    {
+      "id": "quarry-trial",
+      "title": "供述票と試験石板",
+      "sourceIds": [
+        "quarry.read-trial",
+        "quarry.fragment.trial"
+      ],
+      "locationId": "place.quarry",
+      "condition": {
+        "op": "all",
+        "conditions": [
+          {
+            "op": "all",
+            "conditions": [
+              {
+                "op": "eq",
+                "variable": "quarry.trialRead",
+                "value": true
+              },
+              {
+                "op": "knows",
+                "claimId": "truth.exception"
+              }
+            ]
+          },
+          {
+            "op": "any",
+            "conditions": [
+              {
+                "op": "eq",
+                "variable": "quarry.choice",
+                "value": "pending"
+              },
+              {
+                "op": "eq",
+                "variable": "quarry.choice",
+                "value": "leave"
+              }
+            ]
+          }
+        ]
+      },
+      "disclosedClaimIds": [
+        "truth.exception"
+      ],
+      "visual": "開いた旧作業箱、供述票、流量表、侵食の境界が残る試験石板。供述票は紙の資料であり石に閉じ込めた記憶ではない。文字は判読できない筆跡に留める。",
+      "status": "generated",
+      "image": "scenes/quarry-trial-v1.png",
+      "stage": "discovery"
+    },
+    {
+      "id": "quarry-kiln-repaired",
+      "title": "窯台を直したあと",
+      "sourceIds": [
+        "quarry.repair-kiln",
+        "quarry.fragment.kiln"
+      ],
+      "locationId": "place.quarry",
+      "condition": {
+        "op": "eq",
+        "variable": "quarry.choice",
+        "value": "kiln"
+      },
+      "disclosedClaimIds": [],
+      "visual": "抜いた木の支柱と座り直した窯台。窯を止めた作業後で、階段と溝は未修理。万能な再建の全景にしない。",
+      "status": "generated",
+      "image": "scenes/quarry-kiln-repaired-v1.png",
+      "stage": "after-action"
+    },
+    {
+      "id": "quarry-channel-repaired",
+      "title": "粉の溝を直したあと",
+      "sourceIds": [
+        "quarry.repair-channel",
+        "quarry.fragment.repaired-channel"
+      ],
+      "locationId": "place.quarry",
+      "condition": {
+        "op": "eq",
+        "variable": "quarry.choice",
+        "value": "channel"
+      },
+      "disclosedClaimIds": [],
+      "visual": "小水門へ届く掘り直した溝、休業中の洗い場、上の井戸へ桶を運ぶ人。窯台と石段は未修理。",
+      "status": "generated",
+      "image": "scenes/quarry-channel-repaired-v1.png",
+      "stage": "after-action"
+    }
+  ],
+  "styleId": "ash-ink-wash-v1"
+}

@@ -1,0 +1,674 @@
+{
+  "formatVersion": "ash-estuary-character-production-generation/v2",
+  "planId": "ash-ink-wash-character-production-v2",
+  "status": "generated",
+  "generationMode": "built-in-imagegen",
+  "requestedModel": "gpt-image-2.5",
+  "resolvedModel": null,
+  "modelSelectionNote": "内蔵image_genにはモデル指定欄がなく、ユーザー指定モデルへの固定は確認できない。",
+  "requestedAssets": 15,
+  "generatedAssets": 15,
+  "originalsPreserved": true,
+  "records": [
+    {
+      "id": "ira-turnaround",
+      "characterId": "ira",
+      "entityId": "actor.ira",
+      "name": "鐘守イラ",
+      "kind": "turnaround",
+      "file": "characters/ira-turnaround-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-d06d74ba-8b2a-48a0-9f7c-bf9158622d2d.png",
+      "status": "generated",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "8919b6cd82d9538372842f18fe138fd16a43fe90616a72c294a1734243671855",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-turnaround-v2.json",
+        "jobId": "ira-turnaround",
+        "sha256": "3ccd5c8645540de4effba3610e63805fa22d1c29647b32137472a99ba350c95f"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/ira-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "f4c65313540ba48e6966c2a5f4381e49bd7d9d9fef8d9db3ae4ee7295be8ebad"
+        }
+      ],
+      "canonSource": {
+        "file": "../world.json",
+        "entityId": "actor.ira",
+        "sha256": "b6eaece237a4da626b497e64812abf72b530a6d6cdef9ffa6ce5903d077cf93d"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "三方向、全身、同一人物の衣服と体格"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "sui-turnaround",
+      "characterId": "sui",
+      "entityId": "tide.sui",
+      "name": "水門修理人スイ",
+      "kind": "turnaround",
+      "file": "characters/sui-turnaround-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-39af8bfc-91eb-4a27-a694-094a42723146.png",
+      "status": "generated",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "df0e62859d83a0b9694c85d95b75f198d9bddb070bf01f19f32cab923d9ec2b9",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-turnaround-v2.json",
+        "jobId": "sui-turnaround",
+        "sha256": "3ccd5c8645540de4effba3610e63805fa22d1c29647b32137472a99ba350c95f"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/sui-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "976ffd205abea0a220402539aecb3194a769b3f219ca9f4acf1ea0070ea9118c"
+        }
+      ],
+      "canonSource": {
+        "file": "../tide.proposal.json",
+        "entityId": "tide.sui",
+        "sha256": "8afb5d48c283b63350187357c3724c3f8f4d8049ac71e8b1e74140e058af3da6"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "三方向、全身、同一人物の衣服と体格"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "asa-turnaround",
+      "characterId": "asa",
+      "entityId": "tide.asa",
+      "name": "網職人アサ",
+      "kind": "turnaround",
+      "file": "characters/asa-turnaround-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-7612fb99-fa7a-4fed-8577-4459e1ef7fe7.png",
+      "status": "generated",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "ef5bd5c1c34c20edfb3c6ef383342da400ff4956558039e9b68632bca125a959",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-turnaround-v2.json",
+        "jobId": "asa-turnaround",
+        "sha256": "3ccd5c8645540de4effba3610e63805fa22d1c29647b32137472a99ba350c95f"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/asa-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "c7840de697911651ab00d99ef4903fd96d59926ae6709daa10e586912277a5b7"
+        }
+      ],
+      "canonSource": {
+        "file": "../tide.proposal.json",
+        "entityId": "tide.asa",
+        "sha256": "8afb5d48c283b63350187357c3724c3f8f4d8049ac71e8b1e74140e058af3da6"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "三方向、全身、同一人物の衣服と体格"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "nene-turnaround",
+      "characterId": "nene",
+      "entityId": "quarry.nene",
+      "name": "窯番ネネ",
+      "kind": "turnaround",
+      "file": "characters/nene-turnaround-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-277d0a0f-24d9-48e7-adfa-c69e91a8d502.png",
+      "status": "generated",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "68e2de2dd7bc1c2784f8a3aafc2ca55030f572fe477ce3643770e74be6c758a4",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-turnaround-v2.json",
+        "jobId": "nene-turnaround",
+        "sha256": "3ccd5c8645540de4effba3610e63805fa22d1c29647b32137472a99ba350c95f"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/nene-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "7fdab728e1b649391e197aa616bff87ddebf25db2efb014c1b81a914bf17fb54"
+        }
+      ],
+      "canonSource": {
+        "file": "../quarry.proposal.json",
+        "entityId": "quarry.nene",
+        "sha256": "20e4e8c85c0bdb07c744349193a8c46f3d09a2fcf3b7b6b2b949c3d8cd627f59"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "三方向、全身、同一人物の衣服と体格"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "ado-turnaround",
+      "characterId": "ado",
+      "entityId": "quarry.ado",
+      "name": "階段職人アド",
+      "kind": "turnaround",
+      "file": "characters/ado-turnaround-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-fc509f0a-6d57-4f26-9652-8c40b6ca1c28.png",
+      "status": "generated",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "c97cac0b70584169c6376c3546d43202e7be54d3c4332ab8ca26dce28719f0c3",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-turnaround-v2.json",
+        "jobId": "ado-turnaround",
+        "sha256": "3ccd5c8645540de4effba3610e63805fa22d1c29647b32137472a99ba350c95f"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/ado-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "d3d832df1961eea5999837c720bc8fa60adf7e680bdc63a1f42bf6ecf99e498c"
+        }
+      ],
+      "canonSource": {
+        "file": "../quarry.proposal.json",
+        "entityId": "quarry.ado",
+        "sha256": "20e4e8c85c0bdb07c744349193a8c46f3d09a2fcf3b7b6b2b949c3d8cd627f59"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "三方向、全身、同一人物の衣服と体格"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "ira-pose",
+      "characterId": "ira",
+      "entityId": "actor.ira",
+      "name": "鐘守イラ",
+      "kind": "pose",
+      "file": "characters/ira-pose-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-871daf94-6fdb-4ee4-bb73-c7c16321f20c.png",
+      "status": "generated",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6fe5e9a4ede759ab43cd279f1aaf48bd12f87fb4ebe50b7c6f1b9197cb1cbc58",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-pose-v2.json",
+        "jobId": "ira-pose",
+        "sha256": "d3862ae2984147457f63fdb792cc7b6245bf0defe78c39cde8c02eaa224111c2"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/ira-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "f4c65313540ba48e6966c2a5f4381e49bd7d9d9fef8d9db3ae4ee7295be8ebad"
+        }
+      ],
+      "canonSource": {
+        "file": "../world.json",
+        "entityId": "actor.ira",
+        "sha256": "b6eaece237a4da626b497e64812abf72b530a6d6cdef9ffa6ce5903d077cf93d"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "人物ごとの動作と画角、顔と手元、外見の連続性"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "sui-pose",
+      "characterId": "sui",
+      "entityId": "tide.sui",
+      "name": "水門修理人スイ",
+      "kind": "pose",
+      "file": "characters/sui-pose-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-058a52d7-024d-430d-b654-90796394482c.png",
+      "status": "generated",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "573dcd4cc2d647833a1bcb384b9c975772e4fad0e2497481537e6ec768c5618e",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-pose-v2.json",
+        "jobId": "sui-pose",
+        "sha256": "d3862ae2984147457f63fdb792cc7b6245bf0defe78c39cde8c02eaa224111c2"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/sui-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "976ffd205abea0a220402539aecb3194a769b3f219ca9f4acf1ea0070ea9118c"
+        }
+      ],
+      "canonSource": {
+        "file": "../tide.proposal.json",
+        "entityId": "tide.sui",
+        "sha256": "8afb5d48c283b63350187357c3724c3f8f4d8049ac71e8b1e74140e058af3da6"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "人物ごとの動作と画角、顔と手元、外見の連続性"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "asa-pose",
+      "characterId": "asa",
+      "entityId": "tide.asa",
+      "name": "網職人アサ",
+      "kind": "pose",
+      "file": "characters/asa-pose-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-7a4e0fda-d5a2-4980-af2b-40f3570abd09.png",
+      "status": "generated",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "04a234dd3996f6cb7c54330ae2881b0277eff5673660918ede9e3410618f8f7a",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-pose-v2.json",
+        "jobId": "asa-pose",
+        "sha256": "d3862ae2984147457f63fdb792cc7b6245bf0defe78c39cde8c02eaa224111c2"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/asa-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "c7840de697911651ab00d99ef4903fd96d59926ae6709daa10e586912277a5b7"
+        }
+      ],
+      "canonSource": {
+        "file": "../tide.proposal.json",
+        "entityId": "tide.asa",
+        "sha256": "8afb5d48c283b63350187357c3724c3f8f4d8049ac71e8b1e74140e058af3da6"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "人物ごとの動作と画角、顔と手元、外見の連続性"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "nene-pose",
+      "characterId": "nene",
+      "entityId": "quarry.nene",
+      "name": "窯番ネネ",
+      "kind": "pose",
+      "file": "characters/nene-pose-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-f11bed3f-0a96-4230-a8dd-cb206ee3ed73.png",
+      "status": "generated",
+      "width": 1122,
+      "height": 1402,
+      "sha256": "cc5f3b2cc2346d5c6958cb714b1c81838f192e9aa76fa32eb68d263cf29e03d9",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-pose-v2.json",
+        "jobId": "nene-pose",
+        "sha256": "d3862ae2984147457f63fdb792cc7b6245bf0defe78c39cde8c02eaa224111c2"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/nene-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "7fdab728e1b649391e197aa616bff87ddebf25db2efb014c1b81a914bf17fb54"
+        }
+      ],
+      "canonSource": {
+        "file": "../quarry.proposal.json",
+        "entityId": "quarry.nene",
+        "sha256": "20e4e8c85c0bdb07c744349193a8c46f3d09a2fcf3b7b6b2b949c3d8cd627f59"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "人物ごとの動作と画角、顔と手元、外見の連続性"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "ado-pose",
+      "characterId": "ado",
+      "entityId": "quarry.ado",
+      "name": "階段職人アド",
+      "kind": "pose",
+      "file": "characters/ado-pose-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-e126f3ca-7c82-402e-a337-94cdf8b2402a.png",
+      "status": "generated",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "6870181367c49e852ad3b63622f4945a0230c6dfc128d91d0a17530566456b64",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-pose-v2.json",
+        "jobId": "ado-pose",
+        "sha256": "d3862ae2984147457f63fdb792cc7b6245bf0defe78c39cde8c02eaa224111c2"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/ado-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "d3d832df1961eea5999837c720bc8fa60adf7e680bdc63a1f42bf6ecf99e498c"
+        }
+      ],
+      "canonSource": {
+        "file": "../quarry.proposal.json",
+        "entityId": "quarry.ado",
+        "sha256": "20e4e8c85c0bdb07c744349193a8c46f3d09a2fcf3b7b6b2b949c3d8cd627f59"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "人物ごとの動作と画角、顔と手元、外見の連続性"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "ira-expressions",
+      "characterId": "ira",
+      "entityId": "actor.ira",
+      "name": "鐘守イラ",
+      "kind": "expressions",
+      "file": "characters/ira-expressions-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-dbd4e7e9-52db-40a0-bad2-3d41f62c9ee7.png",
+      "status": "generated",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "189510c8f11f258932772c7aa95bf828e1e63ebb9e2bdb3e2cf15ff7f926ca1d",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-expressions-v2.json",
+        "jobId": "ira-expressions",
+        "sha256": "7c28811a2036eb8acfc56f6be7a19fe032075be0e0d6d7c97fae9a84baf09387"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/ira-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "f4c65313540ba48e6966c2a5f4381e49bd7d9d9fef8d9db3ae4ee7295be8ebad"
+        }
+      ],
+      "canonSource": {
+        "file": "../world.json",
+        "entityId": "actor.ira",
+        "sha256": "b6eaece237a4da626b497e64812abf72b530a6d6cdef9ffa6ce5903d077cf93d"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "四表情、顔の同一性と変化、頭と肩の読みやすさ"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "sui-expressions",
+      "characterId": "sui",
+      "entityId": "tide.sui",
+      "name": "水門修理人スイ",
+      "kind": "expressions",
+      "file": "characters/sui-expressions-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-9f7bd21f-086d-46db-9d50-1cb7d79e5deb.png",
+      "status": "generated",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "696384fe6b337f2c0cc0460963381aecc56dd6136f56e8791bc61c8a6cffd3ba",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-expressions-v2.json",
+        "jobId": "sui-expressions",
+        "sha256": "7c28811a2036eb8acfc56f6be7a19fe032075be0e0d6d7c97fae9a84baf09387"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/sui-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "976ffd205abea0a220402539aecb3194a769b3f219ca9f4acf1ea0070ea9118c"
+        }
+      ],
+      "canonSource": {
+        "file": "../tide.proposal.json",
+        "entityId": "tide.sui",
+        "sha256": "8afb5d48c283b63350187357c3724c3f8f4d8049ac71e8b1e74140e058af3da6"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "四表情、顔の同一性と変化、頭と肩の読みやすさ"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "asa-expressions",
+      "characterId": "asa",
+      "entityId": "tide.asa",
+      "name": "網職人アサ",
+      "kind": "expressions",
+      "file": "characters/asa-expressions-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-09287df2-1778-44bf-9513-d3f572440511.png",
+      "status": "generated",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f4ae0709d8e80b8fb0bde3be5c14ebb7fe6c59f6a029713dce09525f97e4f2cf",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-expressions-v2.json",
+        "jobId": "asa-expressions",
+        "sha256": "7c28811a2036eb8acfc56f6be7a19fe032075be0e0d6d7c97fae9a84baf09387"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/asa-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "c7840de697911651ab00d99ef4903fd96d59926ae6709daa10e586912277a5b7"
+        }
+      ],
+      "canonSource": {
+        "file": "../tide.proposal.json",
+        "entityId": "tide.asa",
+        "sha256": "8afb5d48c283b63350187357c3724c3f8f4d8049ac71e8b1e74140e058af3da6"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "四表情、顔の同一性と変化、頭と肩の読みやすさ"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "nene-expressions",
+      "characterId": "nene",
+      "entityId": "quarry.nene",
+      "name": "窯番ネネ",
+      "kind": "expressions",
+      "file": "characters/nene-expressions-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-65256a10-ee74-4829-92dc-f3d150303771.png",
+      "status": "generated",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "e88bb3a5204292a9fe7afea222ba3072e886796cd30b1fafb680dceff424625a",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-expressions-v2.json",
+        "jobId": "nene-expressions",
+        "sha256": "7c28811a2036eb8acfc56f6be7a19fe032075be0e0d6d7c97fae9a84baf09387"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/nene-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "7fdab728e1b649391e197aa616bff87ddebf25db2efb014c1b81a914bf17fb54"
+        }
+      ],
+      "canonSource": {
+        "file": "../quarry.proposal.json",
+        "entityId": "quarry.nene",
+        "sha256": "20e4e8c85c0bdb07c744349193a8c46f3d09a2fcf3b7b6b2b949c3d8cd627f59"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "四表情、顔の同一性と変化、頭と肩の読みやすさ"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    },
+    {
+      "id": "ado-expressions",
+      "characterId": "ado",
+      "entityId": "quarry.ado",
+      "name": "階段職人アド",
+      "kind": "expressions",
+      "file": "characters/ado-expressions-v2.png",
+      "sourcePath": "/Users/mz/.codex/generated_images/01a0fd65-4496-7a42-aada-cbfb55a92762/exec-6648fed6-7a1d-4611-858f-83443edab722.png",
+      "status": "generated",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d9507c716eb163c18d894916812422bc521caa103134c56da011e008dc16d918",
+      "transparentBackground": false,
+      "promptSource": {
+        "file": "character-prompts-expressions-v2.json",
+        "jobId": "ado-expressions",
+        "sha256": "7c28811a2036eb8acfc56f6be7a19fe032075be0e0d6d7c97fae9a84baf09387"
+      },
+      "references": [
+        {
+          "file": "style-b-ink-wash-v1.png",
+          "role": "style-only",
+          "sha256": "b1474e4c5036e545afb36512e3804be0f999c61542f8645ba6e88afc8d3585de"
+        },
+        {
+          "file": "characters/ado-v1.png",
+          "role": "character-identity-and-costume",
+          "sha256": "d3d832df1961eea5999837c720bc8fa60adf7e680bdc63a1f42bf6ecf99e498c"
+        }
+      ],
+      "canonSource": {
+        "file": "../quarry.proposal.json",
+        "entityId": "quarry.ado",
+        "sha256": "20e4e8c85c0bdb07c744349193a8c46f3d09a2fcf3b7b6b2b949c3d8cd627f59"
+      },
+      "visualReview": {
+        "reviewer": "assistant",
+        "status": "checked",
+        "scope": "四表情、顔の同一性と変化、頭と肩の読みやすさ"
+      },
+      "tool": "image_gen",
+      "requestedModel": "gpt-image-2.5",
+      "resolvedModel": null
+    }
+  ]
+}
